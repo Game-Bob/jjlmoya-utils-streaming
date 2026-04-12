@@ -23,7 +23,7 @@ export interface HowToStep {
   text: string;
 }
 
-export interface ToolLocaleContent<TUI extends Record<string, string> = Record<string, string>> {
+export interface ToolLocaleContent<TUI extends Record<string, string | string[]> = Record<string, string | string[]>> {
   slug: string;
   title: string;
   description: string;
@@ -48,7 +48,7 @@ export type LocaleLoader<T> = () => Promise<T>;
 
 export type LocaleMap<T> = Partial<Record<KnownLocale, LocaleLoader<T>>>;
 
-export interface StreamingToolEntry<TUI extends Record<string, string> = Record<string, string>> {
+export interface StreamingToolEntry<TUI extends Record<string, string | string[]> = Record<string, string | string[]>> {
   id: string;
   icons: {
     bg: string;
@@ -69,4 +69,3 @@ export interface ToolDefinition {
   SEOComponent: unknown;
   BibliographyComponent: unknown;
 }
-

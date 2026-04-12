@@ -1,0 +1,30 @@
+export interface SorteoUI {
+  [key: string]: string;
+  title: string;
+  totalParticipants: string;
+  ready: string;
+  participants: string;
+  settings: string;
+  importFile: string;
+  clearAll: string;
+  placeholder: string;
+  onePerLine: string;
+  lines: string;
+  filters: string;
+  allowDuplicates: string;
+  winnerCount: string;
+  autoRemove: string;
+  blacklist: string;
+  blacklistPlaceholder: string;
+  blacklistInfo: string;
+  sceneEffects: string;
+  countdown: string;
+  confetti: string;
+  zenMode: string;
+  waitingParticipants: string;
+  winner: string;
+  reroll: string;
+  history: string;
+  noWinnersYet: string;
+  startGiveaway: string;
+}
