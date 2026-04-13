@@ -97,7 +97,9 @@ export const content: ToolLocaleContent<SorteoUI> = {
   slug,
   title,
   description,
+  faqTitle: 'Preguntas Frecuentes',
   faq: faqData,
+  bibliographyTitle: 'Referencias Técnicas',
   bibliography: [
     {
       name: 'Web Crypto API: getRandomValues()',

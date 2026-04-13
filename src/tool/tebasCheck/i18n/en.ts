@@ -82,7 +82,9 @@ export const content: ToolLocaleContent<TebasCheckUI> = {
   slug,
   title,
   description,
+  faqTitle: 'Frequently Asked Questions',
   faq: faqData,
+  bibliographyTitle: 'References and Context',
   bibliography: [
     {
       name: 'Cloudflare: Understanding IP Blocking',
