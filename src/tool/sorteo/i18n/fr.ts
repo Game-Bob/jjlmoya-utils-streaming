@@ -120,11 +120,16 @@ export const content: ToolLocaleContent<SorteoUI> = {
     },
     {
       type: 'paragraph',
-      html: 'Vous vous demandez comment faire un tirage au sort en ligne rapidement, en toute sécurité et en toute transparence ? Notre outil gratuit de **Tirage de Noms** est la solution ultime pour choisir un gagnant au hasard en quelques secondes. Conçu pour être simple, visuel et efficace, il est parfait pour tout scénario où vous avez besoin d\'une "main innocente" numérique.',
+      html: 'Vous vous demandez comment faire un tirage au sort en ligne rapidement, en toute sécurité et en toute transparence ? Notre outil gratuit de <strong>Tirage de Noms</strong> est la solution ultime pour choisir un gagnant au hasard en quelques secondes. Conçu pour être simple, visuel et efficace, il est parfait pour tout scénario où vous avez besoin d\'une "main innocente" numérique.',
     },
     {
       type: 'paragraph',
-      html: 'Que vous gériez un concours sur les réseaux sociaux, un tirage au sort massif sur votre chaîne de streaming ou que vous décidiez simplement qui sort les poubelles aujourd\'hui, notre sélecteur aléatoire garantit une impartialité totale grâce à des algorithmes cryptographiques modernes.'
+      html: 'Que vous gériez un concours sur les réseaux sociaux, un tirage au sort massif sur votre chaîne de streaming ou que vous décidiez simplement qui sort les poubelles aujourd\'hui, notre sélecteur aléatoire garantit une impartialité totale grâce à des algorithmes cryptographiques modernes. <strong>Aucune manipulation, aucun biais, juste de la pureté aléatoire.</strong>'
+    },
+    {
+      type: 'title',
+      text: 'Cas d\'Usage',
+      level: 3,
     },
     {
       type: 'comparative',
@@ -132,7 +137,7 @@ export const content: ToolLocaleContent<SorteoUI> = {
       items: [
         {
           title: 'Tirages sur les Réseaux Sociaux',
-          description: 'Idéal pour les concours Instagram, Twitter (X) ou Facebook. Copiez simplement les noms des commentaires et collez-les pour choisir un gagnant équitable.',
+          description: 'Idéal pour les concours Instagram, Twitter (X) ou Facebook. Copiez simplement les noms des commentaires et collez-les pour choisir un gagnant équitable. L\'outil nettoie automatiquement les doublons.',
         },
         {
           title: 'Streaming sur Twitch / YouTube',
@@ -150,44 +155,71 @@ export const content: ToolLocaleContent<SorteoUI> = {
     },
     {
       type: 'title',
-      text: 'Comment fonctionne notre sélecteur de noms aléatoire',
+      text: 'Pourquoi notre outil est-il différent ?',
       level: 3,
-    },
-    {
-      type: 'paragraph',
-      html: 'Le processus pour effectuer votre premier tirage au sort ne pourrait pas être plus simple. Suivez ces étapes pour obtenir des résultats instantanés :'
     },
     {
       type: 'list',
       items: [
-        '**Saisissez les participants :** Collez votre liste de noms dans la zone de texte principale. L\'outil détecte automatiquement chaque saut de ligne comme un participant différent.',
-        '**Personnalisez l\'expérience :** Dans l\'onglet des paramètres, vous pouvez activer le compte à rebours pour générer de la tension ou l\'effet de confettis pour célébrer la victoire.',
-        '**Tirer au sort !** Cliquez sur le bouton principal et notre moteur générera une sélection aléatoire sécurisée par cryptographie (Web Crypto API).',
+        '<strong>Cryptographie Réelle :</strong> Nous utilisons la Web Crypto API du navigateur (norme W3C) au lieu de générateurs pseudo-aléatoires faibles. Chaque tirage au sort est mathématiquement impartial.',
+        '<strong>Aucun Stockage :</strong> Vos données ne quittent jamais votre navigateur. Nous ne vendons pas de listes, nous ne vous profileurons pas, nous ne stockons rien. Pur traitement local.',
+        '<strong>Design Visuel :</strong> Le mode cinéma et les animations rendent chaque tirage au sort mémorable. Parfait pour la capture OBS ou la diffusion en direct.',
+        '<strong>Gestion des Doublons :</strong> Détecte automatiquement les noms répétés ou les variantes (espaces supplémentaires, majuscules, etc.) pour assurer que chaque personne réelle ne compte qu\'une seule fois.',
       ],
     },
     {
       type: 'title',
-      text: 'Fonctions Avancées : Entrées Pondérées et Poids',
+      text: 'Comment utiliser le tirage au sort étape par étape',
+      level: 3,
+    },
+    {
+      type: 'list',
+      items: [
+        '<strong>Étape 1 - Entrez les participants :</strong> Collez votre liste de noms dans la zone de texte principale. L\'outil détecte automatiquement chaque saut de ligne comme un participant différent. Vous avez des doublons ? Aucun problème, l\'outil les nettoie.',
+        '<strong>Étape 2 - Personnalisez :</strong> Dans l\'onglet des paramètres, vous pouvez activer le compte à rebours pour générer de la tension, l\'effet de confettis pour célébrer, ou activer la "liste noire" pour exclure certains noms.',
+        '<strong>Étape 3 - Tirez au sort !</strong> Cliquez sur le bouton principal et notre moteur générera une sélection aléatoire sécurisée par cryptographie. Les gagnants seront affichés de manière claire et mémorable.',
+      ],
+    },
+    {
+      type: 'title',
+      text: 'Entrées Pondérées : Donner un Avantage à Certains Participants',
       level: 3,
     },
     {
       type: 'paragraph',
-      html: 'Vous souhaitez récompenser vos abonnés les plus fidèles ou donner plus de chances à certains participants ? Notre système d\'**Entrées Pondérées** est unique et vous permet d\'assigner un "poids" ou un multiplicateur à n\'importe quel nom de la liste sans avoir à l\'écrire plusieurs fois.',
+      html: 'Vous souhaitez récompenser vos abonnés les plus fidèles ou donner plus de chances à certains participants ? Notre système d\'<strong>Entrées Pondérées</strong> est unique et vous permet d\'assigner un "poids" ou un multiplicateur à n\'importe quel nom sans avoir à l\'écrire plusieurs fois.',
     },
     {
       type: 'tip',
       title: 'Comment assigner des poids aux noms',
-      html: '<p>Utilisez un astérisque (*) ou un "x" suivi du nombre de participations que vous souhaitez donner à cet utilisateur. Par exemple, si vous écrivez **"Maria Garcia * 10"**, Maria aura 10 fois plus de chances réelles de gagner qu\'un utilisateur avec une seule entrée.</p>',
+      html: '<p>Utilisez un astérisque (*) ou un "x" suivi du nombre de participations. Exemples :</p><ul><li><strong>"Jean * 5"</strong> - Jean concourt comme s\'il était 5 personnes</li><li><strong>"Maria x 10"</strong> - Maria a 10 fois plus de chances</li><li><strong>"Pierre"</strong> - Sans symbole = 1 entrée normale</li></ul><p>C\'est parfait pour les tirages au sort où vous voulez donner un avantage aux abonnés VIP ou aux utilisateurs spéciaux.</p>',
     },
     {
       type: 'title',
-      text: 'Confidentialité et Sécurité Garanties',
+      text: 'Confidentialité et Sécurité Totales',
       level: 3,
     },
     {
       type: 'paragraph',
-      html: 'Contrairement à d\'autres outils en ligne, **nous ne stockons pas vos données**. Tout le traitement des noms et l\'exécution du tirage au sort se font localement dans votre propre navigateur. Vos listes de participants ne voyagent jamais sur le réseau et ne sont enregistrées sur aucun serveur externe, garantissant une confidentialité maximale pour vous et vos utilisateurs.'
-    }
+      html: 'Contrairement à d\'autres outils en ligne, <strong>nous ne stockons pas vos données</strong>. Tout le traitement des noms et l\'exécution du tirage au sort se font localement dans votre propre navigateur. Vos listes de participants ne voyagent jamais sur le réseau et ne sont enregistrées sur aucun serveur externe.',
+    },
+    {
+      type: 'paragraph',
+      html: '<strong>Qu\'est-ce que cela signifie ?</strong> Votre liste de participants vous appartient et vous seul. En fermant l\'onglet, elle disparaît. Pas de cookies de suivi, pas de profils utilisateur, pas de base de données centrale. Confidentialité maximale garantie pour vous et ceux qui participent à vos tirages au sort.',
+    },
+    {
+      type: 'title',
+      text: 'Transparence Mathématique',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'Certains se poseront la question : "Et si vous manipuliez les résultats ?" La réponse est simple : <strong>nous ne pouvons pas</strong>. Le code du tirage au sort est déterministe et cryptographique. Pas de variables cachées, pas de "doigts sur la scène".',
+    },
+    {
+      type: 'paragraph',
+      html: 'Chaque gagnant est le résultat direct de l\'algorithme Fisher-Yates Shuffle appliqué à votre liste exacte, en utilisant l\'entropie cryptographique réelle. Si vous souhaitez auditer le processus, le code est disponible sur GitHub pour inspection publique.',
+    },
   ],
   ui: {
     title: 'Tirage au Sort Aléatoire',

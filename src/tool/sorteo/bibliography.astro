@@ -1,5 +1,6 @@
 ---
-import { SORTEO_TOOL } from './index';
+import { Bibliography as SharedBibliography } from '@jjlmoya/utils-shared';
+import { sorteo } from './index';
 import type { KnownLocale } from '../../types';
 
 interface Props {
@@ -7,56 +8,7 @@ interface Props {
 }
 
 const { locale = 'es' } = Astro.props;
-const content = await SORTEO_TOOL.entry.i18n[locale]?.();
+const content = await sorteo.i18n[locale]?.();
 ---
 
-{
-  content && content.bibliography.length > 0 && (
-    <div class="sorteo-bibliography">
-      <h3 class="bibliography-title">{content.bibliographyTitle || 'Bibliography'}</h3>
-      <ul class="bibliography-list">
-        {content.bibliography.map((item) => (
-          <li>
-            <a href={item.url} target="_blank" rel="noopener noreferrer">
-              {item.name}
-            </a>
-          </li>
-        ))}
-      </ul>
-    </div>
-  )
-}
-
-<style>
-  .sorteo-bibliography {
-    margin-top: 4rem;
-    padding-top: 2rem;
-    border-top: 1px solid var(--sorteo-border);
-  }
-
-  .bibliography-title {
-    font-size: 1.25rem;
-    font-weight: 700;
-    color: var(--sorteo-text);
-    margin-bottom: 1.5rem;
-  }
-
-  .bibliography-list {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
-  }
-
-  .bibliography-list a {
-    color: var(--sorteo-primary);
-    text-decoration: none;
-    font-size: 0.875rem;
-    transition: opacity 0.2s;
-  }
-
-  .bibliography-list a:hover {
-    opacity: 0.8;
-  }
-</style>
+{content && <SharedBibliography links={content.bibliography} />}

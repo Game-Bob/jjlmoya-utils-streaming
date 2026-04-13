@@ -123,7 +123,7 @@ export const content: CategoryLocaleContent = {
     {
       type: 'stats',
       columns: 2,
-      stats: [
+      items: [
         { label: 'Aleatoriedad', value: 'Criptográfica', icon: 'mdi:ticket' },
         { label: 'Red', value: 'Auditoría DNS', icon: 'mdi:radar' },
         { label: 'Stream', value: 'Multi-Cap', icon: 'mdi:broadcast' },

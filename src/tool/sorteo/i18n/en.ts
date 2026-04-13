@@ -120,11 +120,16 @@ export const content: ToolLocaleContent<SorteoUI> = {
     },
     {
       type: 'paragraph',
-      html: 'Wondering how to do a random giveaway online quickly, safely, and totally transparently? Our free **Name Picker** tool is the ultimate solution to choose a winner at random in seconds. Designed to be simple, visual, and effective, it is perfect for any scenario where you need a digital "innocent hand".',
+      html: 'Wondering how to do a random giveaway online quickly, safely, and totally transparently? Our free <strong>Name Picker</strong> tool is the ultimate solution to choose a winner at random in seconds. Designed to be simple, visual, and effective, it is perfect for any scenario where you need a digital "innocent hand".',
     },
     {
       type: 'paragraph',
-      html: 'Whether you are managing a contest on social networks, a massive giveaway on your streaming channel, or simply deciding who takes out the trash today, our random selector guarantees total impartiality thanks to modern cryptographic algorithms.'
+      html: 'Whether you are managing a contest on social networks, a massive giveaway on your streaming channel, or simply deciding who takes out the trash today, our random selector guarantees total impartiality thanks to modern cryptographic algorithms. <strong>No manipulation, no bias, just pure randomness.</strong>'
+    },
+    {
+      type: 'title',
+      text: 'Use Cases',
+      level: 3,
     },
     {
       type: 'comparative',
@@ -132,11 +137,11 @@ export const content: ToolLocaleContent<SorteoUI> = {
       items: [
         {
           title: 'Social Media Giveaways',
-          description: 'Ideal for Instagram, Twitter (X), or Facebook contests. Simply copy names from comments and paste them to choose a fair winner.',
+          description: 'Ideal for Instagram, Twitter (X), or Facebook contests. Simply copy names from comments and paste them to choose a fair winner. The tool automatically removes duplicates.',
         },
         {
           title: 'Twitch / YouTube Streaming',
-          description: 'Thanks to our Study Mode with smooth animations and integrated sounds, you can share your screen directly in OBS and offer an exciting visual show to your audience while choosing winners live.',
+          description: 'Thanks to our Studio Mode with smooth animations and integrated sounds, you can share your screen directly in OBS and offer an exciting visual show to your audience while choosing winners live.',
         },
         {
           title: 'Class and Team Dynamics',
@@ -150,44 +155,71 @@ export const content: ToolLocaleContent<SorteoUI> = {
     },
     {
       type: 'title',
-      text: 'How our random name selector works',
+      text: 'Why is our tool different?',
       level: 3,
-    },
-    {
-      type: 'paragraph',
-      html: 'The process to carry out your first giveaway could not be simpler. Follow these steps to get instant results:'
     },
     {
       type: 'list',
       items: [
-        '**Enter participants:** Paste your list of names into the main text box. The tool automatically detects each line break as a different participant.',
-        '**Personalize the experience:** In the settings tab, you can activate the countdown to generate tension or the confetti effect to celebrate victory.',
-        '**Draw!** Click the main button and our engine will generate a cryptographically secure random selection (Web Crypto API).',
+        '<strong>Real Cryptography:</strong> We use the browser\'s Web Crypto API (W3C standard) instead of weak pseudo-random generators. Every giveaway is mathematically impartial.',
+        '<strong>No Storage:</strong> Your data never leaves your browser. We don\'t sell lists, we don\'t profile you, we don\'t store anything. Pure local processing.',
+        '<strong>Visual Design:</strong> Cinema mode and animations make every giveaway a memorable event. Perfect for OBS capture or live streaming.',
+        '<strong>Duplicate Handling:</strong> Automatically detects repeated names or variants (extra spaces, capitalization, etc.) to ensure each real person counts only once.',
       ],
     },
     {
       type: 'title',
-      text: 'Advanced Functions: Weighted Entries and Weights',
+      text: 'How to use the giveaway step by step',
+      level: 3,
+    },
+    {
+      type: 'list',
+      items: [
+        '<strong>Step 1 - Enter participants:</strong> Paste your list of names into the main text box. The tool automatically detects each line break as a different participant. Do you have duplicates? No problem, the tool removes them.',
+        '<strong>Step 2 - Customize:</strong> In the settings tab you can enable the countdown to generate tension, the confetti effect to celebrate, or enable the "blacklist" to exclude certain names.',
+        '<strong>Step 3 - Draw!</strong> Click the main button and our engine will generate a cryptographically secure random selection. The winners will be displayed clearly and memorably.',
+      ],
+    },
+    {
+      type: 'title',
+      text: 'Weighted Entries: Give Advantage to Some Participants',
       level: 3,
     },
     {
       type: 'paragraph',
-      html: 'Want to reward your most loyal subscribers or give more opportunities to certain participants? Our **Weighted Entries** system is unique and allows you to assign a "weight" or multiplier to any name on the list without having to write it several times.',
+      html: 'Want to reward your most loyal subscribers or give more opportunities to certain participants? Our <strong>Weighted Entries</strong> system is unique and allows you to assign a "weight" or multiplier to any name without having to write it multiple times.',
     },
     {
       type: 'tip',
       title: 'How to assign weights to names',
-      html: '<p>Use an asterisk (*) or an "x" followed by the number of participations you want to give that user. For example, if you write **"Maria Garcia * 10"**, Maria will have 10 times more real probabilities of winning than a user with a single entry.</p>',
+      html: '<p>Use an asterisk (*) or an "x" followed by the number of participations. Examples:</p><ul><li><strong>"John * 5"</strong> - John competes as if he were 5 people</li><li><strong>"Maria x 10"</strong> - Maria has 10 times more chances</li><li><strong>"Peter"</strong> - No symbol = 1 regular entry</li></ul><p>This is perfect for giveaways where you want to give VIP subscribers or special users an advantage.</p>',
     },
     {
       type: 'title',
-      text: 'Guaranteed Privacy and Security',
+      text: 'Total Privacy and Security',
       level: 3,
     },
     {
       type: 'paragraph',
-      html: 'Unlike other online tools, **we do not store your data**. All processing of names and execution of the giveaway occurs locally in your own browser. Your participant lists never travel over the network or are saved on any external server, guaranteeing maximum privacy for you and your users.'
-    }
+      html: 'Unlike other online tools, <strong>we do not store your data</strong>. All processing of names and execution of the giveaway occurs locally in your own browser. Your participant lists never travel over the network or are saved on any external server.',
+    },
+    {
+      type: 'paragraph',
+      html: '<strong>What does this mean?</strong> Your participant list is yours and yours alone. Closing the tab, it disappears. No tracking cookies, no user profiles, no central database. Maximum privacy guaranteed for you and those who participate in your giveaways.',
+    },
+    {
+      type: 'title',
+      text: 'Mathematical Transparency',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'Some might wonder: "What if you manipulate the results?" The answer is simple: <strong>we can\'t</strong>. The giveaway code is deterministic and cryptographic. No hidden variables, no "fingers on the stage".',
+    },
+    {
+      type: 'paragraph',
+      html: 'Each winner is the direct result of the Fisher-Yates Shuffle algorithm applied to your exact list, using real cryptographic entropy. If you want to audit the process, the code is available on GitHub for public inspection.',
+    },
   ],
   ui: {
     title: 'Random Giveaway',
