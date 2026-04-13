@@ -97,9 +97,7 @@ export const content: ToolLocaleContent<SorteoUI> = {
   slug,
   title,
   description,
-  faqTitle: 'Questions Fréquemment Posées',
   faq: faqData,
-  bibliographyTitle: 'Références Techniques',
   bibliography: [
     {
       name: 'Web Crypto API: getRandomValues()',
@@ -222,6 +220,8 @@ export const content: ToolLocaleContent<SorteoUI> = {
     },
   ],
   ui: {
+    faqTitle: 'Questions Fréquemment Posées',
+    bibliographyTitle: 'Références Techniques',
     title: 'Tirage au Sort Aléatoire',
     totalParticipants: 'Total Participants Uniques',
     ready: 'PRÊT',
@@ -249,5 +249,6 @@ export const content: ToolLocaleContent<SorteoUI> = {
     history: 'Historique de cette session',
     noWinnersYet: 'Pas encore de gagnants...',
     startGiveaway: 'Démarrer le Tirage',
+    studioHeader: 'LIVE STUDIO v2.0',
   },
 };

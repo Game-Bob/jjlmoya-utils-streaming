@@ -1,15 +1,13 @@
 ---
 import { Icon } from 'astro-icon/components';
-import { SORTEO_TOOL } from './index';
-import type { KnownLocale } from '../../types';
+import type { SorteoUI } from './ui';
 
 interface Props {
-  locale?: KnownLocale;
+  ui?: Record<string, string>;
 }
 
-const { locale = 'es' } = Astro.props;
-const content = await SORTEO_TOOL.entry.i18n[locale]?.();
-const ui = content?.ui;
+const { ui: rawUi } = Astro.props;
+const ui = (rawUi ?? {}) as SorteoUI;
 ---
 
 <div id="sorteo-app" class="sorteo-container">
@@ -156,7 +154,7 @@ const ui = content?.ui;
             <div class="dot yellow"></div>
             <div class="dot green"></div>
           </div>
-          <div class="sorteo-version">LIVE STUDIO v2.0</div>
+          <div class="sorteo-version">{ui?.studioHeader}</div>
         </div>
 
         <div class="sorteo-arena">

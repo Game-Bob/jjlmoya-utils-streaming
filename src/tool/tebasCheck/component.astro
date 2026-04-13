@@ -1,16 +1,14 @@
 ---
 import { Icon } from 'astro-icon/components';
-import { TEBAS_CHECK_TOOL } from './index';
-import type { KnownLocale } from '../../types';
+import type { TebasCheckUI } from './types';
 import targetIps from './ips.json';
 
 interface Props {
-  locale?: KnownLocale;
+  ui?: Record<string, string>;
 }
 
-const { locale = 'es' } = Astro.props;
-const content = await TEBAS_CHECK_TOOL.entry.i18n[locale]?.();
-const ui = content?.ui;
+const { ui: rawUi } = Astro.props;
+const ui = (rawUi ?? {}) as TebasCheckUI;
 ---
 
 <div 

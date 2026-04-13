@@ -1,5 +1,7 @@
 export interface SorteoUI {
   [key: string]: string;
+  faqTitle: string;
+  bibliographyTitle: string;
   title: string;
   totalParticipants: string;
   ready: string;
@@ -27,4 +29,5 @@ export interface SorteoUI {
   history: string;
   noWinnersYet: string;
   startGiveaway: string;
+  studioHeader: string;
 }

@@ -1,5 +1,7 @@
 export interface TebasCheckUI {
-  [key: string]: string | string[];
+  [key: string]: string;
+  faqTitle: string;
+  bibliographyTitle: string;
   scanning: string;
   seekingBlocks: string;
   blockedTitle: string;
