@@ -1,7 +1,4 @@
 import type { StreamingToolEntry, ToolLocaleContent, ToolDefinition } from '../../types';
-import TebasCheckComponent from './component.astro';
-import TebasCheckSEO from './seo.astro';
-import TebasCheckBibliography from './bibliography.astro';
 import type { TebasCheckUI } from './types';
 
 export type TebasCheckLocaleContent = ToolLocaleContent<TebasCheckUI>;
@@ -31,11 +28,10 @@ export const tebasCheck: StreamingToolEntry<TebasCheckUI> = {
   },
 };
 
-export { TebasCheckComponent, TebasCheckSEO, TebasCheckBibliography };
 
 export const TEBAS_CHECK_TOOL: ToolDefinition = {
   entry: tebasCheck,
-  Component: TebasCheckComponent,
-  SEOComponent: TebasCheckSEO,
-  BibliographyComponent: TebasCheckBibliography,
+  Component: () => import('./component.astro'),
+  SEOComponent: () => import('./seo.astro'),
+  BibliographyComponent: () => import('./bibliography.astro'),
 };

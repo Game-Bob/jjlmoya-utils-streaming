@@ -1,7 +1,4 @@
 import type { StreamingToolEntry, ToolLocaleContent, ToolDefinition } from '../../types';
-import SorteoComponent from './component.astro';
-import SorteoSEO from './seo.astro';
-import SorteoBibliography from './bibliography.astro';
 import type { SorteoUI } from './ui';
 
 export type SorteoLocaleContent = ToolLocaleContent<SorteoUI>;
@@ -31,11 +28,10 @@ export const sorteo: StreamingToolEntry<SorteoUI> = {
   },
 };
 
-export { SorteoComponent, SorteoSEO, SorteoBibliography };
 
 export const SORTEO_TOOL: ToolDefinition = {
   entry: sorteo,
-  Component: SorteoComponent,
-  SEOComponent: SorteoSEO,
-  BibliographyComponent: SorteoBibliography,
+  Component: () => import('./component.astro'),
+  SEOComponent: () => import('./seo.astro'),
+  BibliographyComponent: () => import('./bibliography.astro'),
 };

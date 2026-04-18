@@ -1,5 +1,5 @@
 export { streamingCategory } from './category';
-export { default as streamingCategorySEO } from './category/seo.astro';
+export const streamingCategorySEO = () => import('./category/seo.astro').then((m) => m.default);
 
 export type {
   KnownLocale,
