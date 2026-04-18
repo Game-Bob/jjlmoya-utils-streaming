@@ -1,3 +1,4 @@
+import { sorteo } from './entry';
 export * from './entry';
 export const SORTEO_TOOL: ToolDefinition = {
   entry: sorteo,

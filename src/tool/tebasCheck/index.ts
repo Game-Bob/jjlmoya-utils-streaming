@@ -1,3 +1,4 @@
+import { tebasCheck } from './entry';
 export * from './entry';
 export const TEBAS_CHECK_TOOL: ToolDefinition = {
   entry: tebasCheck,
