@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { WithContext, FAQPage, HowTo, SoftwareApplication } from 'schema-dts';
 import type { ToolLocaleContent } from '../../../types';
 import type { SorteoUI } from '../ui';
@@ -97,19 +98,8 @@ export const content: ToolLocaleContent<SorteoUI> = {
   slug,
   title,
   description,
-  faqTitle: 'Pertanyaan yang Sering Diajukan',
   faq: faqData,
-  bibliographyTitle: 'Referensi Teknis',
-  bibliography: [
-    {
-      name: 'Web Crypto API: getRandomValues()',
-      url: 'https://developer.mozilla.org/en-US/docs/Web/API/Crypto/getRandomValues',
-    },
-    {
-      name: 'Algoritma Fisher-Yates Shuffle',
-      url: 'https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle',
-    },
-  ],
+  bibliography,
   howTo: howToData,
   schemas: [faqSchema as any, howToSchema as any, appSchema as any],
   seo: [
@@ -222,8 +212,6 @@ export const content: ToolLocaleContent<SorteoUI> = {
     },
   ],
   ui: {
-    faqTitle: 'Pertanyaan yang Sering Diajukan',
-    bibliographyTitle: 'Referensi Teknis',
     title: 'Giveaway Acak',
     totalParticipants: 'Total Peserta Unik',
     ready: 'SIAP',

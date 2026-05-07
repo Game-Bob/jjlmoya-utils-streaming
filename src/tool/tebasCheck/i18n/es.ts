@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { WithContext, FAQPage, HowTo, SoftwareApplication } from 'schema-dts';
 import type { ToolLocaleContent } from '../../../types';
 import type { TebasCheckUI } from '../types';
@@ -82,19 +83,8 @@ export const content: ToolLocaleContent<TebasCheckUI> = {
   slug,
   title,
   description,
-  faqTitle: 'Preguntas Frecuentes',
   faq: faqData,
-  bibliographyTitle: 'Referencias y Contexto',
-  bibliography: [
-    {
-      name: 'Cloudflare: Understanding IP Blocking',
-      url: 'https://www.cloudflare.com/learning/network-layer/what-is-ip-blocking/',
-    },
-    {
-      name: 'Jurisprudencia sobre bloqueos dinámicos en España',
-      url: 'https://www.poderjudicial.es/',
-    },
-  ],
+  bibliography,
   howTo: howToData,
   schemas: [faqSchema as any, howToSchema as any, appSchema as any],
   seo: [
@@ -214,8 +204,6 @@ export const content: ToolLocaleContent<TebasCheckUI> = {
     },
   ],
   ui: {
-    faqTitle: 'Preguntas Frecuentes',
-    bibliographyTitle: 'Referencias y Contexto',
     scanning: 'Escaneando la matrix...',
     seekingBlocks: 'Buscando bloques de hormigón en tu fibra...',
     blockedTitle: 'BLOQUEANDO...',

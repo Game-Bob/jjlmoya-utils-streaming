@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { WithContext, FAQPage, HowTo, SoftwareApplication } from 'schema-dts';
 import type { ToolLocaleContent } from '../../../types';
 import type { SorteoUI } from '../ui';
@@ -97,19 +98,8 @@ export const content: ToolLocaleContent<SorteoUI> = {
   slug,
   title,
   description,
-  faqTitle: '자주 묻는 질문',
   faq: faqData,
-  bibliographyTitle: '기술 문서',
-  bibliography: [
-    {
-      name: 'Web Crypto API: getRandomValues()',
-      url: 'https://developer.mozilla.org/en-US/docs/Web/API/Crypto/getRandomValues',
-    },
-    {
-      name: 'Fisher-Yates Shuffle 알고리즘',
-      url: 'https://ko.wikipedia.org/wiki/%ED%94%BC%EC%85%94-%EC%9G%B4%EC%B8%A0_%EC%85%94%ED%94%8C',
-    },
-  ],
+  bibliography,
   howTo: howToData,
   schemas: [faqSchema as any, howToSchema as any, appSchema as any],
   seo: [
@@ -222,8 +212,6 @@ export const content: ToolLocaleContent<SorteoUI> = {
     },
   ],
   ui: {
-    faqTitle: '자주 묻는 질문',
-    bibliographyTitle: '기술 문서',
     title: '랜덤 추첨',
     totalParticipants: '전체 고유 참가자',
     ready: '준비 완료',

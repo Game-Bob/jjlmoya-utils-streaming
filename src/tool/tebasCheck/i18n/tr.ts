@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { WithContext, FAQPage, HowTo, SoftwareApplication } from 'schema-dts';
 import type { ToolLocaleContent } from '../../../types';
 import type { TebasCheckUI } from '../types';
@@ -82,19 +83,8 @@ export const content: ToolLocaleContent<TebasCheckUI> = {
   slug,
   title,
   description,
-  faqTitle: 'Sıkça Sorulan Sorular',
   faq: faqData,
-  bibliographyTitle: 'Referanslar ve Bağlam',
-  bibliography: [
-    {
-      name: 'Cloudflare: IP Engellemesini Anlamak',
-      url: 'https://www.cloudflare.com/learning/network-layer/what-is-ip-blocking/',
-    },
-    {
-      name: 'İspanyol dinamik engelleme düzenlemeleri',
-      url: 'https://www.poderjudicial.es/',
-    },
-  ],
+  bibliography,
   howTo: howToData,
   schemas: [faqSchema as any, howToSchema as any, appSchema as any],
   seo: [
@@ -214,8 +204,6 @@ export const content: ToolLocaleContent<TebasCheckUI> = {
     },
   ],
   ui: {
-    faqTitle: 'Sıkça Sorulan Sorular',
-    bibliographyTitle: 'Referanslar ve Bağlam',
     scanning: 'Matris taranıyor...',
     seekingBlocks: 'Fiberinizdeki somut engeller aranıyor...',
     blockedTitle: 'ENGELLENİYOR...',

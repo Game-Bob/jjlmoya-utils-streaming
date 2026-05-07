@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { WithContext, FAQPage, HowTo, SoftwareApplication } from 'schema-dts';
 import type { ToolLocaleContent } from '../../../types';
 import type { SorteoUI } from '../ui';
@@ -97,19 +98,8 @@ export const content: ToolLocaleContent<SorteoUI> = {
   slug,
   title,
   description,
-  faqTitle: 'Sıkça Sorulan Sorular',
   faq: faqData,
-  bibliographyTitle: 'Teknik Referanslar',
-  bibliography: [
-    {
-      name: 'Web Crypto API: getRandomValues()',
-      url: 'https://developer.mozilla.org/en-US/docs/Web/API/Crypto/getRandomValues',
-    },
-    {
-      name: 'Fisher-Yates Karıştırma Algoritması',
-      url: 'https://tr.wikipedia.org/wiki/Fisher-Yates_kar%C4%B1%C5%9Ft%C4%B1rma_algoritmas%C4%B1',
-    },
-  ],
+  bibliography,
   howTo: howToData,
   schemas: [faqSchema as any, howToSchema as any, appSchema as any],
   seo: [
@@ -222,8 +212,6 @@ export const content: ToolLocaleContent<SorteoUI> = {
     },
   ],
   ui: {
-    faqTitle: 'Sıkça Sorulan Sorular',
-    bibliographyTitle: 'Teknik Referanslar',
     title: 'Rastgele Çekiliş',
     totalParticipants: 'Toplam Benzersiz Katılımcı',
     ready: 'HAZIR',

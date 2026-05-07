@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { WithContext, FAQPage, HowTo, SoftwareApplication } from 'schema-dts';
 import type { ToolLocaleContent } from '../../../types';
 import type { SorteoUI } from '../ui';
@@ -97,19 +98,8 @@ export const content: ToolLocaleContent<SorteoUI> = {
   slug,
   title,
   description,
-  faqTitle: 'Często Zadawane Pytania',
   faq: faqData,
-  bibliographyTitle: 'Referencje Techniczne',
-  bibliography: [
-    {
-      name: 'Web Crypto API: getRandomValues()',
-      url: 'https://developer.mozilla.org/en-US/docs/Web/API/Crypto/getRandomValues',
-    },
-    {
-      name: 'Algorytm przetasowania Fishera-Yatesa',
-      url: 'https://pl.wikipedia.org/wiki/Algorytm_Fishera-Yatesa',
-    },
-  ],
+  bibliography,
   howTo: howToData,
   schemas: [faqSchema as any, howToSchema as any, appSchema as any],
   seo: [
@@ -222,8 +212,6 @@ export const content: ToolLocaleContent<SorteoUI> = {
     },
   ],
   ui: {
-    faqTitle: 'Często Zadawane Pytania',
-    bibliographyTitle: 'Referencje Techniczne',
     title: 'Losowanie',
     totalParticipants: 'Suma Unikalnych Uczestników',
     ready: 'GOTOWE',

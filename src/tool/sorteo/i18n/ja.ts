@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { WithContext, FAQPage, HowTo, SoftwareApplication } from 'schema-dts';
 import type { ToolLocaleContent } from '../../../types';
 import type { SorteoUI } from '../ui';
@@ -97,19 +98,8 @@ export const content: ToolLocaleContent<SorteoUI> = {
   slug,
   title,
   description,
-  faqTitle: 'よくある質問',
   faq: faqData,
-  bibliographyTitle: '技術リファレンス',
-  bibliography: [
-    {
-      name: 'Web Crypto API: getRandomValues()',
-      url: 'https://developer.mozilla.org/en-US/docs/Web/API/Crypto/getRandomValues',
-    },
-    {
-      name: 'フィッシャー–イェーツのシャッフル アルゴリズム',
-      url: 'https://ja.wikipedia.org/wiki/%E3%83%95%E3%82%A3%E3%83%83%E3%82%B7%E3%83%A3%E3%83%BC%E2%80%93%E3%82%A4%E3%82%A7%E3%83%BC%E3%83%84%E3%81%AE%E3%82%B7%E3%83%A3%E3%83%83%E3%83%95%E3%83%AB',
-    },
-  ],
+  bibliography,
   howTo: howToData,
   schemas: [faqSchema as any, howToSchema as any, appSchema as any],
   seo: [
@@ -222,8 +212,6 @@ export const content: ToolLocaleContent<SorteoUI> = {
     },
   ],
   ui: {
-    faqTitle: 'よくある質問',
-    bibliographyTitle: '技術リファレンス',
     title: 'ランダム抽選',
     totalParticipants: 'ユニーク参加者数',
     ready: '準備完了',

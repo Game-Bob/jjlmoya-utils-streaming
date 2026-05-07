@@ -5,7 +5,7 @@ export type { SEOSection };
 
 export type KnownLocale =
   | 'ar' | 'da' | 'de' | 'en' | 'es' | 'fi'
-  | 'fr' | 'it' | 'ja' | 'ko' | 'nb' | 'nl'
+  | 'fr' | 'id' | 'it' | 'ja' | 'ko' | 'nb' | 'nl'
   | 'pl' | 'pt' | 'ru' | 'sv' | 'tr' | 'zh';
 
 export interface FAQItem {
@@ -29,9 +29,7 @@ export interface ToolLocaleContent<TUI extends Record<string, string | string[]>
   description: string;
   ui: TUI;
   seo: SEOSection[];
-  faqTitle?: string;
   faq: FAQItem[];
-  bibliographyTitle?: string;
   bibliography: BibliographyEntry[];
   howTo: HowToStep[];
   schemas: WithContext<Thing>[];
@@ -68,4 +66,5 @@ export interface ToolDefinition {
   Component: unknown;
   SEOComponent: unknown;
   BibliographyComponent: unknown;
+  css?: string;
 }
