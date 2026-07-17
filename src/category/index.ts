@@ -1,5 +1,5 @@
-import { sorteo } from '../tool/sorteo/index';
-import { tebasCheck } from '../tool/tebasCheck/index';
+import { sorteo } from '../tool/sorteo/entry';
+import { tebasCheck } from '../tool/tebasCheck/entry';
 
 export const streamingCategory: StreamingCategoryEntry = {
   icon: 'mdi:broadcast',
