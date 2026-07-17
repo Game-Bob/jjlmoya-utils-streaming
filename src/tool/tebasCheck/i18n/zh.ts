@@ -10,7 +10,7 @@ const description = '用于检测西班牙 ISP 非法封锁 Cloudflare 共享 IP
 const faqData = [
   {
     question: '什么是 Tebas-Check？',
-    answer: '这是一项诊断工具，尝试连接到在西班牙被司法封锁的已知 Cloudflare IP，以防止访问盗版广播。问题在于，通过封锁共享 IP，成千上万的正规网站也会被“误伤”。',
+    answer: '这是一项诊断工具，尝试连接到在西班牙被司法封锁的已知 Cloudflare IP，以防止访问盗版广播。问题在于，通过封锁共享 IP，成千上万的正规网站也会被\"误伤\"。',
   },
   {
     question: '为什么我的 ISP 封锁了 Cloudflare IP？',
@@ -18,7 +18,7 @@ const faqData = [
   },
   {
     question: '测试是如何工作的？',
-    answer: '我们尝试从标记为已封锁的 IP 加载一个小资源。如果仅在这些 IP 上由于“超时”或连接重置而导致连接失败，则清楚地表明您的 ISP 正在应用 IP 过滤。',
+    answer: '我们尝试从标记为已封锁的 IP 加载一个小资源。如果仅在这些 IP 上由于\"超时\"或连接重置而导致连接失败，则清楚地表明您的 ISP 正在应用 IP 过滤。',
   },
   {
     question: '我可以绕过此封锁吗？',
@@ -95,11 +95,11 @@ export const content: ToolLocaleContent<TebasCheckUI> = {
     },
     {
       type: 'paragraph',
-      html: '欢迎来到<strong>“预防性司法”</strong>的神奇世界。如果你在周日下午来到这里，正规网站停止加载，而 Twitter 运行完美，那么你可能是打击非法足球转播行动的连带受害者。',
+      html: '欢迎来到<strong>\"预防性司法\"</strong>的神奇世界。如果你在周日下午来到这里，正规网站停止加载，而 Twitter 运行完美，那么你可能是打击非法足球转播行动的连带受害者。',
     },
     {
       type: 'paragraph',
-      html: '在西班牙，法官给了某些体育实体一个“红色按钮”。这个按钮允许他们实时封锁 IP 地址，而无需每分钟直接进行司法监督。问题在于，他们就像用园游会的猎枪瞄准一样，经常射中共享服务器，除了“非法比赛”外，那里还住着医院、大学或你最喜欢的烹饪博客。',
+      html: '在西班牙，法官给了某些体育实体一个\"红色按钮\"。这个按钮允许他们实时封锁 IP 地址，而无需每分钟直接进行司法监督。问题在于，他们就像用园游会的猎枪瞄准一样，经常射中共享服务器，除了\"非法比赛\"外，那里还住着医院、大学或你最喜欢的烹饪博客。',
     },
     {
       type: 'title',
@@ -133,11 +133,11 @@ export const content: ToolLocaleContent<TebasCheckUI> = {
       items: [
         {
           title: 'Ping Google',
-          description: '我们检查您是否有“脉搏”。如果 Google 无法加载，问题可能是您没交 Wi-Fi 费。这是基准连接测试。',
+          description: '我们检查您是否有\"脉搏\"。如果 Google 无法加载，问题可能是您没交 Wi-Fi 费。这是基准连接测试。',
         },
         {
           title: 'Ping Cloudflare',
-          description: '我们尝试访问 1.1.1.1。这是西班牙封锁行动的“矿井里的金丝雀”，也是司法封锁的主要目标。',
+          description: '我们尝试访问 1.1.1.1。这是西班牙封锁行动的\"矿井里的金丝雀\"，也是司法封锁的主要目标。',
         },
         {
           title: '结论',
@@ -164,7 +164,7 @@ export const content: ToolLocaleContent<TebasCheckUI> = {
         },
         {
           title: '缺乏透明度',
-          description: '通常，用户只会看到“超时”错误，而不知道问题出在他们的连接上还是 ISP 的主动封锁上。',
+          description: '通常，用户只会看到\"超时\"错误，而不知道问题出在他们的连接上还是 ISP 的主动封锁上。',
         },
       ],
     },
@@ -177,7 +177,7 @@ export const content: ToolLocaleContent<TebasCheckUI> = {
       type: 'list',
       items: [
         '<strong>使用这个是非法的吗？</strong> 不。Ping 服务器就像看商店橱窗一样合法。该工具是一种被动网络诊断。它不破解加密，不破解密码，也不访问受保护的内容。它只是告诉你为什么无法访问常用的网站。',
-        '<strong>如何修复它？</strong> 如果您面临主动封锁，更改 DNS 已不再有效（他们知道所有的技巧）。目前唯一真正的解决方案是 <strong>VPN</strong>。通过加密您的流量，您的 ISP 无法看到您请求的内容或向谁请求，因此无法“有选择性地”（或错误地）封锁您。',
+        '<strong>如何修复它？</strong> 如果您面临主动封锁，更改 DNS 已不再有效（他们知道所有的技巧）。目前唯一真正的解决方案是 <strong>VPN</strong>。通过加密您的流量，您的 ISP 无法看到您请求的内容或向谁请求，因此无法\"有选择性地\"（或错误地）封锁您。',
       ],
     },
     {
@@ -207,7 +207,7 @@ export const content: ToolLocaleContent<TebasCheckUI> = {
     scanning: '正在扫描矩阵...',
     seekingBlocks: '正在您的光纤中搜索具体封锁...',
     blockedTitle: '封锁中...',
-    blockedDiagnosis: '诊断：“选择性审查”',
+    blockedDiagnosis: '诊断：\"选择性审查\"',
     blockedReason: '我们检测到您的 ISP 存在干扰。Cloudflare 或 DNS 正在被操纵。',
     noInternetTitle: '无连接',
     noInternetReason: '看来您无法访问互联网。请检查您的网线或账单。',
@@ -215,7 +215,7 @@ export const content: ToolLocaleContent<TebasCheckUI> = {
     successReason: '您的连接看起来很洁净。如果有全局封锁，它们并未影响到您。',
     retryBtn: '再次挑衅司法',
     authorNoteTitle: '作者注：',
-    authorNoteText: '由于我并未受到 Tebas 的“黑手”影响，因此无法完整测试此工具。如果您想帮助我改进诊断，请与我联系。',
+    authorNoteText: '由于我并未受到 Tebas 的\"黑手\"影响，因此无法完整测试此工具。如果您想帮助我改进诊断，请与我联系。',
     consoleHeader: 'TEBAS_OS v3.2.0',
     statusNegotiating: '正在与您的路由器协商...',
     statusDodging: '正在规避法院通告...',

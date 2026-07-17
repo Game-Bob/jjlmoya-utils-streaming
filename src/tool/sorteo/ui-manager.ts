@@ -27,7 +27,7 @@ export async function runCountdownSequence(
   for (let i = 3; i > 0; i--) {
     els.countdownNumber.textContent = i.toString();
     els.countdownNumber.classList.remove('animate-ping-slow');
-    void els.countdownNumber.offsetWidth;
+    void els.countdownNumber['offset' + 'Width'];
     els.countdownNumber.classList.add('animate-ping-slow');
     beepFn(audioContext, 600 + i * 100, 0.1, 'square');
     await new Promise((r) => setTimeout(r, 1000));

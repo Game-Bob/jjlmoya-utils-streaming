@@ -96,7 +96,7 @@ export const content: CategoryLocaleContent = {
     },
     {
       type: 'paragraph',
-      html: 'Erfolgreiche Creator nutzen Verhaltenspsychologie: Belohnungen nach variablen Quoten, Community-Meilensteine, saisonale Events. Unsere Tools automatisieren die Zufallslogik, sodass Sie sich auf Ihr kreatives Talent konzentrieren können: Unterhalten, Bilden, Verbinden. Die technische „Infrastruktur“ ist gelöst.',
+      html: 'Erfolgreiche Creator nutzen Verhaltenspsychologie: Belohnungen nach variablen Quoten, Community-Meilensteine, saisonale Events. Unsere Tools automatisieren die Zufallslogik, sodass Sie sich auf Ihr kreatives Talent konzentrieren können: Unterhalten, Bilden, Verbinden. Die technische \"Infrastruktur\" ist gelöst.',
     },
     {
       type: 'title',

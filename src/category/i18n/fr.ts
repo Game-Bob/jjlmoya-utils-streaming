@@ -8,7 +8,7 @@ export const content: CategoryLocaleContent = {
   seo: [
     {
       type: 'title',
-      text: 'Écosystème de Streaming 2026 : Interaction et Souveraineté Réseau',
+      text: 'Écosystème de Streaming 2026: Interaction et Souveraineté Réseau',
       level: 2,
     },
     {
@@ -21,7 +21,7 @@ export const content: CategoryLocaleContent = {
     },
     {
       type: 'title',
-      text: 'Gamification et Communauté : Tirages au Sort et Concours Transparents',
+      text: 'Gamification et Communauté: Tirages au Sort et Concours Transparents',
       level: 2,
     },
     {
@@ -34,7 +34,7 @@ export const content: CategoryLocaleContent = {
     },
     {
       type: 'title',
-      text: 'Audit Réseau et Neutralité : Tebas-Check',
+      text: 'Audit Réseau et Neutralité: Tebas-Check',
       level: 2,
     },
     {
@@ -61,12 +61,12 @@ export const content: CategoryLocaleContent = {
     },
     {
       type: 'title',
-      text: 'Gestion de Communauté : Modèles de Modération et de Sécurité',
+      text: 'Gestion de Communauté: Modèles de Modération et de Sécurité',
       level: 2,
     },
     {
       type: 'paragraph',
-      html: 'La communauté est l\'atout le plus précieux d\'un streamer. Cependant, croître sans structure est chaotique. Une communauté de 500 personnes est facile à gérer seul, mais à 5000, vous avez besoin de systèmes, de règles claires et d\'outils de modération. Nos utilitaires incluent des générateurs de tirages au sort qui fonctionnent également comme des systèmes de participation fair-play : chaque utilisateur inscrit a exactement la même probabilité de gagner, sans favoritisme.',
+      html: 'La communauté est l\'atout le plus précieux d\'un streamer. Cependant, croître sans structure est chaotique. Une communauté de 500 personnes est facile à gérer seul, mais à 5000, vous avez besoin de systèmes, de règles claires et d\'outils de modération. Nos utilitaires incluent des générateurs de tirages au sort qui fonctionnent également comme des systèmes de participation fair-play: chaque utilisateur inscrit a exactement la même probabilité de gagner, sans favoritisme.',
     },
     {
       type: 'paragraph',
@@ -74,7 +74,7 @@ export const content: CategoryLocaleContent = {
     },
     {
       type: 'title',
-      text: 'Infrastructure et Résilience : Quand le FAI s\'interpose',
+      text: 'Infrastructure et Résilience: Quand le FAI s\'interpose',
       level: 2,
     },
     {
@@ -83,29 +83,29 @@ export const content: CategoryLocaleContent = {
     },
     {
       type: 'paragraph',
-      html: 'Savoir si votre connexion est auditée ou bloquée vous donne du pouvoir : vous pouvez changer de FAI, utiliser des proxies légaux ou simplifier votre infrastructure en fonction de ce que vous découvrez. Un direct qui souffre de coupures inattendues ou de lag pourrait être dû à des blocages réseau, pas à votre équipement.',
+      html: 'Savoir si votre connexion est auditée ou bloquée vous donne du pouvoir: vous pouvez changer de FAI, utiliser des proxies légaux ou simplifier votre infrastructure en fonction de ce que vous découvrez. Un direct qui souffre de coupures inattendues ou de lag pourrait être dû à des blocages réseau, pas à votre équipement.',
     },
     {
       type: 'title',
-      text: 'Monétisation Durable : Du Direct aux Revenus Stables',
+      text: 'Monétisation Durable: Du Direct aux Revenus Stables',
       level: 2,
     },
     {
       type: 'paragraph',
-      html: 'Faire du streaming une carrière durable nécessite une diversification. Abonnements, dons, publicité, merchandising, cours : chaque source nécessite une audience engagée. Les outils de gamification comme les tirages au sort ne sont pas seulement du divertissement ; ce sont des mécanismes psychologiques qui augmentent la rétention.',
+      html: 'Faire du streaming une carrière durable nécessite une diversification. Abonnements, dons, publicité, merchandising, cours: chaque source nécessite une audience engagée. Les outils de gamification comme les tirages au sort ne sont pas seulement du divertissement ; ce sont des mécanismes psychologiques qui augmentent la rétention.',
     },
     {
       type: 'paragraph',
-      html: 'Les créateurs qui réussissent utilisent la psychologie comportementale : renforcement à ratio variable, étapes communautaires, événements saisonniers. Nos outils automatisent la logique aléatoire pour que vous puissiez vous concentrer sur votre talent créatif : divertir, éduquer, connecter. La "tuyauterie" technique est résolue.',
+      html: 'Les créateurs qui réussissent utilisent la psychologie comportementale: renforcement à ratio variable, étapes communautaires, événements saisonniers. Nos outils automatisent la logique aléatoire pour que vous puissiez vous concentrer sur votre talent créatif: divertir, éduquer, connecter. La "tuyauterie" technique est résolue.',
     },
     {
       type: 'title',
-      text: 'Omnicanalité : Le Streaming Fragmenté Nécessite des Outils Unifiés',
+      text: 'Omnicanalité: Le Streaming Fragmenté Nécessite des Outils Unifiés',
       level: 2,
     },
     {
       type: 'paragraph',
-      html: 'Un streamer moderne ne diffuse pas seulement sur Twitch. Il diffuse simultanément sur Twitch, YouTube, Kick, Twitter/X. Cela signifie que votre tirage au sort doit être équitable même si les participants proviennent de plusieurs plateformes. Nos outils sont agnostiques vis-à-vis de la plateforme : vous importez une liste d\'utilisateurs, vous lancez le sélecteur, vous obtenez un gagnant transparent.',
+      html: 'Un streamer moderne ne diffuse pas seulement sur Twitch. Il diffuse simultanément sur Twitch, YouTube, Kick, Twitter/X. Cela signifie que votre tirage au sort doit être équitable même si les participants proviennent de plusieurs plateformes. Nos outils sont agnostiques vis-à-vis de la plateforme: vous importez une liste d\'utilisateurs, vous lancez le sélecteur, vous obtenez un gagnant transparent.',
     },
     {
       type: 'paragraph',

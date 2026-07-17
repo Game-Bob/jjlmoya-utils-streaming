@@ -236,7 +236,7 @@ export const content: ToolLocaleContent<TebasCheckUI> = {
     logLaunchingProbes: '> Lanzando sondas sobre objetivos críticos...',
     logIpBlocked: '> Objetivo {ip}: NO RESPONDE (Bloqueo IP sospechoso)',
     logIpActive: '> Objetivo {ip}: ACTIVO',
-    logAlertInterference: '!!! ALERTA DE INTERFERENCIA JUDICIAL !!!',
+    logAlertInterference: '¡¡¡ ALERTA DE INTERFERENCIA JUDICIAL !!!',
     logNoInternet: 'SIN ACCESO A INTERNET',
     logClean: 'CONEXIÓN LIMPIA. DISFRUTA.',
     logDiagError: 'ERROR DE DIAGNÓSTICO',

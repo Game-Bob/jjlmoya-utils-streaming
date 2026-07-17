@@ -10,7 +10,7 @@ const description = 'Diagnosetool zur Erkennung illegaler Sperren gemeinsamer Cl
 const faqData = [
   {
     question: 'Was ist der Tebas-Check?',
-    answer: 'Es handelt sich um ein Diagnosetool, das versucht, eine Verbindung zu bekannten Cloudflare-IPs herzustellen, die in Spanien gerichtlich gesperrt wurden, um den Zugriff auf illegale Übertragungen zu verhindern. Das Problem ist, dass durch das Sperren einer gemeinsam genutzten IP tausende legitime Websites „kaputt“ gehen.',
+    answer: 'Es handelt sich um ein Diagnosetool, das versucht, eine Verbindung zu bekannten Cloudflare-IPs herzustellen, die in Spanien gerichtlich gesperrt wurden, um den Zugriff auf illegale Übertragungen zu verhindern. Das Problem ist, dass durch das Sperren einer gemeinsam genutzten IP tausende legitime Websites \"kaputt\" gehen.',
   },
   {
     question: 'Warum sperrt mein Internetanbieter eine Cloudflare-IP?',
@@ -18,7 +18,7 @@ const faqData = [
   },
   {
     question: 'Wie funktioniert der Test?',
-    answer: 'Wir versuchen, eine kleine Ressource von den als gesperrt markierten IPs zu laden. Wenn die Verbindung aufgrund von „Timeouts“ oder Verbindungsabbrüchen nur bei diesen IPs fehlschlägt, ist dies ein klares Indiz dafür, dass Ihr Anbieter eine IP-Filterung vornimmt.',
+    answer: 'Wir versuchen, eine kleine Ressource von den als gesperrt markierten IPs zu laden. Wenn die Verbindung aufgrund von \"Timeouts\" oder Verbindungsabbrüchen nur bei diesen IPs fehlschlägt, ist dies ein klares Indiz dafür, dass Ihr Anbieter eine IP-Filterung vornimmt.',
   },
   {
     question: 'Kann ich diese Sperre umgehen?',
@@ -95,11 +95,11 @@ export const content: ToolLocaleContent<TebasCheckUI> = {
     },
     {
       type: 'paragraph',
-      html: 'Willkommen in der wunderbaren Welt der <strong>„präventiven Justiz“</strong>. Wenn Sie an einem Sonntagnachmittag hier sind und legitime Websites nicht mehr geladen werden, während Twitter einwandfrei funktioniert, sind Sie wahrscheinlich ein Kollateralschaden des Kreuzzugs gegen illegale Fußballübertragungen.',
+      html: 'Willkommen in der wunderbaren Welt der <strong>\"präventiven Justiz\"</strong>. Wenn Sie an einem Sonntagnachmittag hier sind und legitime Websites nicht mehr geladen werden, während Twitter einwandfrei funktioniert, sind Sie wahrscheinlich ein Kollateralschaden des Kreuzzugs gegen illegale Fußballübertragungen.',
     },
     {
       type: 'paragraph',
-      html: 'In Spanien haben Richter bestimmten Sportorganisationen einen „roten Knopf“ in die Hand gegeben. Dieser Knopf erlaubt es ihnen, IP-Adressen in Echtzeit und ohne direkte gerichtliche Aufsicht von Minute zu Minute zu sperren. Das Problem ist, dass sie mit einer Kirmes-Schrotflinte zielen und oft auf gemeinsam genutzte Server schießen, auf denen neben „illegalen Spielen“ auch Krankenhäuser, Universitäten oder Ihr Lieblings-Kochblog zu Hause sind.',
+      html: 'In Spanien haben Richter bestimmten Sportorganisationen einen \"roten Knopf\" in die Hand gegeben. Dieser Knopf erlaubt es ihnen, IP-Adressen in Echtzeit und ohne direkte gerichtliche Aufsicht von Minute zu Minute zu sperren. Das Problem ist, dass sie mit einer Kirmes-Schrotflinte zielen und oft auf gemeinsam genutzte Server schießen, auf denen neben \"illegalen Spielen\" auch Krankenhäuser, Universitäten oder Ihr Lieblings-Kochblog zu Hause sind.',
     },
     {
       type: 'title',
@@ -133,11 +133,11 @@ export const content: ToolLocaleContent<TebasCheckUI> = {
       items: [
         {
           title: 'Google anpingen',
-          description: 'Wir prüfen, ob Sie noch „Puls“ haben. Wenn Google nicht lädt, haben Sie wahrscheinlich Ihre WLAN-Rechnung nicht bezahlt. Dies ist der grundlegende Konnektivitätstest.',
+          description: 'Wir prüfen, ob Sie noch \"Puls\" haben. Wenn Google nicht lädt, haben Sie wahrscheinlich Ihre WLAN-Rechnung nicht bezahlt. Dies ist der grundlegende Konnektivitätstest.',
         },
         {
           title: 'Cloudflare anpingen',
-          description: 'Wir versuchen, 1.1.1.1 zu erreichen. Das ist der „Kanarienvogel im Bergwerk“ für Sperren in Spanien und das Hauptziel gerichtlicher Blockaden.',
+          description: 'Wir versuchen, 1.1.1.1 zu erreichen. Das ist der \"Kanarienvogel im Bergwerk\" für Sperren in Spanien und das Hauptziel gerichtlicher Blockaden.',
         },
         {
           title: 'Urteil',
@@ -164,7 +164,7 @@ export const content: ToolLocaleContent<TebasCheckUI> = {
         },
         {
           title: 'Mangelnde Transparenz',
-          description: 'Oft sieht der Nutzer nur einen „Timeout“-Fehler, ohne zu wissen, ob das Problem an seiner eigenen Verbindung oder an einer aktiven Sperre des Anbieters liegt.',
+          description: 'Oft sieht der Nutzer nur einen \"Timeout\"-Fehler, ohne zu wissen, ob das Problem an seiner eigenen Verbindung oder an einer aktiven Sperre des Anbieters liegt.',
         },
       ],
     },
@@ -177,7 +177,7 @@ export const content: ToolLocaleContent<TebasCheckUI> = {
       type: 'list',
       items: [
         '<strong>Ist die Verwendung illegal?</strong> Nein. Einen Server anzupingen ist so illegal wie der Blick in ein Schaufenster. Dieses Tool ist eine passive Netzwerkdiagnose. Es bricht keine Verschlüsselung, knackt keine Passwörter und greift nicht auf geschützte Inhalte zu. Es sagt Ihnen lediglich, warum Sie Ihre gewohnten Websites nicht erreichen können.',
-        '<strong>Wie behebe ich das?</strong> Wenn bei Ihnen eine aktive Sperre vorliegt, hilft das Ändern des DNS nicht mehr (sie kennen alle Tricks). Die einzige echte Lösung ist heute ein <strong>VPN</strong>. Durch die Verschlüsselung Ihres Datenverkehrs kann Ihr Anbieter nicht sehen, was Sie anfordern oder von wem, und kann Sie daher nicht „selektiv“ (oder versehentlich) sperren.',
+        '<strong>Wie behebe ich das?</strong> Wenn bei Ihnen eine aktive Sperre vorliegt, hilft das Ändern des DNS nicht mehr (sie kennen alle Tricks). Die einzige echte Lösung ist heute ein <strong>VPN</strong>. Durch die Verschlüsselung Ihres Datenverkehrs kann Ihr Anbieter nicht sehen, was Sie anfordern oder von wem, und kann Sie daher nicht \"selektiv\" (oder versehentlich) sperren.',
       ],
     },
     {
@@ -207,7 +207,7 @@ export const content: ToolLocaleContent<TebasCheckUI> = {
     scanning: 'Scanne die Matrix...',
     seekingBlocks: 'Suche nach Betonblöcken in deiner Leitung...',
     blockedTitle: 'GESPERRT...',
-    blockedDiagnosis: 'Diagnose: „Selektive Zensur“',
+    blockedDiagnosis: 'Diagnose: \"Selektive Zensur\"',
     blockedReason: 'Interferenzen beim Internetanbieter erkannt. Cloudflare oder DNS werden manipuliert.',
     noInternetTitle: 'KEINE VERBINDUNG',
     noInternetReason: 'Es scheint, als hätten Sie keinen Internetzugriff. Prüfen Sie Kabel oder Rechnung.',
@@ -215,7 +215,7 @@ export const content: ToolLocaleContent<TebasCheckUI> = {
     successReason: 'Ihre Verbindung sieht sauber aus. Falls es globale Sperren gibt, betreffen sie Sie nicht.',
     retryBtn: 'Die Justiz erneut herausfordern',
     authorNoteTitle: 'Anmerkung des Autors:',
-    authorNoteText: 'Ich konnte dieses Tool nicht vollständig testen, da ich nicht von Tebas\' „schwarzer Hand“ betroffen bin. Wenn du mir helfen willst, die Diagnose zu verbessern, kontaktiere mich.',
+    authorNoteText: 'Ich konnte dieses Tool nicht vollständig testen, da ich nicht von Tebas\' \"schwarzer Hand\" betroffen bin. Wenn du mir helfen willst, die Diagnose zu verbessern, kontaktiere mich.',
     consoleHeader: 'TEBAS_OS v3.2.0',
     statusNegotiating: 'Verhandle mit deinem Router...',
     statusDodging: 'Weiche dem Gerichtsbeschluss aus...',
@@ -225,7 +225,7 @@ export const content: ToolLocaleContent<TebasCheckUI> = {
     statusCheckingFee: 'Prüfe, ob Tebas die Selbstständigengebühr bezahlt hat...',
     statusCalculating: 'Berechne die Gewinnwahrscheinlichkeit im Lotto...',
     statusDeciphering: 'Versuche, deinen Providervertrag zu entziffern...',
-    logStarted: "STARTE AUTONOMES PROTOKOLL ‚TEBAS_WATCH‘...",
+    logStarted: "STARTE AUTONOMES PROTOKOLL ‚TEBAS_WATCH\'...",
     logDetecting: '> Erkenne Anbieter und Basis-Konnektivität...',
     logIspFound: '> Anbieter erkannt: ',
     logConnError: '> Basis-Verbindungsfehler',

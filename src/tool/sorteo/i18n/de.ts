@@ -12,7 +12,7 @@ const faqData = [
   {
     question: 'Ist dieses Gewinnspiel wirklich zufällig?',
     answer:
-      'Ja, wir verwenden den kryptografischen Zufallsalgorithmus des Browsers (Web Crypto API), um sicherzustellen, dass jeder Teilnehmer genau die gleiche Gewinnwahrscheinlichkeit hat – ohne Verzerrung oder Manipulation.',
+      'Ja, wir verwenden den kryptografischen Zufallsalgorithmus des Browsers (Web Crypto API), um sicherzustellen, dass jeder Teilnehmer genau die gleiche Gewinnwahrscheinlichkeit hat - ohne Verzerrung oder Manipulation.',
   },
   {
     question: 'Kann ich diesen Generator auf Twitch oder YouTube verwenden?',
@@ -32,7 +32,7 @@ const faqData = [
   {
     question: 'Wie viele Namen kann ich zur Liste hinzufügen?',
     answer:
-      'Es gibt keine strikte Grenze vonseiten des Tools. Wir haben die Engine so optimiert, dass sie Listen mit tausenden Teilnehmern ohne Performance-Probleme verarbeitet – ideal also auch für riesige Gewinnspiele.',
+      'Es gibt keine strikte Grenze vonseiten des Tools. Wir haben die Engine so optimiert, dass sie Listen mit tausenden Teilnehmern ohne Performance-Probleme verarbeitet - ideal also auch für riesige Gewinnspiele.',
   },
   {
     question: 'Werden meine Daten oder die Teilnehmerliste gespeichert?',
@@ -51,7 +51,7 @@ const howToData = [
     text: 'Wählen Sie aus, wie viele Gewinner Sie benötigen und ob Sie Duplikate oder leere Zeilen filtern möchten.',
   },
   {
-    name: 'Die „Glücksfee“ starten',
+    name: 'Die \"Glücksfee\" starten',
     text: 'Klicken Sie auf die Schaltfläche für die Auslosung. Eine visuelle Animation sorgt für Spannung, bevor der Gewinner enthüllt wird.',
   },
   {
@@ -110,7 +110,7 @@ export const content: ToolLocaleContent<SorteoUI> = {
     },
     {
       type: 'paragraph',
-      html: 'Fragen Sie sich, wie Sie online ein Gewinnspiel schnell, sicher und absolut transparent durchführen können? Unser kostenloser <strong>Namens-Picker</strong> ist die ultimative Lösung, um in Sekunden einen Zufallsgewinner zu ziehen. Entwickelt, um einfach, visuell und effektiv zu sein – perfekt für jedes Szenario, in dem Sie eine digitale „Glücksfee“ benötigen.',
+      html: 'Fragen Sie sich, wie Sie online ein Gewinnspiel schnell, sicher und absolut transparent durchführen können? Unser kostenloser <strong>Namens-Picker</strong> ist die ultimative Lösung, um in Sekunden einen Zufallsgewinner zu ziehen. Entwickelt, um einfach, visuell und effektiv zu sein - perfekt für jedes Szenario, in dem Sie eine digitale \"Glücksfee\" benötigen.',
     },
     {
       type: 'paragraph',
@@ -165,9 +165,9 @@ export const content: ToolLocaleContent<SorteoUI> = {
     {
       type: 'list',
       items: [
-        '<strong>Schritt 1 – Teilnehmer eingeben:</strong> Fügen Sie Ihre Namensliste in das Haupttextfeld ein. Das Tool erkennt jeden Zeilenumbruch als separaten Teilnehmer. Haben Sie Duplikate? Kein Problem, das Tool entfernt sie automatisch.',
-        '<strong>Schritt 2 – Anpassen:</strong> In den Einstellungen können Sie den Countdown für mehr Spannung, den Konfetti-Effekt zum Feiern oder die „Blacklist“ zum Ausschluss bestimmter Namen aktivieren.',
-        '<strong>Schritt 3 – Auslosen!</strong> Klicken Sie auf die Hauptschaltfläche. Unsere Engine generiert eine kryptografisch sichere Zufallsauswahl. Die Gewinner werden klar und einprägsam angezeigt.',
+        '<strong>Schritt 1 - Teilnehmer eingeben:</strong> Fügen Sie Ihre Namensliste in das Haupttextfeld ein. Das Tool erkennt jeden Zeilenumbruch als separaten Teilnehmer. Haben Sie Duplikate? Kein Problem, das Tool entfernt sie automatisch.',
+        '<strong>Schritt 2 - Anpassen:</strong> In den Einstellungen können Sie den Countdown für mehr Spannung, den Konfetti-Effekt zum Feiern oder die \"Blacklist\" zum Ausschluss bestimmter Namen aktivieren.',
+        '<strong>Schritt 3 - Auslosen!</strong> Klicken Sie auf die Hauptschaltfläche. Unsere Engine generiert eine kryptografisch sichere Zufallsauswahl. Die Gewinner werden klar und einprägsam angezeigt.',
       ],
     },
     {
@@ -177,12 +177,12 @@ export const content: ToolLocaleContent<SorteoUI> = {
     },
     {
       type: 'paragraph',
-      html: 'Möchten Sie Ihre treuesten Abonnenten belohnen oder bestimmten Teilnehmern mehr Chancen einräumen? Unser System für <strong>gewichtete Einträge</strong> ist einzigartig und ermöglicht es Ihnen, jedem Namen ein „Gewicht“ oder einen Multiplikator zuzuweisen, ohne ihn mehrfach aufschreiben zu müssen.',
+      html: 'Möchten Sie Ihre treuesten Abonnenten belohnen oder bestimmten Teilnehmern mehr Chancen einräumen? Unser System für <strong>gewichtete Einträge</strong> ist einzigartig und ermöglicht es Ihnen, jedem Namen ein \"Gewicht\" oder einen Multiplikator zuzuweisen, ohne ihn mehrfach aufschreiben zu müssen.',
     },
     {
       type: 'tip',
       title: 'So weisen Sie Gewichte zu',
-      html: '<p>Verwenden Sie ein Sternchen (*) oder ein „x“, gefolgt von der Anzahl der Teilnahmen. Beispiele:</p><ul><li><strong>„Max * 5“</strong> – Max nimmt teil, als wäre er 5 Personen</li><li><strong>„Julia x 10“</strong> – Julia hat eine 10-mal höhere Gewinnchance</li><li><strong>„Peter“</strong> – Kein Symbol = 1 normale Teilnahme</li></ul><p>Dies ist perfekt für Gewinnspiele, bei denen Sie VIP-Abonnenten oder speziellen Nutzern einen Vorteil gewähren möchten.</p>',
+      html: '<p>Verwenden Sie ein Sternchen (*) oder ein \"x\", gefolgt von der Anzahl der Teilnahmen. Beispiele:</p><ul><li><strong>\"Max * 5\"</strong> - Max nimmt teil, als wäre er 5 Personen</li><li><strong>\"Julia x 10\"</strong> - Julia hat eine 10-mal höhere Gewinnchance</li><li><strong>\"Peter\"</strong> - Kein Symbol = 1 normale Teilnahme</li></ul><p>Dies ist perfekt für Gewinnspiele, bei denen Sie VIP-Abonnenten oder speziellen Nutzern einen Vorteil gewähren möchten.</p>',
     },
     {
       type: 'title',
@@ -204,7 +204,7 @@ export const content: ToolLocaleContent<SorteoUI> = {
     },
     {
       type: 'paragraph',
-      html: 'Manchen mag die Frage kommen: „Was, wenn die Ergebnisse manipuliert werden?“ Die Antwort ist einfach: <strong>Wir können es nicht.</strong> Der Code der Auslosung ist deterministisch und kryptografisch. Keine versteckten Variablen, keine „geschobenen“ Ergebnisse.',
+      html: 'Manchen mag die Frage kommen: \"Was, wenn die Ergebnisse manipuliert werden?\" Die Antwort ist einfach: <strong>Wir können es nicht.</strong> Der Code der Auslosung ist deterministisch und kryptografisch. Keine versteckten Variablen, keine \"geschobenen\" Ergebnisse.',
     },
     {
       type: 'paragraph',

@@ -172,7 +172,7 @@ export const content: ToolLocaleContent<SorteoUI> = {
     },
     {
       type: 'title',
-      text: 'Entrées Pondérées : Donner un Avantage à Certains Participants',
+      text: 'Entrées Pondérées: Donner un Avantage à Certains Participants',
       level: 3,
     },
     {
@@ -204,7 +204,7 @@ export const content: ToolLocaleContent<SorteoUI> = {
     },
     {
       type: 'paragraph',
-      html: 'Certains se poseront la question : "Et si vous manipuliez les résultats ?" La réponse est simple : <strong>nous ne pouvons pas</strong>. Le code du tirage au sort est déterministe et cryptographique. Pas de variables cachées, pas de "doigts sur la scène".',
+      html: 'Certains se poseront la question: "Et si vous manipuliez les résultats ?" La réponse est simple: <strong>nous ne pouvons pas</strong>. Le code du tirage au sort est déterministe et cryptographique. Pas de variables cachées, pas de "doigts sur la scène".',
     },
     {
       type: 'paragraph',

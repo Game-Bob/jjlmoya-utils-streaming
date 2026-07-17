@@ -17,7 +17,7 @@ export const content: CategoryLocaleContent = {
     },
     {
       type: 'paragraph',
-      html: 'Od uczciwego i przejrzystego zarządzania losowaniami na żywo po audyt cenzury sieciowej i blokad stosowanych przez dostawców Internetu – nasze narzędzia dają Ci niezbędną kontrolę w konkurencyjnym świecie tworzenia treści na żywo.',
+      html: 'Od uczciwego i przejrzystego zarządzania losowaniami na żywo po audyt cenzury sieciowej i blokad stosowanych przez dostawców Internetu - nasze narzędzia dają Ci niezbędną kontrolę w konkurencyjnym świecie tworzenia treści na żywo.',
     },
     {
       type: 'title',
@@ -87,7 +87,7 @@ export const content: CategoryLocaleContent = {
     },
     {
       type: 'title',
-      text: 'Zrównoważona monetyzacja: Od live’a do stabilnego dochodu',
+      text: 'Zrównoważona monetyzacja: Od live\'a do stabilnego dochodu',
       level: 2,
     },
     {

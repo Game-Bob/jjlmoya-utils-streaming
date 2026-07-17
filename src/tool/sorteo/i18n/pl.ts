@@ -22,7 +22,7 @@ const faqData = [
   {
     question: 'Jak zapobiec dwukrotnemu udziałowi tej samej osoby?',
     answer:
-      'Narzędzie posiada funkcję automatycznego „czyszczenia duplikatów”, która wykrywa identyczne imiona lub takie z niewielkimi różnicami w spacji, aby zapewnić, że każda prawdziwa osoba liczy się tylko raz.',
+      'Narzędzie posiada funkcję automatycznego \"czyszczenia duplikatów\", która wykrywa identyczne imiona lub takie z niewielkimi różnicami w spacji, aby zapewnić, że każda prawdziwa osoba liczy się tylko raz.',
   },
   {
     question: 'Czy mogę wylosować kilku zwycięzców naraz?',
@@ -51,7 +51,7 @@ const howToData = [
     text: 'Wybierz, ilu zwycięzców potrzebujesz i czy chcesz odfiltrować duplikaty lub puste wpisy.',
   },
   {
-    name: 'Uruchom „niewinną rękę”',
+    name: 'Uruchom \"niewinną rękę\"',
     text: 'Kliknij przycisk losowania. Wizualna animacja podtrzyma napięcie przed ujawnieniem zwycięzcy.',
   },
   {
@@ -110,7 +110,7 @@ export const content: ToolLocaleContent<SorteoUI> = {
     },
     {
       type: 'paragraph',
-      html: 'Zastanawiasz się, jak przeprowadzić losowanie online szybko, bezpiecznie i całkowicie przejrzyście? Nasze darmowe narzędzie <strong>Losowanie Imion</strong> to ostateczne rozwiązanie, pozwalające wybrać zwycięzcę w kilka sekund. Zaprojektowane, by być proste, wizualne i skuteczne, jest idealne do każdego scenariusza, w którym potrzebujesz cyfrowej „niewinnej ręki”.',
+      html: 'Zastanawiasz się, jak przeprowadzić losowanie online szybko, bezpiecznie i całkowicie przejrzyście? Nasze darmowe narzędzie <strong>Losowanie Imion</strong> to ostateczne rozwiązanie, pozwalające wybrać zwycięzcę w kilka sekund. Zaprojektowane, by być proste, wizualne i skuteczne, jest idealne do każdego scenariusza, w którym potrzebujesz cyfrowej \"niewinnej ręki\".',
     },
     {
       type: 'paragraph',
@@ -166,7 +166,7 @@ export const content: ToolLocaleContent<SorteoUI> = {
       type: 'list',
       items: [
         '<strong>Krok 1 - Wprowadź uczestników:</strong> Wklej listę imion do głównego pola tekstowego. Narzędzie automatycznie wykrywa każdą nową linię jako oddzielnego uczestnika. Masz duplikaty? Nie ma problemu, narzędzie je usunie.',
-        '<strong>Krok 2 - Dostosuj:</strong> W zakładce ustawień możesz włączyć odliczanie, aby zbudować napięcie, efekt konfetti do świętowania, lub aktywować „ czarną listę”, aby wykluczyć pewne imiona.',
+        '<strong>Krok 2 - Dostosuj:</strong> W zakładce ustawień możesz włączyć odliczanie, aby zbudować napięcie, efekt konfetti do świętowania, lub aktywować \" czarną listę\", aby wykluczyć pewne imiona.',
         '<strong>Krok 3 - Losuj!</strong> Kliknij główny przycisk, a nasz silnik wygeneruje kryptograficznie bezpieczny wybór. Zwycięzcy zostaną wyświetleni w sposób czytelny i efektowny.',
       ],
     },
@@ -177,12 +177,12 @@ export const content: ToolLocaleContent<SorteoUI> = {
     },
     {
       type: 'paragraph',
-      html: 'Chcesz nagrodzić swoich najwierniejszych subskrybentów lub dać więcej szans niektórym uczestnikom? Nasz system <strong>Wpisów Ważonych</strong> jest unikalny i pozwala przypisać „wagę” lub mnożnik do dowolnego imienia bez konieczności wielokrotnego wpisywania go.',
+      html: 'Chcesz nagrodzić swoich najwierniejszych subskrybentów lub dać więcej szans niektórym uczestnikom? Nasz system <strong>Wpisów Ważonych</strong> jest unikalny i pozwala przypisać \"wagę\" lub mnożnik do dowolnego imienia bez konieczności wielokrotnego wpisywania go.',
     },
     {
       type: 'tip',
       title: 'Jak przypisać wagi do imion',
-      html: '<p>Użyj gwiazdki (*) lub „x”, a następnie wpisz liczbę udziałów. Przykłady:</p><ul><li><strong>"Jan * 5"</strong> - Jan bierze udział tak, jakby był 5 osobami</li><li><strong>"Maria x 10"</strong> - Maria ma 10 razy większe szanse</li><li><strong>"Piotr"</strong> - Brak symbolu = 1 zwykły wpis</li></ul><p>Jest to idealne dla losowań, w których chcesz dać przewagę subskrybentom VIP lub specjalnym użytkownikom.</p>',
+      html: '<p>Użyj gwiazdki (*) lub \"x\", a następnie wpisz liczbę udziałów. Przykłady:</p><ul><li><strong>"Jan * 5"</strong> - Jan bierze udział tak, jakby był 5 osobami</li><li><strong>"Maria x 10"</strong> - Maria ma 10 razy większe szanse</li><li><strong>"Piotr"</strong> - Brak symbolu = 1 zwykły wpis</li></ul><p>Jest to idealne dla losowań, w których chcesz dać przewagę subskrybentom VIP lub specjalnym użytkownikom.</p>',
     },
     {
       type: 'title',
@@ -204,7 +204,7 @@ export const content: ToolLocaleContent<SorteoUI> = {
     },
     {
       type: 'paragraph',
-      html: 'Niektórzy mogą pytać: „A co jeśli zmanipulujecie wyniki?”. Odpowiedź jest prosta: <strong>nie możemy</strong>. Kod losowania jest deterministyczny i kryptograficzny. Brak ukrytych zmiennych, żadnych „palców na wadze”.',
+      html: 'Niektórzy mogą pytać: \"A co jeśli zmanipulujecie wyniki?\". Odpowiedź jest prosta: <strong>nie możemy</strong>. Kod losowania jest deterministyczny i kryptograficzny. Brak ukrytych zmiennych, żadnych \"palców na wadze\".',
     },
     {
       type: 'paragraph',
