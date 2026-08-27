@@ -1,15 +1,19 @@
-import { sorteo } from '../tool/sorteo/entry';
-import { tebasCheck } from '../tool/tebasCheck/entry';
-import { videoBitratePlanner } from '../tool/videoBitratePlanner/entry';
+import type { StreamingToolEntry, ToolLocaleContent } from '../../types';
+import type { VideoBitratePlannerUI } from './ui';
 
-export const streamingCategory: StreamingCategoryEntry = {
-  icon: 'mdi:broadcast',
-  tools: [sorteo, tebasCheck, videoBitratePlanner],
+export type VideoBitratePlannerLocaleContent = ToolLocaleContent<VideoBitratePlannerUI>;
+
+export const videoBitratePlanner: StreamingToolEntry<VideoBitratePlannerUI> = {
+  id: 'video-bitrate-planner',
+  icons: {
+    bg: 'mdi:video-outline',
+    fg: 'mdi:harddisk',
+  },
   i18n: {
-    es: () => import('./i18n/es').then((m) => m.content),
-    en: () => import('./i18n/en').then((m) => m.content),
-    fr: () => import('./i18n/fr').then((m) => m.content),
     de: () => import('./i18n/de').then((m) => m.content),
+    en: () => import('./i18n/en').then((m) => m.content),
+    es: () => import('./i18n/es').then((m) => m.content),
+    fr: () => import('./i18n/fr').then((m) => m.content),
     id: () => import('./i18n/id').then((m) => m.content),
     it: () => import('./i18n/it').then((m) => m.content),
     ja: () => import('./i18n/ja').then((m) => m.content),

@@ -1,0 +1,12 @@
+---
+import { SEORenderer } from '@jjlmoya/utils-shared';
+import type { UtilitySEOContent } from '@jjlmoya/utils-shared';
+
+interface Props {
+  content: UtilitySEOContent;
+}
+
+const { content } = Astro.props;
+---
+
+<SEORenderer content={content} />

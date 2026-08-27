@@ -1,0 +1,122 @@
+---
+import type { VideoBitratePlannerUI } from './ui';
+
+interface Props {
+  ui: VideoBitratePlannerUI;
+}
+
+const { ui } = Astro.props;
+const uiJson = JSON.stringify(ui).replace(/</g, '\\u003c');
+---
+
+<div class="bitrate-planner" data-video-bitrate-planner data-resolution="1080p" data-fps="60" data-codec="h264">
+  <script is:inline type="application/json" data-planner-ui set:html={uiJson}></script>
+  <form class="planner-layout" data-planner-form>
+    <div class="planner-controls">
+      <div class="preset-line">
+        <span class="control-caption">{ui.presetLabel}</span>
+        <button type="button" class="preset-button" data-preset="fast">{ui.presetFast}</button>
+        <button type="button" class="preset-button is-active" data-preset="upload">{ui.presetUpload}</button>
+        <button type="button" class="preset-button" data-preset="archive">{ui.presetArchive}</button>
+      </div>
+
+      <fieldset class="control-fieldset">
+        <legend>{ui.resolutionLabel}</legend>
+        <div class="choice-row">
+          <button type="button" class="choice-button" data-resolution="720p" aria-pressed="false">720p</button>
+          <button type="button" class="choice-button is-active" data-resolution="1080p" aria-pressed="true">1080p</button>
+          <button type="button" class="choice-button" data-resolution="1440p" aria-pressed="false">1440p</button>
+          <button type="button" class="choice-button" data-resolution="2160p" aria-pressed="false">4K</button>
+        </div>
+      </fieldset>
+
+      <fieldset class="control-fieldset">
+        <legend>{ui.frameRateLabel}</legend>
+        <div class="choice-row">
+          <button type="button" class="choice-button" data-fps="30" aria-pressed="false">30 fps</button>
+          <button type="button" class="choice-button is-active" data-fps="60" aria-pressed="true">60 fps</button>
+          <button type="button" class="choice-button" data-fps="120" aria-pressed="false">120 fps</button>
+        </div>
+      </fieldset>
+
+      <fieldset class="control-fieldset">
+        <legend>{ui.codecLabel}</legend>
+        <div class="choice-row">
+          <button type="button" class="choice-button" data-codec="h264" aria-pressed="true">{ui.h264}</button>
+          <button type="button" class="choice-button" data-codec="h265" aria-pressed="false">{ui.h265}</button>
+          <button type="button" class="choice-button" data-codec="av1" aria-pressed="false">{ui.av1}</button>
+        </div>
+        <p class="control-note">{ui.codecNote}</p>
+      </fieldset>
+
+      <div class="number-grid">
+        <label class="number-control">
+          <span>{ui.bitrateLabel}</span>
+          <span class="number-input-wrap"><input name="bitrate" type="number" inputmode="decimal" min="0.1" max="500" step="0.1" value="8" aria-label={ui.bitrateLabel} /><b>Mbps</b></span>
+        </label>
+        <label class="number-control">
+          <span>{ui.durationLabel}</span>
+          <span class="number-input-wrap"><input name="duration" type="number" inputmode="numeric" min="1" max="10080" step="1" value="60" aria-label={ui.durationLabel} /><b>{ui.minutesLabel}</b></span>
+        </label>
+        <label class="number-control">
+          <span>{ui.copiesLabel}</span>
+          <span class="number-input-wrap"><input name="copies" type="number" inputmode="numeric" min="1" max="99" step="1" value="1" aria-label={ui.copiesLabel} /><b>{ui.copiesShort}</b></span>
+        </label>
+      </div>
+      <div class="control-footer">
+        <p class="local-note">{ui.localNote}</p>
+        <button type="button" class="reset-button" data-reset>{ui.reset}</button>
+      </div>
+    </div>
+
+    <section class="planner-scene" aria-live="polite" aria-label={ui.sceneLabel}>
+      <div class="scene-heading">
+        <span class="scene-label">{ui.sceneLabel}</span>
+        <span class="quality-badge" data-quality-badge></span>
+      </div>
+      <div class="signal-world">
+        <div class="signal-source">
+          <div class="source-screen"><div class="screen-grid"><i></i><i></i><i></i><i></i></div><span data-resolution-value>1080p</span></div>
+          <span class="world-label">{ui.signalSource}</span>
+        </div>
+        <div class="signal-bridge"><span class="bridge-line"></span><span class="codec-gate" data-codec-value>H264</span><span class="bridge-line"></span></div>
+        <div class="signal-reel">
+          <div class="reel-disc"><span class="reel-hole"></span><span class="reel-groove"></span><span class="reel-groove reel-groove-inner"></span></div>
+          <span class="world-label">{ui.storageReel}</span>
+        </div>
+        <div class="signal-frames" data-signal-frames aria-hidden="true"></div>
+      </div>
+      <div class="scene-caption"><span>{ui.codecGate}</span><strong data-fps-value>60 fps</strong></div>
+      <div class="main-result">
+        <span>{ui.storageEstimate}</span>
+        <strong data-total-storage>3.6 GB</strong>
+        <small data-storage-caption>{ui.allCopies}: 3.6 GB {ui.copiesShort}</small>
+      </div>
+      <p class="quality-note" data-quality-note></p>
+      <div class="badge-line"><span class="capacity-badge" data-capacity-badge></span><span class="capacity-note">{ui.capacityNote}</span></div>
+    </section>
+
+    <div class="planner-lower">
+      <div class="stat-strip">
+        <div><span>{ui.perCopy}</span><strong data-per-copy>3.6 GB</strong></div>
+        <div><span>{ui.perHour}</span><strong data-per-hour>60 GB</strong></div>
+        <div><span>{ui.frameTime}</span><strong data-frame-time>16.67 ms</strong></div>
+        <div><span>{ui.dataPerFrame}</span><strong data-data-per-frame>16.67 KB</strong></div>
+      </div>
+      <div class="comparison-panel">
+        <div class="comparison-heading"><span>{ui.comparisonLabel}</span><span data-resolution-value>1080p</span></div>
+        <div data-comparison></div>
+      </div>
+      <details class="assumption-panel">
+        <summary>{ui.assumptionTitle}</summary>
+        <p>{ui.assumptionText}</p>
+        <p>{ui.warningText}</p>
+      </details>
+    </div>
+  </form>
+</div>
+
+<script>
+  import { mountVideoBitratePlanner } from './controller';
+  mountVideoBitratePlanner();
+</script>

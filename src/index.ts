@@ -20,3 +20,5 @@ export { ALL_ENTRIES, ALL_TOOLS } from './tools';
 export { SORTEO_TOOL } from './tool/sorteo/index';
 
 export { TEBAS_CHECK_TOOL } from './tool/tebasCheck/index';
+
+export { VIDEO_BITRATE_PLANNER_TOOL } from './tool/videoBitratePlanner/index';
