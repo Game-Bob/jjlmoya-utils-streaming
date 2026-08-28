@@ -10,4 +10,5 @@ export { streamingCategory } from './category';
 import { sorteo } from './tool/sorteo/entry';
 import { tebasCheck } from './tool/tebasCheck/entry';
 import { videoBitratePlanner } from './tool/videoBitratePlanner/entry';
-export const ALL_ENTRIES = [sorteo, tebasCheck, videoBitratePlanner];
+import { streamSceneCountdownClock } from './tool/streamSceneCountdownClock/entry';
+export const ALL_ENTRIES = [sorteo, tebasCheck, videoBitratePlanner, streamSceneCountdownClock];
