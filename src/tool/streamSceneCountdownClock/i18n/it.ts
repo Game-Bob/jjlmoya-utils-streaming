@@ -1,0 +1,44 @@
+import { makeContent } from './locale-factory';
+
+export const content = makeContent({
+  language: 'it',
+  slug: 'conto-alla-rovescia-scena-stream-obs',
+  title: 'Conto alla rovescia per scene streaming',
+  description: 'Crea una schermata con conto alla rovescia per starting soon, BRB, raid e pause del tuo stream.',
+  ui: {
+    sceneLabel: 'Quale scena stai preparando?', sceneBrb: 'BRB', sceneStarting: 'Inizia tra poco', sceneRaid: 'Raid', sceneIntermission: 'Pausa', sceneTitleLabel: 'Cosa deve apparire sopra al timer?', sceneTitlePlaceholder: 'Inizia tra poco', designLabel: 'Che atmosfera deve avere la scena?', designAurora: 'Nebbia aurora', designType: 'Tipografia cinetica', designPulse: 'Bagliore pulsante', designGlitch: 'Segnale glitch', designSunset: 'Bagliore solare', accentColorLabel: "Colore d\'accento", glowColorLabel: 'Colore della luce', messageLabel: 'Cosa devono sapere gli spettatori?', messagePlaceholder: 'Torno tra 5 minuti', durationLabel: 'Quanto tempo ti serve?', duration60: '1 min', duration300: '5 min', duration600: '10 min', durationCustom: 'Personalizzato', secondsLabel: 'secondi', startLabel: 'Quando deve iniziare questo avviso?', startNow: 'Inizia ora', scheduleTime: 'Pianifica un orario', timeLabel: 'A quale ora locale deve iniziare?', startAction: 'Metti il mio avviso in onda', focusAction: 'Mostra la mia scena', exitFocusAction: 'Esci dalla scena', resetAction: 'Reimposta avviso', flowText: 'Sei lo streamer: scegli il momento, imposta il tempo necessario e manda in onda il tuo avviso.', obsTitle: 'Porta questa scena in OBS', obsText: 'Copia il link, aggiungi una Browser Source in OBS, incollalo e usa la risoluzione del canvas. STREAMING apre automaticamente la scena pulita a schermo intero.', obsStepCopy: 'Copia questo link', obsStepAdd: 'Aggiungi una Browser Source in OBS', obsStepPaste: 'Incolla e adatta al canvas', copyUrlAction: 'Copia link OBS', copiedUrlText: 'Link OBS copiato', streamUrlAria: 'URL streaming OBS generato', previewTitle: 'Scegli lo stile della scena', previewHint: 'Fai clic su un\'anteprima per usarla', previewAria: 'Anteprime degli stili della scena', stageEyebrow: 'Schermata di trasmissione', stageCaption: 'La prossima scena è pronta', readyBadge: 'Pronto', waitingBadge: 'In attesa', liveBadge: 'Avviso live', endedBadge: 'Terminato', readyText: 'Controlla la schermata e avvia l\'avviso quando la scena è pronta.', waitingText: 'Il conto alla rovescia live inizierà all\'ora locale pianificata.', liveText: 'Lascia visibile questa scena finché il cambio non è pronto.', endedText: 'L\'avviso è terminato. Reimpostalo o prepara una nuova scena.', remainingLabel: 'Tempo sulla scena', startTimeLabel: 'Inizio', endTimeLabel: 'Fine', progressLabel: 'Avanzamento scena', assumptionTitle: 'Nota sul tempo', assumptionText: 'Gli orari pianificati usano l\'orologio del dispositivo. Il timer è un segnale visivo e non sincronizza OBS, Twitch, chat o encoder.', warningTitle: 'Usalo come segnale di scena', warningText: 'Una scheda sospesa, un cambio dell\'orologio o un ritardo della trasmissione possono rendere diverso il tempo mostrato. Controlla la scena live prima del cambio.', invalidTime: 'Inserisci un\'ora locale nel formato HH:MM.', clockAria: 'Tempo rimanente del conto alla rovescia', statusAria: 'Stato del conto alla rovescia',
+  },
+  faq: [
+    { question: 'Questo conto alla rovescia si collega a OBS o Twitch?', answer: 'No. È un timer indipendente e non controlla OBS, Twitch, chat o un server di streaming. Usa Mostra la mia scena per riempire lo schermo e cattura quella vista come Browser Source.' },
+    { question: 'Come uso il conto alla rovescia direttamente in OBS?', answer: 'Aggiungi l\'URL come Browser Source di OBS con il flag streaming e le impostazioni, per esempio ?STREAMING&scene=starting&duration=300&design=aurora&title=Inizia%20tra%20poco. I controlli spariscono e il conto alla rovescia riempie l\'area della fonte.' },
+    { question: 'Cosa succede quando pianifico un orario di inizio?', answer: 'L\'orologio aspetta l\'ora locale scelta, poi conta la durata della scena. Un orario già passato viene trattato come la prossima occorrenza del giorno seguente.' },
+    { question: 'Posso usare un messaggio personalizzato?', answer: 'Sì. Come streamer puoi scrivere l\'avviso breve che vuoi mostrare, ad esempio l\'ora del ritorno, il prossimo passo o un messaggio per il raid.' },
+    { question: 'Cosa cambiano i preset della scena?', answer: 'Danno un nome al momento della trasmissione, così la scena è riconoscibile a colpo d\'occhio. Calcolo, durata e collegamento alle piattaforme non cambiano.' },
+    { question: 'L\'ora di fine è precisa?', answer: 'È calcolata dall\'orologio locale del browser e dalla durata inserita. Sospensione del browser, scheda in pausa o cambio dell\'orologio possono influenzare l\'aggiornamento visibile. È un riferimento di preparazione, non una sincronizzazione garantita.' },
+  ],
+  howTo: [
+    { name: 'Scegli il momento della scena', text: 'Seleziona Inizia tra poco, BRB, Raid o Pausa per nominare il momento mostrato agli spettatori.' },
+    { name: 'Scrivi il tuo avviso da streamer', text: 'Inserisci il messaggio breve che gli spettatori devono leggere mentre prepari la scena successiva.' },
+    { name: 'Imposta durata o orario', text: 'Scegli una durata comune o inseriscine una tua. Inizia subito per un avviso live oppure pianifica un\'ora locale.' },
+    { name: 'Leggi lo stato', text: 'Usa il grande orologio e il badge di stato per decidere quando cambiare scena.' },
+  ],
+  seo: [
+    { type: 'title', text: 'Prepara un segnale di scena leggibile subito', level: 2 },
+    { type: 'paragraph', html: 'Un conto alla rovescia dà alla scena Inizia tra poco, BRB, raid o pausa un punto di ritorno chiaro. Spiega cosa stai facendo, imposta il tempo che ti serve e lascia visibile il timer mentre prepari la trasmissione.' },
+    { type: 'title', text: 'Cosa calcola il timer della scena', level: 3 },
+    { type: 'list', items: ['<strong>Avviso immediato:</strong> parte quando lo metti in onda e scala la durata scelta.', '<strong>Avviso pianificato:</strong> aspetta l\'ora locale e poi avvia la durata della scena.', '<strong>Stato della scena:</strong> distingue pronto, attesa, live e terminato per rendere chiara la prossima azione.'] },
+    { type: 'title', text: 'Come scegliere una durata utile', level: 3 },
+    { type: 'paragraph', html: 'Usa una durata breve per cambiare fonte o risolvere una pausa veloce. Scegli più tempo per preparare un ospite, un gioco o un riavvio tecnico. Il messaggio deve aggiungere informazioni che il timer da solo non comunica.' },
+    { type: 'tip', title: 'Rendi concreto il ritorno', html: 'Invece di una promessa generica, scrivi la prossima azione: "Torno alle 20:30 per la finale" oppure "Raid in preparazione". Gli spettatori capiscono attesa e motivo.' },
+    { type: 'title', text: 'Perché il timer resta offline', level: 3 },
+    { type: 'paragraph', html: 'L\'orologio non deve accedere al canale o al software di trasmissione. Testo e tempo restano nel browser, quindi la scena è utile per preparare lo stream. Prima della diretta, controlla visibilità della fonte e transizione in OBS.' },
+    { type: 'title', text: 'Invia la scena finita a OBS', level: 3 },
+    { type: 'paragraph', html: 'Fai clic su <strong>Copia link OBS</strong>, aggiungi una Browser Source alla scena dello stream, incolla il link e adatta la risoluzione del canvas. <code>?STREAMING</code> apre una scena pulita, automatica e senza controlli.' },
+    { type: 'title', text: 'Adatta lo stile al tuo canale', level: 3 },
+    { type: 'paragraph', html: 'Scegli tra cinque composizioni diverse: Nebbia aurora con anello atmosferico, Tipografia cinetica con numeri enormi, Bagliore pulsante con onde in espansione, Segnale glitch con energia da trasmissione o Bagliore solare con orizzonte caldo. Scegli un\'anteprima e regola i colori.' },
+    { type: 'list', items: ['<strong>Scena:</strong> indica Inizia tra poco, BRB, raid o pausa.', '<strong>Titolo:</strong> sostituisce la riga predefinita con il tuo titolo.', '<strong>Messaggio:</strong> aggiunge l\'avviso da leggere.', '<strong>Durata e orario:</strong> controllano inizio e tempo visibile.'] },
+    { type: 'paragraph', html: 'Se costruisci l\'URL a mano, usa <code>?STREAMING&amp;scene=raid&amp;title=Raid%20in%20arrivo&amp;design=pulse</code>. Il generatore aggiunge durata, messaggio e colori personalizzati.' },
+    { type: 'title', text: 'Leggi l\'ora finale come riferimento', level: 3 },
+    { type: 'paragraph', html: 'L\'ora finale deriva dall\'orologio del dispositivo e dalla durata scelta. Non garantisce che il live arrivi a tutti nello stesso istante. Lascia un margine se il cambio dipende da un ospite, da una connessione o da una transizione.' },
+  ],
+});

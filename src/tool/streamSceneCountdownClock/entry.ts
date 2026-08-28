@@ -1,17 +1,19 @@
-import type { StreamingCategoryEntry } from '../types';
-import { sorteo } from '../tool/sorteo/entry';
-import { tebasCheck } from '../tool/tebasCheck/entry';
-import { videoBitratePlanner } from '../tool/videoBitratePlanner/entry';
-import { streamSceneCountdownClock } from '../tool/streamSceneCountdownClock/entry';
+import type { StreamingToolEntry, ToolLocaleContent } from '../../types';
+import type { StreamSceneCountdownClockUI } from './ui';
 
-export const streamingCategory: StreamingCategoryEntry = {
-  icon: 'mdi:broadcast',
-  tools: [sorteo, tebasCheck, videoBitratePlanner, streamSceneCountdownClock],
+export type StreamSceneCountdownClockLocaleContent = ToolLocaleContent<StreamSceneCountdownClockUI>;
+
+export const streamSceneCountdownClock: StreamingToolEntry<StreamSceneCountdownClockUI> = {
+  id: 'streamSceneCountdownClock',
+  icons: {
+    bg: 'mdi:television-ambient-light',
+    fg: 'mdi:timer-outline',
+  },
   i18n: {
-    es: () => import('./i18n/es').then((m) => m.content),
     en: () => import('./i18n/en').then((m) => m.content),
-    fr: () => import('./i18n/fr').then((m) => m.content),
     de: () => import('./i18n/de').then((m) => m.content),
+    es: () => import('./i18n/es').then((m) => m.content),
+    fr: () => import('./i18n/fr').then((m) => m.content),
     id: () => import('./i18n/id').then((m) => m.content),
     it: () => import('./i18n/it').then((m) => m.content),
     ja: () => import('./i18n/ja').then((m) => m.content),

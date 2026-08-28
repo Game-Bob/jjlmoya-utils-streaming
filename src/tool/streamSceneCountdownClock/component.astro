@@ -1,0 +1,180 @@
+---
+import type { StreamSceneCountdownClockUI } from './ui';
+
+interface Props {
+  ui: StreamSceneCountdownClockUI;
+}
+
+const { ui } = Astro.props;
+---
+
+<div class="ssc-root" data-status="ready" data-stream-scene-clock>
+  <section class="ssc-panel" aria-label={ui.stageEyebrow}>
+    <div class="ssc-controls">
+      <p class="ssc-route">{ui.flowText}</p>
+      <div class="ssc-control-block">
+        <span class="ssc-label">{ui.sceneLabel}</span>
+        <div class="ssc-scene-list" role="group" aria-label={ui.sceneLabel}>
+          <button type="button" class="ssc-choice" data-scene="starting" aria-pressed="true">{ui.sceneStarting}</button>
+          <button type="button" class="ssc-choice" data-scene="brb" aria-pressed="false">{ui.sceneBrb}</button>
+          <button type="button" class="ssc-choice" data-scene="raid" aria-pressed="false">{ui.sceneRaid}</button>
+          <button type="button" class="ssc-choice" data-scene="intermission" aria-pressed="false">{ui.sceneIntermission}</button>
+        </div>
+      </div>
+      <label class="ssc-field">
+        <span class="ssc-label">{ui.sceneTitleLabel}</span>
+        <input data-scene-title type="text" maxlength="40" placeholder={ui.sceneTitlePlaceholder} value={ui.sceneTitlePlaceholder} />
+      </label>
+      <label class="ssc-field">
+        <span class="ssc-label">{ui.designLabel}</span>
+        <div class="ssc-custom-select" data-design-select>
+          <input type="hidden" data-design value="aurora" />
+          <button type="button" class="ssc-select-trigger" data-design-trigger aria-haspopup="listbox" aria-expanded="false" aria-label={ui.designLabel}>{ui.designAurora}</button>
+          <div class="ssc-select-options" data-design-options role="listbox" aria-label={ui.designLabel} hidden>
+            <button type="button" class="ssc-select-option is-active" data-design-option="aurora" role="option" aria-selected="true">{ui.designAurora}</button>
+            <button type="button" class="ssc-select-option" data-design-option="type" role="option" aria-selected="false">{ui.designType}</button>
+            <button type="button" class="ssc-select-option" data-design-option="pulse" role="option" aria-selected="false">{ui.designPulse}</button>
+            <button type="button" class="ssc-select-option" data-design-option="glitch" role="option" aria-selected="false">{ui.designGlitch}</button>
+            <button type="button" class="ssc-select-option" data-design-option="sunset" role="option" aria-selected="false">{ui.designSunset}</button>
+          </div>
+        </div>
+      </label>
+      <div class="ssc-color-row">
+        <label class="ssc-color-field">
+          <span class="ssc-label">{ui.accentColorLabel}</span>
+          <input data-accent-color type="color" value="#a78bfa" aria-label={ui.accentColorLabel} />
+        </label>
+        <label class="ssc-color-field">
+          <span class="ssc-label">{ui.glowColorLabel}</span>
+          <input data-glow-color type="color" value="#8ff5d7" aria-label={ui.glowColorLabel} />
+        </label>
+      </div>
+      <label class="ssc-field">
+        <span class="ssc-label">{ui.messageLabel}</span>
+        <input data-message type="text" maxlength="90" placeholder={ui.messagePlaceholder} value={ui.messagePlaceholder} />
+      </label>
+      <div class="ssc-control-block">
+        <span class="ssc-label">{ui.durationLabel}</span>
+        <div class="ssc-duration-row" role="group" aria-label={ui.durationLabel}>
+          <button type="button" class="ssc-choice" data-duration="60">{ui.duration60}</button>
+          <button type="button" class="ssc-choice is-active" data-duration="300">{ui.duration300}</button>
+          <button type="button" class="ssc-choice" data-duration="600">{ui.duration600}</button>
+          <label class="ssc-number-wrap">
+            <span class="sr-only">{ui.durationCustom}</span>
+            <input data-duration-input type="number" min="10" max="86400" step="1" value="300" aria-label={ui.durationCustom} />
+            <span>{ui.secondsLabel}</span>
+          </label>
+        </div>
+      </div>
+      <div class="ssc-control-block">
+        <span class="ssc-label">{ui.startLabel}</span>
+        <div class="ssc-start-row" role="group" aria-label={ui.startLabel}>
+          <button type="button" class="ssc-choice is-active" data-start-mode="now" aria-pressed="true">{ui.startNow}</button>
+          <button type="button" class="ssc-choice" data-start-mode="scheduled" aria-pressed="false">{ui.scheduleTime}</button>
+          <label class="ssc-time-wrap" hidden>
+            <span class="sr-only">{ui.timeLabel}</span>
+            <input data-start-time-input type="time" value="20:00" aria-label={ui.timeLabel} />
+          </label>
+        </div>
+        <p class="ssc-error" data-time-error aria-live="polite"></p>
+      </div>
+      <div class="ssc-actions">
+        <button type="button" class="ssc-primary" data-action="start">{ui.startAction}</button>
+        <button type="button" class="ssc-secondary" data-action="focus">{ui.focusAction}</button>
+        <button type="button" class="ssc-secondary" data-action="reset">{ui.resetAction}</button>
+      </div>
+      <aside class="ssc-obs-card" aria-labelledby="ssc-obs-title">
+        <div class="ssc-obs-heading">
+          <span class="ssc-label" id="ssc-obs-title">{ui.obsTitle}</span>
+          <span class="ssc-obs-mark" aria-hidden="true">OBS</span>
+        </div>
+        <p>{ui.obsText}</p>
+        <ol class="ssc-obs-steps">
+          <li>{ui.obsStepCopy}</li>
+          <li>{ui.obsStepAdd}</li>
+          <li>{ui.obsStepPaste}</li>
+        </ol>
+        <a class="ssc-stream-url" data-stream-url aria-label={ui.streamUrlAria} target="_blank" rel="noreferrer"></a>
+        <div class="ssc-obs-actions">
+          <button type="button" class="ssc-secondary" data-copy-url>{ui.copyUrlAction}</button>
+          <span class="ssc-copy-state" data-copy-state aria-live="polite"></span>
+        </div>
+      </aside>
+    </div>
+    <div class="ssc-stage" data-stage>
+      <div class="ssc-stage-heading">
+        <span class="ssc-eyebrow">{ui.stageEyebrow}</span>
+        <span class="ssc-status-badge" data-status-badge aria-live="polite">{ui.readyBadge}</span>
+      </div>
+      <div class="ssc-stage-main">
+        <div class="ssc-dial-wrap">
+          <svg class="ssc-dial" viewBox="0 0 120 120" aria-hidden="true">
+            <circle class="ssc-dial-track" cx="60" cy="60" r="50"></circle>
+            <circle class="ssc-dial-progress" data-progress-ring cx="60" cy="60" r="50"></circle>
+            <circle class="ssc-dial-pin" cx="60" cy="10" r="3"></circle>
+          </svg>
+          <div class="ssc-dial-content">
+            <span class="ssc-scene-name" data-scene-name>{ui.sceneStarting}</span>
+            <time class="ssc-clock" data-clock aria-label={ui.clockAria}>00:05:00</time>
+            <span class="ssc-clock-label">{ui.remainingLabel}</span>
+          </div>
+        </div>
+        <div class="ssc-stage-copy">
+          <p class="ssc-stage-caption">{ui.stageCaption}</p>
+          <p class="ssc-stage-message" data-stage-message>{ui.messagePlaceholder}</p>
+          <p class="ssc-status-copy" data-status-copy aria-live="polite">{ui.readyText}</p>
+        </div>
+      </div>
+      <div class="ssc-alt-progress" aria-hidden="true"><span data-alt-progress></span></div>
+      <div class="ssc-preview-strip">
+        <div class="ssc-preview-heading">
+          <span class="ssc-label">{ui.previewTitle}</span>
+          <span>{ui.previewHint}</span>
+        </div>
+        <div class="ssc-design-gallery" role="listbox" aria-label={ui.previewAria}>
+          <button type="button" role="option" class="ssc-design-thumb" data-preview-design="aurora" aria-selected="true">
+            <span class="ssc-mini-art ssc-mini-art-aurora"><span>05:00</span></span>
+            <span>{ui.designAurora}</span>
+          </button>
+          <button type="button" role="option" class="ssc-design-thumb" data-preview-design="type" aria-selected="false">
+            <span class="ssc-mini-art ssc-mini-art-type"><span>05 00</span></span>
+            <span>{ui.designType}</span>
+          </button>
+          <button type="button" role="option" class="ssc-design-thumb" data-preview-design="pulse" aria-selected="false">
+            <span class="ssc-mini-art ssc-mini-art-pulse"><span>05:00</span></span>
+            <span>{ui.designPulse}</span>
+          </button>
+          <button type="button" role="option" class="ssc-design-thumb" data-preview-design="glitch" aria-selected="false">
+            <span class="ssc-mini-art ssc-mini-art-glitch"><span>05:00</span></span>
+            <span>{ui.designGlitch}</span>
+          </button>
+          <button type="button" role="option" class="ssc-design-thumb" data-preview-design="sunset" aria-selected="false">
+            <span class="ssc-mini-art ssc-mini-art-sunset"><span>05:00</span></span>
+            <span>{ui.designSunset}</span>
+          </button>
+        </div>
+      </div>
+      <div class="ssc-stage-footer">
+        <div><span>{ui.startTimeLabel}</span><strong data-start-time>--:--</strong></div>
+        <div><span>{ui.endTimeLabel}</span><strong data-end-time>--:--</strong></div>
+        <div><span>{ui.progressLabel}</span><strong data-progress-copy>0%</strong></div>
+      </div>
+      <div class="ssc-notes">
+        <details>
+          <summary>{ui.assumptionTitle}</summary>
+          <p>{ui.assumptionText}</p>
+        </details>
+        <p class="ssc-warning"><strong>{ui.warningTitle}</strong> {ui.warningText}</p>
+      </div>
+    </div>
+  </section>
+</div>
+
+<script is:inline type="application/json" id="stream-scene-countdown-clock-ui" set:html={JSON.stringify(ui)}></script>
+<script>
+  import { mountCountdown } from './controller';
+
+  const root = document.querySelector<HTMLElement>('[data-stream-scene-clock]');
+  const data = document.getElementById('stream-scene-countdown-clock-ui');
+  if (root && data?.textContent) mountCountdown(root, JSON.parse(data.textContent));
+</script>

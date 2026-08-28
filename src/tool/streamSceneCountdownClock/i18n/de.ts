@@ -1,0 +1,47 @@
+import { makeContent } from './locale-factory';
+
+export const content = makeContent({
+  language: 'de',
+  slug: 'stream-countdown-uhr-fuer-obs',
+  title: 'Countdown Uhr fuer Stream Szenen',
+  description: 'Erstelle eine klare Countdown Szene fuer Starting soon, BRB, Raids und Unterbrechungen in deinem Stream.',
+  ui: {
+    sceneLabel: 'Welche Szene richtest du ein?', sceneBrb: 'BRB', sceneStarting: 'Gleich geht es los', sceneRaid: 'Raid', sceneIntermission: 'Pause',
+    sceneTitleLabel: 'Was soll über dem Timer stehen?', sceneTitlePlaceholder: 'Gleich geht es los', designLabel: 'Wie soll sich deine Szene anfühlen?', designAurora: 'Polarlicht Schleier', designType: 'Kinetische Schrift', designPulse: 'Pulsschimmer', designGlitch: 'Glitch Signal', designSunset: 'Sonnenflare',
+    accentColorLabel: 'Akzentfarbe', glowColorLabel: 'Leuchtfarbe', messageLabel: 'Was sollen deine Zuschauer wissen?', messagePlaceholder: 'Bin in 5 Minuten zurück', durationLabel: 'Wie viel Zeit brauchst du?', duration60: '1 Min.', duration300: '5 Min.', duration600: '10 Min.', durationCustom: 'Benutzerdefiniert', secondsLabel: 'Sekunden', startLabel: 'Wann soll dieser Hinweis starten?', startNow: 'Jetzt starten', scheduleTime: 'Zeit planen', timeLabel: 'Zu welcher Ortszeit soll er starten?',
+    startAction: 'Hinweis auf Sendung setzen', focusAction: 'Meine Szene zeigen', exitFocusAction: 'Szenenansicht verlassen', resetAction: 'Hinweis zurücksetzen', flowText: 'Du bist der Streamer: Waehle den Moment, stelle deine Zeit ein und schalte den Hinweis auf Sendung.', obsTitle: 'Diese Szene in OBS verwenden', obsText: 'Kopiere den Link, fuege eine OBS Browserquelle hinzu, setze den Link ein und nutze deine Ausgabeaufloesung. STREAMING oeffnet die saubere Vollbildszene automatisch.', obsStepCopy: 'Diesen Link kopieren', obsStepAdd: 'Eine Browserquelle in OBS hinzufuegen', obsStepPaste: 'Link einfuegen und Leinwandgroesse angleichen', copyUrlAction: 'OBS Link kopieren', copiedUrlText: 'OBS Link kopiert', streamUrlAria: 'Erzeugte OBS Streaming URL', previewTitle: 'Szenenlook waehlen', previewHint: 'Klicke auf eine Vorschau, um sie zu verwenden', previewAria: 'Vorschauen der Szenenlooks', stageEyebrow: 'Sendungsbild', stageCaption: 'Deine naechste Szene ist bereit', readyBadge: 'Bereit', waitingBadge: 'Wartet', liveBadge: 'Live Hinweis', endedBadge: 'Beendet', readyText: 'Pruefe die Szene und starte den Hinweis, sobald deine Szene bereit ist.', waitingText: 'Der Live Countdown beginnt zur geplanten Ortszeit.', liveText: 'Lass diese Szene sichtbar, bis der Wechsel bereit ist.', endedText: 'Der Hinweis ist vorbei. Setze ihn zurück oder richte eine neue Szene ein.', remainingLabel: 'Zeit in der Szene', startTimeLabel: 'Start', endTimeLabel: 'Ende', progressLabel: 'Szenenfortschritt', assumptionTitle: 'Hinweis zur Zeitmessung', assumptionText: 'Geplante Zeiten verwenden die Uhr deines Geraets. Der Timer ist ein visueller Hinweis und synchronisiert OBS, Twitch, Chat oder Encoder nicht.', warningTitle: 'Als Szenenhinweis verwenden', warningText: 'Ein schlafender Tab, eine geaenderte Systemzeit oder eine verzoegerte Sendung kann die sichtbare Zeit von deinem Stream abweichen lassen. Pruefe die Live Szene vor dem Wechsel.', invalidTime: 'Gib eine Ortszeit im Format HH:MM ein.', clockAria: 'Verbleibende Countdown Zeit', statusAria: 'Countdown Status',
+  },
+  faq: [
+    { question: 'Verbindet sich diese Uhr mit OBS oder Twitch?', answer: 'Nein. Sie ist ein eigenstaendiger Timer und steuert weder OBS, Twitch, Chat noch einen Streamingserver. Nutze Meine Szene zeigen fuer eine bildschirmfuellende Ansicht und erfasse sie als Browserquelle.' },
+    { question: 'Wie verwende ich den Countdown direkt in OBS?', answer: 'Fuege die Tool URL als OBS Browserquelle mit dem Streaming Schalter und den Einstellungen hinzu, zum Beispiel ?STREAMING&scene=starting&duration=300&design=aurora&title=Gleich%20geht%20es%20los. Steuerelemente verschwinden und der Countdown fuellt den Browserquellenbereich.' },
+    { question: 'Was passiert bei einer geplanten Startzeit?', answer: 'Die Uhr wartet bis zur gewaehlten Ortszeit und zaehlt dann die Dauer der Szene herunter. Eine bereits vergangene Zeit gilt als naechster Termin am folgenden Tag.' },
+    { question: 'Kann ich eine eigene Nachricht verwenden?', answer: 'Ja. Schreibe als Streamer den kurzen Hinweis fuer deine Zuschauer, etwa eine Rueckkehrzeit, den naechsten Schritt oder eine Raid Nachricht.' },
+    { question: 'Was aendern die Szenenpresets?', answer: 'Sie benennen den Moment der Sendung, damit die Szene auf einen Blick erkennbar ist. Timerrechnung, Dauer und Verbindung zu einer Plattform bleiben unveraendert.' },
+    { question: 'Ist die Endzeit exakt?', answer: 'Sie wird aus der lokalen Geraeteuhr und deiner Dauer berechnet. Ruhezustand des Browsers, pausierte Tabs oder eine geaenderte Uhr koennen die sichtbare Aktualisierung beeinflussen. Sie ist daher ein Planungshinweis, keine Sendesynchronisation.' },
+  ],
+  howTo: [
+    { name: 'Szenenmoment waehlen', text: 'Waehle Starting soon, BRB, Raid oder Pause, damit die Szene den Moment fuer deine Zuschauer benennt.' },
+    { name: 'Streamer Hinweis schreiben', text: 'Gib die kurze Nachricht ein, die deine Zuschauer beim Vorbereiten der naechsten Szene lesen sollen.' },
+    { name: 'Dauer oder Startzeit einstellen', text: 'Waehle eine haeufige Dauer oder gib deine eigene ein. Starte sofort fuer einen Live Hinweis oder plane eine lokale Uhrzeit.' },
+    { name: 'Status lesen', text: 'Nutze die grosse Uhr und das Statuslabel, um zu entscheiden, wann du die Sendeszene wechselst.' },
+  ],
+  seo: [
+    { type: 'title', text: 'Eine Stream Szene auf einen Blick vorbereiten', level: 2 },
+    { type: 'paragraph', html: 'Eine Countdown Uhr gibt deiner Starting soon, BRB, Raid oder Pausenszene einen klaren Rueckkehrpunkt. Schreibe, was du tust, stelle deine Zeit ein und nutze die grosse Uhr waehrend der Vorbereitung.' },
+    { type: 'title', text: 'Was die Szenenuhr berechnet', level: 3 },
+    { type: 'list', items: ['<strong>Sofortiger Hinweis:</strong> startet beim Auf Sendung Schalten und zaehlt die gewaehlte Dauer herunter.', '<strong>Geplanter Hinweis:</strong> wartet auf deine Ortszeit und beginnt danach mit der Szenendauer.', '<strong>Szenenstatus:</strong> trennt bereit, wartend, live und beendet, damit die naechste Aktion sichtbar bleibt.'] },
+    { type: 'title', text: 'Die passende Szenendauer waehlen', level: 3 },
+    { type: 'paragraph', html: 'Nimm eine kurze Dauer fuer Quellenwechsel oder eine schnelle Unterbrechung. Eine längere Dauer hilft bei Gaesten, einem Spielstart oder einem technischen Neustart. Deine Nachricht sollte Informationen liefern, die die Uhr allein nicht zeigt.' },
+    { type: 'tip', title: 'Die Rueckkehr konkret machen', html: 'Schreibe statt eines allgemeinen Versprechens die naechste Aktion: "Um 20:30 mit dem Finale zurück" oder "Raid wird vorbereitet". So sehen Zuschauer Wartezeit und Grund.' },
+    { type: 'title', text: 'Warum die Uhr offline bleibt', level: 3 },
+    { type: 'paragraph', html: 'Die Uhr braucht keinen Zugriff auf deinen Kanal oder deine Sendesoftware. Text und Zeit bleiben lokal und eignen sich als Planungsszene. Pruefe vor dem Livegang trotzdem die Sichtbarkeit der Browserquelle und den Szenenwechsel in deiner Sendesoftware.' },
+    { type: 'title', text: 'Die fertige Szene an OBS senden', level: 3 },
+    { type: 'paragraph', html: 'Klicke auf <strong>OBS Link kopieren</strong>, fuege in deiner Streamszene eine Browserquelle hinzu, setze den Link ein und gleiche die Leinwandaufloesung an. <code>?STREAMING</code> oeffnet eine saubere, selbststartende Vollbildszene ohne Bedienelemente.' },
+    { type: 'title', text: 'Den Look an deinen Stream anpassen', level: 3 },
+    { type: 'paragraph', html: 'Waehle zwischen fuenf unterschiedlichen Richtungen: Polarlicht Schleier fuer den atmosphaerischen Ring, Kinetische Schrift fuer grosse Zahlen, Pulsschimmer fuer expandierende Wellen, Glitch Signal fuer scharfe Broadcast Energie und Sonnenflare fuer einen warmen Horizont. Waehle eine Vorschau und passe Akzent und Leuchtfarbe an.' },
+    { type: 'list', items: ['<strong>Szene:</strong> benennt Starting soon, BRB, Raid oder Pause.', '<strong>Titel:</strong> ersetzt die Standardszeile durch deine eigene Ueberschrift.', '<strong>Nachricht:</strong> gibt den zusaetzlichen Hinweis fuer Zuschauer aus.', '<strong>Dauer und Startzeit:</strong> bestimmen Beginn und sichtbare Laufzeit.'] },
+    { type: 'paragraph', html: 'Wenn du den Link selbst baust, reicht <code>?STREAMING&amp;scene=raid&amp;title=Raid%20startet&amp;design=pulse</code>. Der Generator fuegt Dauer, Nachricht und Farben automatisch hinzu.' },
+    { type: 'title', text: 'Die Endzeit als Planungshinweis lesen', level: 3 },
+    { type: 'paragraph', html: 'Die Endzeit kommt aus deiner Geraeteuhr und der gewaehlten Dauer. Sie garantiert nicht, dass der Stream im selben Moment bei allen Zuschauern ankommt. Plane einen kleinen Puffer fuer Szenenwechsel mit Gaesten, Verbindungen oder Uebergaengen ein.' },
+  ],
+});

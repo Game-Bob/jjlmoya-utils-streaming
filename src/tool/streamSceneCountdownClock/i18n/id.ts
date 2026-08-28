@@ -1,0 +1,47 @@
+import { makeContent } from './locale-factory';
+
+export const content = makeContent({
+  language: 'id',
+  slug: 'penghitung-mundur-adegan-streaming-obs',
+  title: 'Penghitung Mundur Adegan Streaming',
+  description: 'Buat layar hitung mundur untuk streamer saat akan mulai, BRB, raid, dan jeda siaran.',
+  ui: {
+    sceneLabel: 'Adegan apa yang sedang Anda siapkan?', sceneBrb: 'BRB', sceneStarting: 'Segera mulai', sceneRaid: 'Raid', sceneIntermission: 'Jeda',
+    sceneTitleLabel: 'Apa yang harus muncul di atas penghitung waktu?', sceneTitlePlaceholder: 'Segera mulai', designLabel: 'Seperti apa suasana adegan Anda?', designAurora: 'Kabut aurora', designType: 'Tipografi kinetik', designPulse: 'Denyut cahaya', designGlitch: 'Sinyal glitch', designSunset: 'Sinar matahari',
+    accentColorLabel: 'Warna aksen', glowColorLabel: 'Warna cahaya', messageLabel: 'Apa yang perlu diketahui penonton?', messagePlaceholder: 'Kembali dalam 5 menit', durationLabel: 'Berapa lama waktu yang Anda perlukan?', duration60: '1 mnt', duration300: '5 mnt', duration600: '10 mnt', durationCustom: 'Kustom', secondsLabel: 'detik', startLabel: 'Kapan pesan ini dimulai?', startNow: 'Mulai sekarang', scheduleTime: 'Jadwalkan waktu', timeLabel: 'Pada waktu lokal berapa ini dimulai?',
+    startAction: 'Tampilkan pesan saya', focusAction: 'Tampilkan adegan saya', exitFocusAction: 'Keluar dari tampilan adegan', resetAction: 'Atur ulang pesan', flowText: 'Anda adalah streamer: pilih momennya, atur waktu yang diperlukan, lalu tampilkan pesan Anda.', obsTitle: 'Masukkan adegan ini ke OBS', obsText: 'Salin tautan, tambahkan Browser Source di OBS, tempelkan tautannya, lalu gunakan ukuran kanvas Anda. STREAMING otomatis membuka adegan layar penuh yang bersih.', obsStepCopy: 'Salin tautan ini', obsStepAdd: 'Tambahkan Browser Source di OBS', obsStepPaste: 'Tempel dan sesuaikan ukuran kanvas', copyUrlAction: 'Salin tautan OBS', copiedUrlText: 'Tautan OBS disalin', streamUrlAria: 'URL streaming OBS yang dibuat', previewTitle: 'Pilih tampilan adegan', previewHint: 'Klik pratinjau untuk menggunakannya', previewAria: 'Pratinjau tampilan adegan', stageEyebrow: 'Layar siaran', stageCaption: 'Adegan berikutnya siap', readyBadge: 'Siap', waitingBadge: 'Menunggu', liveBadge: 'Pesan live', endedBadge: 'Selesai', readyText: 'Periksa layar, lalu mulai pesan saat adegan Anda siap.', waitingText: 'Hitung mundur live akan mulai pada waktu lokal yang dijadwalkan.', liveText: 'Biarkan layar ini terlihat sampai pergantian adegan siap.', endedText: 'Pesan selesai. Atur ulang atau siapkan adegan baru.', remainingLabel: 'Waktu di layar', startTimeLabel: 'Mulai', endTimeLabel: 'Selesai', progressLabel: 'Progres adegan', assumptionTitle: 'Catatan waktu', assumptionText: 'Waktu terjadwal memakai jam perangkat Anda. Penghitung ini adalah petunjuk visual dan tidak menyinkronkan OBS, Twitch, chat, atau encoder.', warningTitle: 'Gunakan sebagai petunjuk adegan', warningText: 'Tab yang tertidur, perubahan jam sistem, atau keterlambatan siaran dapat membuat waktu di layar berbeda dari stream. Periksa adegan live sebelum berpindah.', invalidTime: 'Masukkan waktu lokal dengan format HH:MM.', clockAria: 'Sisa waktu hitung mundur', statusAria: 'Status hitung mundur',
+  },
+  faq: [
+    { question: 'Apakah penghitung ini terhubung ke OBS atau Twitch?', answer: 'Tidak. Ini adalah timer mandiri yang tidak mengendalikan OBS, Twitch, chat, atau server streaming. Gunakan Tampilkan adegan saya agar layar memenuhi tampilan, lalu tangkap sebagai Browser Source.' },
+    { question: 'Bagaimana cara memakai penghitung langsung di OBS?', answer: 'Tambahkan URL tool sebagai Browser Source OBS dengan penanda streaming dan pengaturannya, misalnya ?STREAMING&scene=starting&duration=300&design=aurora&title=Segera%20mulai. Kontrol halaman hilang dan penghitung memenuhi area sumber.' },
+    { question: 'Apa yang terjadi jika saya menjadwalkan waktu mulai?', answer: 'Jam menunggu sampai waktu lokal yang dipilih, lalu menghitung mundur durasi adegan. Waktu yang sudah lewat dianggap sebagai waktu berikutnya pada hari berikutnya.' },
+    { question: 'Bisakah saya memakai pesan sendiri?', answer: 'Bisa. Sebagai streamer, tulis pesan singkat yang ingin dilihat penonton, seperti waktu kembali, langkah berikutnya, atau pesan raid.' },
+    { question: 'Apa yang diubah oleh preset adegan?', answer: 'Preset memberi nama pada momen siaran agar mudah dikenali. Perhitungan timer, durasi, dan koneksi ke platform tidak berubah.' },
+    { question: 'Apakah waktu selesai pasti tepat?', answer: 'Waktu dihitung dari jam lokal browser dan durasi yang Anda masukkan. Tab yang tidur, browser yang dijeda, atau perubahan jam dapat memengaruhi pembaruan tampilan. Ini adalah petunjuk persiapan, bukan sinkronisasi siaran.' },
+  ],
+  howTo: [
+    { name: 'Pilih momen adegan', text: 'Pilih Segera mulai, BRB, Raid, atau Jeda agar layar memberi nama momen yang dilihat penonton.' },
+    { name: 'Tulis pesan streamer', text: 'Masukkan pesan singkat yang perlu dibaca penonton saat Anda menyiapkan adegan berikutnya.' },
+    { name: 'Atur durasi atau waktu', text: 'Pilih durasi umum atau masukkan durasi sendiri. Mulai sekarang untuk pesan live atau jadwalkan waktu lokal.' },
+    { name: 'Baca statusnya', text: 'Gunakan angka besar dan label status untuk memutuskan kapan mengganti adegan siaran.' },
+  ],
+  seo: [
+    { type: 'title', text: 'Siapkan petunjuk adegan stream yang terbaca seketika', level: 2 },
+    { type: 'paragraph', html: 'Penghitung mundur memberi adegan Segera mulai, BRB, raid, atau jeda Anda titik kembali yang jelas. Tulis apa yang sedang dilakukan, atur waktu yang diperlukan, dan biarkan angka besar terlihat saat Anda bersiap.' },
+    { type: 'title', text: 'Apa yang dihitung oleh jam adegan', level: 3 },
+    { type: 'list', items: ['<strong>Pesan langsung:</strong> mulai saat ditampilkan dan menghitung durasi yang dipilih.', '<strong>Pesan terjadwal:</strong> menunggu waktu lokal lalu memulai durasi adegan.', '<strong>Status adegan:</strong> memisahkan siap, menunggu, live, dan selesai agar tindakan berikutnya jelas.'] },
+    { type: 'title', text: 'Cara memilih durasi yang berguna', level: 3 },
+    { type: 'paragraph', html: 'Pilih durasi singkat saat mengganti sumber atau kembali dari gangguan kecil. Pilih durasi lebih lama saat menyiapkan tamu, game, atau perbaikan teknis. Pesan Anda sebaiknya memberi informasi yang tidak diberikan timer saja.' },
+    { type: 'tip', title: 'Buat pesan kembali lebih spesifik', html: 'Daripada janji umum, tulis tindakan berikutnya: "Kembali pukul 20.30 untuk pertandingan final" atau "Sedang menyiapkan raid". Penonton tahu berapa lama menunggu dan alasannya.' },
+    { type: 'title', text: 'Mengapa jam ini tetap offline', level: 3 },
+    { type: 'paragraph', html: 'Jam ini tidak membutuhkan akses ke channel atau software siaran Anda. Teks dan waktu tetap di browser sehingga cocok sebagai layar persiapan. Sebelum live, periksa visibilitas sumber dan transisi adegan di OBS.' },
+    { type: 'title', text: 'Kirim adegan yang sudah jadi ke OBS', level: 3 },
+    { type: 'paragraph', html: 'Klik <strong>Salin tautan OBS</strong>, tambahkan Browser Source ke adegan stream, tempel tautan, dan sesuaikan ukuran kanvas. Penanda <code>?STREAMING</code> membuka layar penuh yang bersih, berjalan otomatis, dan tanpa kontrol.' },
+    { type: 'title', text: 'Sesuaikan tampilan dengan channel Anda', level: 3 },
+    { type: 'paragraph', html: 'Pilih lima komposisi berbeda: Kabut aurora dengan cincin atmosfer, Tipografi kinetik dengan angka besar, Denyut cahaya dengan gelombang yang melebar, Sinyal glitch dengan energi siaran tajam, atau Sinar matahari dengan horizon hangat. Pilih pratinjau lalu sesuaikan warna aksen dan cahaya.' },
+    { type: 'list', items: ['<strong>Adegan:</strong> memberi label Segera mulai, BRB, raid, atau jeda.', '<strong>Judul:</strong> mengganti baris default dengan judul Anda.', '<strong>Pesan:</strong> menambahkan petunjuk yang perlu dibaca penonton.', '<strong>Durasi dan waktu:</strong> mengatur kapan adegan dimulai dan berapa lama terlihat.'] },
+    { type: 'paragraph', html: 'Jika membuat URL sendiri, gunakan <code>?STREAMING&amp;scene=raid&amp;title=Raid%20segera%20mulai&amp;design=pulse</code>. Generator otomatis menyertakan durasi, pesan, dan warna kustom Anda.' },
+    { type: 'title', text: 'Baca waktu selesai sebagai petunjuk persiapan', level: 3 },
+    { type: 'paragraph', html: 'Waktu selesai berasal dari jam perangkat dan durasi yang dipilih. Ini bukan jaminan bahwa stream diterima semua penonton pada saat yang sama. Sisakan jeda jika pergantian bergantung pada tamu, koneksi, atau transisi siaran.' },
+  ],
+});

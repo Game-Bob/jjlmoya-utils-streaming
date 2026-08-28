@@ -4,6 +4,8 @@ export { tebasCheck } from './tool/tebasCheck/entry';
 export type { TebasCheckLocaleContent } from './tool/tebasCheck/entry';
 export { videoBitratePlanner } from './tool/videoBitratePlanner/entry';
 export type { VideoBitratePlannerLocaleContent } from './tool/videoBitratePlanner/entry';
+export { streamSceneCountdownClock } from './tool/streamSceneCountdownClock/entry';
+export type { StreamSceneCountdownClockLocaleContent } from './tool/streamSceneCountdownClock/entry';
 export { streamingCategory } from './category';
 import { sorteo } from './tool/sorteo/entry';
 import { tebasCheck } from './tool/tebasCheck/entry';

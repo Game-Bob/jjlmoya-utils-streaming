@@ -1,0 +1,47 @@
+import { makeContent } from './locale-factory';
+
+export const content = makeContent({
+  language: 'fr',
+  slug: 'compte-a-rebours-scene-stream-obs',
+  title: 'Compte à rebours pour scène de stream',
+  description: 'Créez une scène de compte à rebours pensée pour les streamers, pour le démarrage, le BRB, le raid et la pause.',
+  ui: {
+    sceneLabel: 'Quelle scène préparez-vous ?', sceneBrb: 'BRB', sceneStarting: 'Bientôt en direct', sceneRaid: 'Raid', sceneIntermission: 'Pause',
+    sceneTitleLabel: 'Que faut-il afficher au-dessus du compteur ?', sceneTitlePlaceholder: 'Bientôt en direct', designLabel: 'Quelle ambiance doit avoir votre scène ?', designAurora: 'Brume aurora', designType: 'Typographie cinétique', designPulse: 'Pulsation florale', designGlitch: 'Signal glitch', designSunset: 'Éclat solaire',
+    accentColorLabel: "Couleur d\'accent", glowColorLabel: 'Couleur de halo', messageLabel: 'Que doivent savoir vos spectateurs ?', messagePlaceholder: 'Je reviens dans 5 minutes', durationLabel: 'De combien de temps avez-vous besoin ?', duration60: '1 min', duration300: '5 min', duration600: '10 min', durationCustom: 'Personnalisé', secondsLabel: 'secondes', startLabel: 'Quand ce signal doit-il commencer ?', startNow: 'Commencer maintenant', scheduleTime: 'Planifier une heure', timeLabel: 'À quelle heure locale doit-il commencer ?',
+    startAction: 'Mettre mon signal à l\'antenne', focusAction: 'Afficher ma scène', exitFocusAction: 'Quitter la scène', resetAction: 'Réinitialiser mon signal', flowText: 'Vous êtes le streamer: choisissez le moment, définissez le temps nécessaire, puis mettez votre signal à l\'antenne.', obsTitle: 'Mettre cette scène dans OBS', obsText: 'Copiez le lien, ajoutez une source navigateur dans OBS, collez-le et utilisez la résolution de votre canevas. STREAMING ouvre automatiquement la scène propre en plein écran.', obsStepCopy: 'Copier ce lien', obsStepAdd: 'Ajouter une source navigateur dans OBS', obsStepPaste: 'Coller et adapter à la taille du canevas', copyUrlAction: 'Copier le lien OBS', copiedUrlText: 'Lien OBS copié', streamUrlAria: 'URL de streaming OBS générée', previewTitle: 'Choisir le style de votre scène', previewHint: 'Cliquez sur un aperçu pour le choisir', previewAria: 'Aperçus des styles de scène', stageEyebrow: 'Scène de diffusion', stageCaption: 'Votre prochaine scène est prête', readyBadge: 'Prêt', waitingBadge: 'En attente', liveBadge: 'Signal en direct', endedBadge: 'Terminé', readyText: 'Vérifiez la scène, puis lancez le signal quand elle est prête.', waitingText: 'Le compte à rebours en direct commencera à l\'heure locale prévue.', liveText: 'Gardez cette scène visible jusqu\'à ce que le changement soit prêt.', endedText: 'Le signal est terminé. Réinitialisez-le ou préparez une nouvelle scène.', remainingLabel: 'Temps dans la scène', startTimeLabel: 'Début', endTimeLabel: 'Fin', progressLabel: 'Progression de la scène', assumptionTitle: 'Note sur le temps', assumptionText: 'Les heures planifiées utilisent l\'horloge de votre appareil. Le compteur est un repère visuel et ne synchronise pas OBS, Twitch, le chat ni l\'encodeur.', warningTitle: 'Utilisez-le comme repère de scène', warningText: 'Un onglet en veille, une horloge modifiée ou un retard de diffusion peuvent rendre le temps affiché différent du direct. Vérifiez la scène avant le changement.', invalidTime: 'Saisissez une heure locale au format HH:MM.', clockAria: 'Temps restant du compte à rebours', statusAria: 'État du compte à rebours',
+  },
+  faq: [
+    { question: 'Ce compte à rebours se connecte-t-il à OBS ou Twitch ?', answer: 'Non. Il s\'agit d\'un minuteur autonome qui ne contrôle ni OBS, ni Twitch, ni le chat, ni un serveur de stream. Utilisez Afficher ma scène pour remplir l\'écran, puis capturez cette vue comme source navigateur.' },
+    { question: 'Comment utiliser le compte à rebours directement dans OBS ?', answer: 'Ajoutez l\'URL de l\'outil comme source navigateur OBS avec le mode streaming et ses paramètres, par exemple ?STREAMING&scene=starting&duration=300&design=aurora&title=Bientôt%20en%20direct. Les commandes disparaissent et le compte à rebours remplit la zone de la source.' },
+    { question: 'Que se passe-t-il quand je planifie une heure de début ?', answer: 'L\'horloge attend l\'heure locale choisie, puis décompte la durée de la scène. Une heure déjà passée est reportée à la prochaine occurrence, le jour suivant.' },
+    { question: 'Puis-je utiliser un message personnalisé ?', answer: 'Oui. En tant que streamer, écrivez le signal court que vous voulez montrer, comme une heure de retour, une prochaine étape ou un message de raid.' },
+    { question: 'Que changent les préréglages de scène ?', answer: 'Ils nomment le moment de la diffusion afin que la scène soit comprise d\'un coup d\'œil. Le calcul du temps, la durée et la connexion à une plateforme ne changent pas.' },
+    { question: 'L\'heure de fin est-elle exacte ?', answer: 'Elle est calculée avec l\'horloge locale du navigateur et la durée saisie. La mise en veille du navigateur, un onglet suspendu ou un changement d\'horloge peuvent modifier l\'actualisation visible. C\'est un repère de préparation, pas une synchronisation de diffusion.' },
+  ],
+  howTo: [
+    { name: 'Choisir le moment de la scène', text: 'Sélectionnez Bientôt en direct, BRB, Raid ou Pause pour nommer ce que vos spectateurs voient.' },
+    { name: 'Écrire votre signal de streamer', text: 'Saisissez le court message à lire pendant que vous préparez la scène suivante.' },
+    { name: 'Définir la durée ou l\'heure', text: 'Choisissez une durée courante ou saisissez la vôtre. Démarrez immédiatement pour un signal en direct ou planifiez une heure locale.' },
+    { name: 'Lire l\'état', text: 'Utilisez la grande horloge et le badge d\'état pour savoir quand changer de scène dans votre diffusion.' },
+  ],
+  seo: [
+    { type: 'title', text: 'Préparer un signal de scène lisible en un instant', level: 2 },
+    { type: 'paragraph', html: 'Un compte à rebours donne à votre scène Bientôt en direct, BRB, raid ou pause un point de retour clair. Indiquez ce que vous faites, définissez le temps nécessaire et laissez le grand compteur visible pendant la préparation.' },
+    { type: 'title', text: 'Ce que calcule le compteur de scène', level: 3 },
+    { type: 'list', items: ['<strong>Signal immédiat :</strong> commence quand vous le mettez à l\'antenne et décompte la durée choisie.', '<strong>Signal planifié :</strong> attend l\'heure locale saisie avant de lancer la durée de la scène.', '<strong>État de la scène :</strong> distingue prêt, attente, direct et terminé pour rendre la prochaine action évidente.'] },
+    { type: 'title', text: 'Choisir une durée utile', level: 3 },
+    { type: 'paragraph', html: 'Utilisez une durée courte pour changer de source ou revenir d\'une interruption rapide. Prévoyez plus de temps pour préparer un invité, un jeu ou une remise en route technique. Votre message doit apporter une information que l\'horloge seule ne peut pas donner.' },
+    { type: 'tip', title: 'Rendre le retour concret', html: 'Au lieu d\'une promesse vague, écrivez l\'action suivante: "De retour à 20 h 30 pour la finale" ou "Raid en préparation". Vos spectateurs comprennent ainsi l\'attente et sa raison.' },
+    { type: 'title', text: 'Pourquoi le compteur reste hors ligne', level: 3 },
+    { type: 'paragraph', html: 'L\'horloge n\'a pas besoin d\'accéder à votre chaîne ni à votre logiciel de diffusion. Le texte et le temps restent dans le navigateur, ce qui en fait une scène de préparation pratique. Vérifiez tout de même la visibilité de la source et la transition dans OBS avant le direct.' },
+    { type: 'title', text: 'Envoyer la scène terminée vers OBS', level: 3 },
+    { type: 'paragraph', html: 'Cliquez sur <strong>Copier le lien OBS</strong>, ajoutez une source navigateur à votre scène de stream, collez le lien et adaptez la résolution du canevas. Le mode <code>?STREAMING</code> ouvre une scène propre, autonome et sans commandes.' },
+    { type: 'title', text: 'Adapter le style à votre chaîne', level: 3 },
+    { type: 'paragraph', html: 'Choisissez entre cinq compositions distinctes: Brume aurora garde un anneau atmosphérique, Typographie cinétique agrandit les chiffres, Pulsation florale déploie des ondes, Signal glitch apporte une énergie de diffusion et Éclat solaire crée un horizon chaud. Choisissez un aperçu et ajustez les couleurs d\'accent et de halo.' },
+    { type: 'list', items: ['<strong>Scène :</strong> indique Bientôt en direct, BRB, raid ou pause.', '<strong>Titre :</strong> remplace la ligne par défaut par votre propre accroche.', '<strong>Message :</strong> ajoute le repère que vos spectateurs doivent lire.', '<strong>Durée et heure :</strong> contrôlent le début et le temps d\'affichage.'] },
+    { type: 'paragraph', html: 'Si vous construisez l\'URL vous-même, utilisez <code>?STREAMING&amp;scene=raid&amp;title=Raid%20en%20preparation&amp;design=pulse</code>. Le générateur ajoute automatiquement la durée, le message et vos couleurs.' },
+    { type: 'title', text: 'Lire l\'heure de fin comme un repère', level: 3 },
+    { type: 'paragraph', html: 'L\'heure de fin vient de l\'horloge de votre appareil et de la durée choisie. Elle ne garantit pas que le direct arrive au même instant chez tous les spectateurs. Gardez une marge si le changement dépend d\'un invité, d\'une connexion ou d\'une transition de diffusion.' },
+  ],
+});
