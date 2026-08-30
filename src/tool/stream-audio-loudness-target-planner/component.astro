@@ -1,0 +1,97 @@
+---
+import type { StreamAudioLoudnessUI } from './ui';
+import './stream-audio-loudness-target-planner.css';
+
+interface Props {
+  ui: StreamAudioLoudnessUI;
+}
+
+const { ui } = Astro.props;
+---
+
+<div class="loudness-tool" data-loudness-tool data-measured-lufs="-18" data-target-profile="web" data-content-type="gameplay">
+  <form class="input-panel" data-loudness-form>
+    <section class="file-analysis" aria-labelledby="file-analysis-label">
+      <div class="section-heading"><span id="file-analysis-label">{ui.fileAnalysisLabel}</span><span class="local-badge">Local</span></div>
+      <p class="section-hint">{ui.fileAnalysisHint}</p>
+      <label class="drop-zone" data-drop-zone for="audio-file"><span>{ui.fileDropLabel}</span><small>{ui.fileTypesLabel}</small><input id="audio-file" type="file" accept="audio/*,video/mp4,video/webm" data-audio-file /></label>
+      <p class="file-status" data-file-status>{ui.fileIdleText}</p>
+      <div class="analysis-result" data-analysis-result hidden><span data-analysis-summary>{ui.analysisSummaryLabel}</span><button type="button" class="inline-button" data-use-analysis>{ui.useAnalysisLabel}</button></div>
+    </section>
+    <div class="field-group">
+      <label for="measured-lufs">{ui.measuredLufsLabel}</label>
+      <div class="unit-input"><input id="measured-lufs" name="measuredLufs" type="number" min="-60" max="0" step="0.1" value="-18" inputmode="decimal" /><span>LUFS</span></div>
+      <p>{ui.measuredLufsHint}</p>
+    </div>
+    <div class="field-group">
+      <label for="true-peak">{ui.truePeakLabel}</label>
+      <div class="unit-input"><input id="true-peak" name="truePeakDbtp" type="number" min="-60" max="6" step="0.1" value="-6" inputmode="decimal" /><span>dBTP</span></div>
+      <p>{ui.truePeakHint}</p>
+    </div>
+    <fieldset class="choice-group">
+      <legend>{ui.targetProfileLabel}</legend>
+      <div class="choice-grid" role="group" aria-label={ui.targetProfileLabel}>
+        <button type="button" class="choice active" data-target-profile="web">{ui.targetWebLabel}</button>
+        <button type="button" class="choice" data-target-profile="broadcast">{ui.targetBroadcastLabel}</button>
+        <button type="button" class="choice" data-target-profile="game">{ui.targetGameLabel}</button>
+        <button type="button" class="choice" data-target-profile="custom">{ui.targetCustomLabel}</button>
+      </div>
+      <label class="custom-target" data-custom-target hidden for="custom-target">{ui.customTargetLabel}
+        <div class="unit-input"><input id="custom-target" name="customTargetLufs" type="number" min="-60" max="0" step="0.1" value="-14" inputmode="decimal" /><span>LUFS</span></div>
+      </label>
+    </fieldset>
+    <fieldset class="choice-group">
+      <legend>{ui.contentTypeLabel}</legend>
+      <div class="choice-grid content-grid" role="group" aria-label={ui.contentTypeLabel}>
+        <button type="button" class="choice" data-content-type="voice">{ui.contentVoiceLabel}</button>
+        <button type="button" class="choice active" data-content-type="gameplay">{ui.contentGameplayLabel}</button>
+        <button type="button" class="choice" data-content-type="music">{ui.contentMusicLabel}</button>
+      </div>
+    </fieldset>
+    <button type="reset" class="reset-button">{ui.resetLabel}</button>
+  </form>
+
+  <section class="reading-panel" aria-labelledby="scene-label" data-state="boost">
+    <div class="reading-heading"><span id="scene-label">{ui.sceneLabel}</span><span class="state-badge" data-state-badge>{ui.stateBoost}</span></div>
+    <div class="meter-wrap" role="img" aria-label={ui.meterAria} data-meter>
+      <div class="meter-track"><span class="meter-fill" data-meter-fill></span><span class="meter-marker current-marker" data-current-marker><b data-current-value>-18.0 LUFS</b></span><span class="meter-marker target-marker" data-target-marker><b data-target-value>-14.0 LUFS</b></span><span class="peak-line" data-peak-line></span></div>
+      <div class="meter-scale"><span>-36</span><span>-24</span><span>-12</span><span>0 LUFS</span></div>
+      <div class="meter-key"><span><i class="key-dot current-dot"></i>{ui.currentLabel}</span><span><i class="key-dot target-dot"></i>{ui.targetLabel}</span><span><i class="key-line"></i>{ui.peakCeilingLabel}</span></div>
+    </div>
+    <div class="reading-copy"><p class="state-text" data-state-text>{ui.stateBoostText}</p><p class="guidance" data-guidance>{ui.gameGuidance} {ui.gameplayGuidance}</p></div>
+    <div class="metric-row">
+      <div><span>{ui.correctionLabel}</span><strong data-correction>+4.0 dB</strong></div>
+      <div><span>{ui.projectedPeakLabel}</span><strong data-projected-peak>-2.0 dBTP</strong></div>
+      <div><span>{ui.headroomLabel}</span><strong data-headroom>+1.0 dB</strong></div>
+    </div>
+    <div class="insight-row">
+      <div><span>{ui.lraLabel}</span><strong data-lra>-</strong><small data-lra-status>{ui.lraWaiting}</small></div>
+      <div><span>{ui.limiterLabel}</span><strong data-limiter-required>-</strong><small data-limiter-status>{ui.limiterWaiting}</small></div>
+    </div>
+    <section class="platform-preview" aria-labelledby="platform-preview-label">
+      <div class="section-heading"><span id="platform-preview-label">{ui.platformPreviewLabel}</span></div>
+      <p class="section-hint">{ui.platformPreviewHint}</p>
+      <div class="platform-list">
+        <label class="platform-row"><span>{ui.youtubeLabel}</span><span class="platform-target"><input data-platform-target="youtube" type="number" min="-60" max="0" step="0.1" value="-14" /><small>LUFS</small></span><strong data-platform-result="youtube">{ui.platformNoTrim}</strong></label>
+        <label class="platform-row"><span>{ui.spotifyLabel}</span><span class="platform-target"><input data-platform-target="spotify" type="number" min="-60" max="0" step="0.1" value="-14" /><small>LUFS</small></span><strong data-platform-result="spotify">{ui.platformNoTrim}</strong></label>
+        <label class="platform-row"><span>{ui.twitchLabel}</span><span class="platform-target"><input data-platform-target="twitch" type="number" min="-60" max="0" step="0.1" value="-14" /><small>LUFS</small></span><strong data-platform-result="twitch">{ui.platformNoTrim}</strong></label>
+        <label class="platform-row"><span>{ui.tiktokLabel}</span><span class="platform-target"><input data-platform-target="tiktok" type="number" min="-60" max="0" step="0.1" value="-14" /><small>LUFS</small></span><strong data-platform-result="tiktok">{ui.platformNoTrim}</strong></label>
+      </div>
+    </section>
+    <section class="output-panel" aria-labelledby="output-label">
+      <div class="section-heading"><span id="output-label">{ui.outputLabel}</span></div>
+      <p class="section-hint">{ui.outputHint}</p>
+      <p class="output-settings"><span>{ui.outputSettingsLabel}</span><strong data-output-settings>Gain +4.0 dB · Limiter -1.0 dBTP</strong></p>
+      <p class="preset-settings"><span data-obs-preset>{ui.obsPresetLabel}: Gain +4.0 dB · Limiter -1.0 dBTP</span><span data-daw-preset>{ui.dawPresetLabel}: Gain +4.0 dB · Ceiling -1.0 dBTP</span></p>
+      <div class="output-actions"><button type="button" class="inline-button" data-process-audio disabled>{ui.outputProcessLabel}</button><a class="download-link" data-download-audio hidden>{ui.outputDownloadLabel}</a></div>
+      <p class="output-status" data-output-status>{ui.outputWaiting}</p>
+    </section>
+    <p class="note"><strong>{ui.noteLabel}</strong> {ui.noteText}</p>
+  </section>
+</div>
+
+<script is:inline type="application/json" data-loudness-ui set:html={JSON.stringify(ui)}></script>
+<script>
+  import { mountLoudnessTool } from './controller';
+  mountLoudnessTool();
+</script>

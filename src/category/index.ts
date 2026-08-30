@@ -3,10 +3,11 @@ import { sorteo } from '../tool/sorteo/entry';
 import { tebasCheck } from '../tool/tebasCheck/entry';
 import { videoBitratePlanner } from '../tool/videoBitratePlanner/entry';
 import { streamSceneCountdownClock } from '../tool/streamSceneCountdownClock/entry';
+import { streamAudioLoudnessTargetPlanner } from '../tool/stream-audio-loudness-target-planner/entry';
 
 export const streamingCategory: StreamingCategoryEntry = {
   icon: 'mdi:broadcast',
-  tools: [sorteo, tebasCheck, videoBitratePlanner, streamSceneCountdownClock],
+  tools: [sorteo, tebasCheck, videoBitratePlanner, streamSceneCountdownClock, streamAudioLoudnessTargetPlanner],
   i18n: {
     es: () => import('./i18n/es').then((m) => m.content),
     en: () => import('./i18n/en').then((m) => m.content),
