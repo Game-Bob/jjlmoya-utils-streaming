@@ -9,6 +9,7 @@ import {
   SEORenderer,
 } from "@jjlmoya/utils-shared";
 import type { KnownLocale, ToolLocaleContent } from "../../types";
+import type { AstroComponentFactory } from "astro/runtime/server/index.js";
 import type { UtilitySEOContent } from "@jjlmoya/utils-shared";
 
 export async function getStaticPaths() {
@@ -69,7 +70,7 @@ interface NavItem {
 }
 
 interface Props {
-  Component: unknown;
+  Component: AstroComponentFactory;
   locale: KnownLocale;
   content: ToolLocaleContent;
   localeUrls: Partial<Record<KnownLocale, string>>;
@@ -127,7 +128,7 @@ const titleBase = words.slice(1).join(" ") || "";
     </section>
 
     <section class="section-faq">
-      <FAQSection items={content.faq} inLanguage={locale} />
+      <FAQSection items={content.faq} />
     </section>
 
     <section class="section-bibliography">

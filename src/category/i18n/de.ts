@@ -29,10 +29,6 @@ export const content: CategoryLocaleContent = {
       html: 'Gamification ist der Schlüssel zur Zuschauerbindung. Unser <strong>Gewinnspiel- und Wettbewerbs-Tool</strong> ermöglicht die Auswahl zufälliger Gewinner auf völlig transparente Weise. Durch die lokale Verarbeitung auf Ihrem Endgerät stellen Sie sicher, dass keine externe Manipulation möglich ist, was das Vertrauen der Follower bei Live-Auslosungen stärkt.',
     },
     {
-      type: 'tool',
-      tool: 'sorteo',
-    },
-    {
       type: 'title',
       text: 'Netzwerkaudit und Neutralität: Tebas Check',
       level: 2,
@@ -40,10 +36,6 @@ export const content: CategoryLocaleContent = {
     {
       type: 'paragraph',
       html: 'In der digitalen Welt von 2026 können gerichtliche Sperren und ISP-Einschränkungen die Stabilität Ihres Streams oder den Zugriff Ihrer Community auf Ihre Ressourcen beeinträchtigen. <strong>Tebas Check</strong> ist ein technisches Diagnosetool, das erkennt, ob Ihr Anbieter Zensur oder präventive Sperren auf Infrastrukturen wie Cloudflare oder anderen Content-Anbietern anwendet, sodass Sie Ihre Netzneutralität überprüfen können.',
-    },
-    {
-      type: 'tool',
-      tool: 'tebas-check',
     },
     {
       type: 'list',

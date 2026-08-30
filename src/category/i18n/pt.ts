@@ -4,7 +4,7 @@ export const content: CategoryLocaleContent = {
   slug: 'streaming',
   title: 'Ferramentas para Streaming e Criadores de Conteúdo',
   description:
-    'Melhore a interação e a segurança das suas transmissões ao vivo com ferramentas online gratuitas. Seletores de sorteios aleatórios e detetores de bloqueios de rede ISP (Tebas-Check).',
+    'Ferramentas online gratuitas para transmissões ao vivo: sorteios aleatórios e verificação de bloqueios de rede ISP para streamers.',
   seo: [
     {
       type: 'title',
@@ -29,10 +29,6 @@ export const content: CategoryLocaleContent = {
       html: 'A gamificação é fundamental para a retenção de audiência. A nossa <strong>ferramenta de sorteios e concursos</strong> permite escolher vencedores aleatórios de forma totalmente transparente. Ao processar localmente no seu terminal, garante que não há manipulação externa, promovendo a confiança dos seguidores durante os sorteios em direto.',
     },
     {
-      type: 'tool',
-      tool: 'sorteo',
-    },
-    {
       type: 'title',
       text: 'Auditoria de Rede e Neutralidade: Tebas-Check',
       level: 2,
@@ -40,10 +36,6 @@ export const content: CategoryLocaleContent = {
     {
       type: 'paragraph',
       html: 'No ambiente digital de 2026, os bloqueios judiciais e as restrições dos ISPs podem afetar a estabilidade da sua transmissão ou o acesso da sua comunidade aos seus recursos. O <strong>Tebas-Check</strong> é uma ferramenta de diagnóstico técnico que deteta se o seu operador está a aplicar censura ou bloqueios preventivos em infraestruturas como a Cloudflare ou outros fornecedores de conteúdo, permitindo-lhe auditar a neutralidade da sua rede.',
-    },
-    {
-      type: 'tool',
-      tool: 'tebas-check',
     },
     {
       type: 'list',

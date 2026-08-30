@@ -29,10 +29,6 @@ export const content: CategoryLocaleContent = {
       html: '게이미피케이션은 청중 유지의 핵심입니다. 당사의 <strong>추첨 및 컨테스트 도구</strong>를 사용하면 완전히 투명한 방식으로 무작위 당첨자를 선택할 수 있습니다. 사용자의 단말기에서 로컬로 처리를 수행함으로써 외부 조작이 없음을 보장하고 라이브 추첨 중 팔로워의 신뢰를 구축합니다.',
     },
     {
-      type: 'tool',
-      tool: 'sorteo',
-    },
-    {
       type: 'title',
       text: '네트워크 감사 및 중립성: Tebas-Check',
       level: 2,
@@ -40,10 +36,6 @@ export const content: CategoryLocaleContent = {
     {
       type: 'paragraph',
       html: '2026년의 디지털 환경에서 사법적 차단 및 ISP 제한은 스트림 안정성이나 커뮤니티의 리소스 액세스에 영향을 미칠 수 있습니다. <strong>Tebas-Check</strong>는 통신사가 Cloudflare와 같은 인프라나 다른 콘텐츠 제공업체에 대해 검열 또는 예방적 차단을 적용하고 있는지 감지하는 기술 진단 도구로, 네트워크 중립성을 감사할 수 있게 해줍니다.',
-    },
-    {
-      type: 'tool',
-      tool: 'tebas-check',
     },
     {
       type: 'list',

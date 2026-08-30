@@ -29,10 +29,6 @@ export const content: CategoryLocaleContent = {
       html: 'Gamification är nyckeln till att behålla publiken. Vårt <strong>utlottnings- och tävlingsverktyg</strong> gör det möjligt att välja slumpmässiga vinnare på ett helt transparent sätt. Genom att bearbeta lokalt på din terminal säkerställer du att ingen extern manipulation sker, vilket främjar följarnas förtroende under live-dragningar.',
     },
     {
-      type: 'tool',
-      tool: 'sorteo',
-    },
-    {
       type: 'title',
       text: 'Nätverksrevision och neutralitet: Tebas-Check',
       level: 2,
@@ -40,10 +36,6 @@ export const content: CategoryLocaleContent = {
     {
       type: 'paragraph',
       html: 'I den digitala miljön 2026 kan rättsliga blockeringar och ISP-restriktioner påverka din streams stabilitet eller din communitys tillgång till dina resurser. <strong>Tebas-Check</strong> är ett tekniskt diagnostikverktyg som upptäcker om din operatör tillämpar censur eller förebyggande blockeringar av infrastruktur som Cloudflare eller andra innehållsleverantörer, vilket gör att du kan granska din nätverksneutralitet.',
-    },
-    {
-      type: 'tool',
-      tool: 'tebas-check',
     },
     {
       type: 'list',

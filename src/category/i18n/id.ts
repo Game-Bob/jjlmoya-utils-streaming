@@ -29,10 +29,6 @@ export const content: CategoryLocaleContent = {
       html: 'Gamifikasi adalah kunci untuk retensi audiens. <strong>Alat giveaway dan kontes</strong> kami memungkinkan untuk memilih pemenang acak dengan cara yang sepenuhnya transparan. Dengan memproses secara lokal di terminal Anda, Anda memastikan tidak ada manipulasi eksternal, menumbuhkan kepercayaan pengikut selama pengundian langsung.',
     },
     {
-      type: 'tool',
-      tool: 'sorteo',
-    },
-    {
       type: 'title',
       text: 'Audit Jaringan dan Netralitas: Tebas-Check',
       level: 2,
@@ -40,10 +36,6 @@ export const content: CategoryLocaleContent = {
     {
       type: 'paragraph',
       html: 'Di lingkungan digital tahun 2026, pemblokiran yudisial dan pembatasan ISP dapat memengaruhi stabilitas aliran Anda atau akses komunitas Anda ke sumber daya Anda. <strong>Tebas-Check</strong> adalah alat diagnosis teknis yang mendeteksi apakah operator Anda menerapkan sensor atau pemblokiran preventif pada infrastruktur seperti Cloudflare atau penyedia konten lainnya, memungkinkan Anda untuk mengaudit netralitas jaringan Anda.',
-    },
-    {
-      type: 'tool',
-      tool: 'tebas-check',
     },
     {
       type: 'list',

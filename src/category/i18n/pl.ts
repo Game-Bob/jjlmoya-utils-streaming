@@ -29,10 +29,6 @@ export const content: CategoryLocaleContent = {
       html: 'Grywalizacja jest kluczem do utrzymania uwagi widzów. Nasze <strong>narzędzie do losowań i konkursów</strong> pozwala na wybór losowych zwycięzców w całkowicie przejrzysty sposób. Przetwarzanie odbywa się lokalnie na Twoim urządzeniu, co gwarantuje brak zewnętrznych manipulacji i buduje zaufanie obserwujących podczas losowań na żywo.',
     },
     {
-      type: 'tool',
-      tool: 'sorteo',
-    },
-    {
       type: 'title',
       text: 'Audyt sieci i neutralność: Tebas-Check',
       level: 2,
@@ -40,10 +36,6 @@ export const content: CategoryLocaleContent = {
     {
       type: 'paragraph',
       html: 'W środowisku cyfrowym roku 2026 blokady sądowe i ograniczenia nakładane przez dostawców Internetu mogą wpływać na stabilność Twojej transmisji lub dostęp społeczności do Twoich zasobów. <strong>Tebas-Check</strong> to techniczne narzędzie diagnostyczne, które wykrywa, czy Twój operator stosuje cenzurę lub blokady prewencyjne na infrastrukturach takich jak Cloudflare lub u innych dostawców treści, umożliwiając audyt neutralności Twojej sieci.',
-    },
-    {
-      type: 'tool',
-      tool: 'tebas-check',
     },
     {
       type: 'list',

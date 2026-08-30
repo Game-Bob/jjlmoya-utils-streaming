@@ -29,10 +29,6 @@ export const content: CategoryLocaleContent = {
       html: 'Oyunlaştırma, izleyici tutmanın anahtarıdır. <strong>Çekiliş ve yarışma aracımız</strong>, tamamen şeffaf bir şekilde rastgele kazananlar seçilmesine olanak tanır. İşlemleri cihazınızda yerel olarak gerçekleştirerek dışarıdan müdahale olmamasını sağlar, canlı çekilişler sırasında takipçilerinizin güvenini kazanırsınız.',
     },
     {
-      type: 'tool',
-      tool: 'sorteo',
-    },
-    {
       type: 'title',
       text: 'Ağ Denetimi ve Tarafsızlık: Tebas-Check',
       level: 2,
@@ -40,10 +36,6 @@ export const content: CategoryLocaleContent = {
     {
       type: 'paragraph',
       html: '2026\'nın dijital ortamında, adli engellemeler ve ISP kısıtlamaları yayınınızın istikrarını veya topluluğunuzun kaynaklarınıza erişimini etkileyebilir. <strong>Tebas-Check</strong>, operatörünüzün Cloudflare veya diğer içerik sağlayıcılar gibi altyapılar üzerinde sansür veya önleyici engellemeler uygulayıp uygulamadığını tespit eden, ağ tarafsızlığınızı denetlemenize olanak tanıyan teknik bir teşhis aracıdır.',
-    },
-    {
-      type: 'tool',
-      tool: 'tebas-check',
     },
     {
       type: 'list',

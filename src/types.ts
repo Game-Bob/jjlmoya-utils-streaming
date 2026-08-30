@@ -1,5 +1,6 @@
 import type { SEOSection } from '@jjlmoya/utils-shared';
 import type { WithContext, Thing } from 'schema-dts';
+import type { AstroComponentFactory } from 'astro/runtime/server/index.js';
 
 export type { SEOSection };
 
@@ -63,8 +64,8 @@ export interface StreamingCategoryEntry {
 
 export interface ToolDefinition {
   entry: StreamingToolEntry;
-  Component: unknown;
-  SEOComponent: unknown;
-  BibliographyComponent: unknown;
+  Component: () => Promise<{ default: AstroComponentFactory }>;
+  SEOComponent: () => Promise<{ default: AstroComponentFactory }>;
+  BibliographyComponent: () => Promise<{ default: AstroComponentFactory }>;
   css?: string;
 }

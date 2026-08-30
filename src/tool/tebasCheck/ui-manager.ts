@@ -22,7 +22,9 @@ export class TebasUIManager {
     div.innerHTML = `<span class="tebas-log-time">[${time}]</span> ${msg}`;
     
     this.output.appendChild(div);
-    this.output['scroll' + 'Top'] = this.output['scroll' + 'Height'];
+    requestAnimationFrame(() => {
+      this.output?.scrollTo({ top: Number.MAX_SAFE_INTEGER, behavior: 'auto' });
+    });
   }
 
   clearLog() {

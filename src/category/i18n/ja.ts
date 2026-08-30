@@ -29,10 +29,6 @@ export const content: CategoryLocaleContent = {
       html: 'ゲーミフィケーションは視聴者維持の鍵です。当社の<strong>抽選・コンテストツール</strong>を使用すると、完全に透明な方法でランダムに当選者を選ぶことができます。お使いの末端でローカルに処理を行うことで、外部からの操作を排除し、ライブ抽選中のフォロワーの信頼を育みます。',
     },
     {
-      type: 'tool',
-      tool: 'sorteo',
-    },
-    {
       type: 'title',
       text: 'ネットワーク監査と中立性：Tebas-Check',
       level: 2,
@@ -40,10 +36,6 @@ export const content: CategoryLocaleContent = {
     {
       type: 'paragraph',
       html: '2026年のデジタル環境では、司法的ブロックやISPの制限が配信の安定性やコミュニティのリソースへのアクセスに影響を与える可能性があります。<strong>Tebas-Check</strong>は、プロバイダーがCloudflareなどのインフラや他のコンテンツプロバイダーに対して検閲や予防的ブロックを適用しているかどうかを検出する技術的な診断ツールであり、ネットワークの中立性を監査することができます。',
-    },
-    {
-      type: 'tool',
-      tool: 'tebas-check',
     },
     {
       type: 'list',

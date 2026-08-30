@@ -29,10 +29,6 @@ export const content: CategoryLocaleContent = {
       html: 'Gamification is key to audience retention. Our <strong>giveaway and contest tool</strong> allows for choosing random winners in a fully transparent way. By processing locally on your terminal, you ensure no external manipulation, fostering follower trust during live draws.',
     },
     {
-      type: 'tool',
-      tool: 'sorteo',
-    },
-    {
       type: 'title',
       text: 'Network Audit and Neutrality: Tebas-Check',
       level: 2,
@@ -40,10 +36,6 @@ export const content: CategoryLocaleContent = {
     {
       type: 'paragraph',
       html: 'In the digital environment of 2026, judicial blocks and ISP restrictions can affect your stream stability or your community\'s access to your resources. <strong>Tebas-Check</strong> is a technical diagnostic tool that detects if your operator is applying censorship or preventive blocks on infrastructures like Cloudflare or other content providers, allowing you to audit your network neutrality.',
-    },
-    {
-      type: 'tool',
-      tool: 'tebas-check',
     },
     {
       type: 'list',
@@ -70,7 +62,7 @@ export const content: CategoryLocaleContent = {
     },
     {
       type: 'paragraph',
-      html: 'This is especially important when distributing real or exclusive prizes. Perceived injustice in a giveaway can destroy follower relationships for months. That\'s why using a transparent system that processes locally on your computer is the best guarantee of impartiality. Your community sees the code running, trusts the result, and keeps coming back.',
+      html: 'This is especially important when distributing real or exclusive prizes. Perceived injustice in a giveaway can destroy follower relationships for months. That\'s why using a transparent system that processes locally on your computer can support a more impartial draw. Your community sees the code running, understands the process, and can come back with confidence.',
     },
     {
       type: 'title',

@@ -29,10 +29,6 @@ export const content: CategoryLocaleContent = {
       html: 'La gamification è la chiave per la fidelizzazione del pubblico. Il nostro <strong>strumento per giveaway e contest</strong> consente di scegliere vincitori casuali in modo completamente trasparente. Eseguendo l\'elaborazione localmente sul tuo terminale, garantisci l\'assenza di manipolazioni esterne, promuovendo la fiducia dei follower durante i sorteggi dal vivo.',
     },
     {
-      type: 'tool',
-      tool: 'sorteo',
-    },
-    {
       type: 'title',
       text: 'Audit di Rete e Neutralità: Tebas-Check',
       level: 2,
@@ -40,10 +36,6 @@ export const content: CategoryLocaleContent = {
     {
       type: 'paragraph',
       html: 'Nell\'ambiente digitale del 2026, i blocchi giudiziari e le restrizioni degli ISP possono influire sulla stabilità del tuo stream o sull\'accesso della tua community alle tue risorse. <strong>Tebas-Check</strong> è uno strumento di diagnosi tecnica che rileva se il tuo operatore sta applicando censura o blocchi preventivi su infrastrutture come Cloudflare o altri fornitori di contenuti, permettendoti di verificare la neutralità della tua rete.',
-    },
-    {
-      type: 'tool',
-      tool: 'tebas-check',
     },
     {
       type: 'list',

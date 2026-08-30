@@ -29,10 +29,6 @@ export const content: CategoryLocaleContent = {
       html: '游戏化是留住观众的关键。我们的<strong>抽奖和竞赛工具</strong>允许以完全透明的方式选择随机获胜者。通过在您的终端本地进行处理，您可以确保没有外部干预，从而在现场抽奖期间培养追随者的信任。',
     },
     {
-      type: 'tool',
-      tool: 'sorteo',
-    },
-    {
       type: 'title',
       text: '网络审计与中立性：Tebas-Check',
       level: 2,
@@ -40,10 +36,6 @@ export const content: CategoryLocaleContent = {
     {
       type: 'paragraph',
       html: '在 2026 年的数字环境中，司法封锁和 ISP 限制可能会影响直播的稳定性或社区对资源的访问。<strong>Tebas-Check</strong> 是一款技术诊断工具，可检测您的运营商是否对 Cloudflare 等基础设施或其他内容提供商实施审查或预防性封锁，让您可以审计自己的网络中立性。',
-    },
-    {
-      type: 'tool',
-      tool: 'tebas-check',
     },
     {
       type: 'list',

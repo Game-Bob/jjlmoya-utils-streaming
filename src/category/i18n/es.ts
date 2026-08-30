@@ -26,11 +26,7 @@ export const content: CategoryLocaleContent = {
     },
     {
       type: 'paragraph',
-      html: 'La gamificación es clave para retener a la audiencia. Nuestra herramienta de <strong>sorteo y concursos</strong> permite elegir ganadores aleatorios de forma totalmente transparente. Al procesarse localmente en tu terminal, garantizas que no hay manipulación externa, fomentando la confianza de tus seguidores durante los sorteos en directo.',
-    },
-    {
-      type: 'tool',
-      tool: 'sorteo',
+      html: 'La gamificación ayuda a retener a la audiencia. Nuestra herramienta de <strong>sorteo y concursos</strong> permite elegir ganadores aleatorios de forma transparente. Al procesarse localmente en tu terminal, facilita revisar el proceso y reduce el riesgo de manipulación externa durante los sorteos en directo.',
     },
     {
       type: 'title',
@@ -40,10 +36,6 @@ export const content: CategoryLocaleContent = {
     {
       type: 'paragraph',
       html: 'En el entorno digital de 2026, los bloqueos judiciales y las restricciones de las operadoras (ISP) pueden afectar la estabilidad de tus directos o el acceso de tu comunidad a tus recursos. <strong>Tebas-Check</strong> es una herramienta de diagnóstico técnico que detecta si tu operadora está aplicando censura o bloqueos preventivos sobre infraestructuras como las de Cloudflare u otros proveedores de contenido, permitiéndote auditar la neutralidad de tu red.',
-    },
-    {
-      type: 'tool',
-      tool: 'tebas-check',
     },
     {
       type: 'list',
