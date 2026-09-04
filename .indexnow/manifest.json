@@ -1,365 +1,365 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-04T06:49:59.671Z",
+  "generatedAt": "2026-09-04T09:06:22.137Z",
   "pages": {
     "https://www.gamebob.dev/de/werkzeuge/kategorien/streaming/": {
-      "hash": "9858efde29a469de9c65fa5548117656e7f6c4c5156af26b5afcd2da8813439b",
+      "hash": "48b5997990d36829924407507578a49a0422840ca4c2bfdaeda840ee093ec112",
       "route": "/de/werkzeuge/kategorien/streaming/"
     },
     "https://www.gamebob.dev/de/werkzeuge/kategorien/streaming/isp-block-detektor/": {
-      "hash": "c9a24034612ab0d0325012c5d6a940c2126c2d4332a3afa63ae9ac10ca6e821d",
+      "hash": "b4539d5ade7669bb3fe8cd44ef18a7579192b0683282c9909561511350f3e4d9",
       "route": "/de/werkzeuge/kategorien/streaming/isp-block-detektor/"
     },
     "https://www.gamebob.dev/de/werkzeuge/kategorien/streaming/stream-audio-loudness-zielplaner/": {
-      "hash": "cc96e76705d9180ae96f2de3b8d144fc17c19a4f3ee37f05fccaf8dbf26b8b92",
+      "hash": "835964c1d62569b78df05cd391001dcfd27f52dac3c692e999d593f5f56e7b26",
       "route": "/de/werkzeuge/kategorien/streaming/stream-audio-loudness-zielplaner/"
     },
     "https://www.gamebob.dev/de/werkzeuge/kategorien/streaming/stream-countdown-uhr-fuer-obs/": {
-      "hash": "f9040d3e259600241d267e61f12788a6bc8cdc75d0574b3446b7a2d0d1692593",
+      "hash": "39ca773dbf2ed4b280136e5ad9a21726934f61af3bb5222625fcf4d175f6efa9",
       "route": "/de/werkzeuge/kategorien/streaming/stream-countdown-uhr-fuer-obs/"
     },
     "https://www.gamebob.dev/de/werkzeuge/kategorien/streaming/video-bitrate-speicherplaner/": {
-      "hash": "a7faf8789d9a2fd589d9b9ed6886fed20f0627dbbdad19a7769d9ce91136493e",
+      "hash": "724b302a09d7a74d98849db1e63e4171b50e9481d1475ef91fe75341bff82e66",
       "route": "/de/werkzeuge/kategorien/streaming/video-bitrate-speicherplaner/"
     },
     "https://www.gamebob.dev/de/werkzeuge/kategorien/streaming/zufallsgenerator/": {
-      "hash": "5d63ff977b9cbad91dd825924bbd5c21f53df4a10c70ae0fe33237dcde3df88c",
+      "hash": "29937a4bdc51b3956d57af050d34ce329de456f8a665e67b95a143d9bbd75937",
       "route": "/de/werkzeuge/kategorien/streaming/zufallsgenerator/"
     },
     "https://www.gamebob.dev/en/utilities/categories/streaming/giveaway/": {
-      "hash": "7c7201b1b792eccc5770e9feb2e8ecbac3145e4b857df0e03a0e63f0d187d363",
+      "hash": "5200a576c916ca14a234c0ae269969edab8f3643d6283abfbf4a4d1833d735cd",
       "route": "/en/utilities/categories/streaming/giveaway/"
     },
     "https://www.gamebob.dev/en/utilities/categories/streaming/": {
-      "hash": "2009f2b9cabac1085e00e6a5e7a1d037fd26504a75b879fe59252a3f48ddb803",
+      "hash": "93b3c5d0d86696715a913741382cec2347dea71e7e1ba5df76b069ca63f58df3",
       "route": "/en/utilities/categories/streaming/"
     },
     "https://www.gamebob.dev/en/utilities/categories/streaming/isp-blockage-detector/": {
-      "hash": "26de9f39bc1e8257d9e093676f2850b6ae9ab64106392544a44876ba9719ac31",
+      "hash": "aa4041a74bb65255b4233a8971a2cc2cf7cb8bd22844065d99789254d84acad2",
       "route": "/en/utilities/categories/streaming/isp-blockage-detector/"
     },
     "https://www.gamebob.dev/en/utilities/categories/streaming/stream-audio-loudness-target-planner/": {
-      "hash": "869af3abeff4ee50a648982c36dca7a03cd0a2498b8b237fbeda9ef4f9ca3872",
+      "hash": "2d23899809dfc09110e7da5556a64f62f51f42f51c02d28e7ee78c9aace3829a",
       "route": "/en/utilities/categories/streaming/stream-audio-loudness-target-planner/"
     },
     "https://www.gamebob.dev/en/utilities/categories/streaming/stream-scene-countdown-clock/": {
-      "hash": "b31372589ea8c8f9394a39b961b4092ff39358b68f7f1739f75bc59273acf87d",
+      "hash": "8c914fea5a302bd06453fb3158d1d451739c98c6e578e770e019623d3ccf4355",
       "route": "/en/utilities/categories/streaming/stream-scene-countdown-clock/"
     },
     "https://www.gamebob.dev/en/utilities/categories/streaming/video-bitrate-storage-planner/": {
-      "hash": "6d2eb575f319115bb6fc7d9429373a61d9378a881f1e3396aee9675978cb38fe",
+      "hash": "53d532fb8c87e48bfbfa87d2e6e9b2cfa2cbc89c633a6e27b6a9846d55fb2acf",
       "route": "/en/utilities/categories/streaming/video-bitrate-storage-planner/"
     },
     "https://www.gamebob.dev/fr/utilitaires/categories/streaming/calculateur-debit-stockage-video/": {
-      "hash": "4d3309b539d0817d2ca8b856640b6992dd0a35391ce73299881ce551e3cb649e",
+      "hash": "bd36e6b99bf71d1949d5b95f1954a6fc2a0a860ae1cb18a5b6f0b8cb7e7234a9",
       "route": "/fr/utilitaires/categories/streaming/calculateur-debit-stockage-video/"
     },
     "https://www.gamebob.dev/fr/utilitaires/categories/streaming/compte-a-rebours-scene-stream-obs/": {
-      "hash": "fff81d8ff6ad33476228bc6b84a9e8241911d1acf0831ad5e09e4a4d0727b78b",
+      "hash": "b9b515d25be74bec3b62b939468af0ce54aa60aa58877f5b33e6bdf066850424",
       "route": "/fr/utilitaires/categories/streaming/compte-a-rebours-scene-stream-obs/"
     },
     "https://www.gamebob.dev/fr/utilitaires/categories/streaming/detecteur-blocage-isp/": {
-      "hash": "8eee74e2cceb931d16e11b35355c17247590ce8c67023c0428024c1706596ffe",
+      "hash": "4efc4dc410b32da8804f45bfb973ce066060e5b0ebdc0057e3c5e2177d069728",
       "route": "/fr/utilitaires/categories/streaming/detecteur-blocage-isp/"
     },
     "https://www.gamebob.dev/fr/utilitaires/categories/streaming/": {
-      "hash": "42da7d28b2afd31446230b9c1e4e90ec079a5edd8b7d81fef9e83b5a32393160",
+      "hash": "e9e9ddcde4a154cbf31968088393fde1f1b453ec09be56de8d8f5df7ce6aa167",
       "route": "/fr/utilitaires/categories/streaming/"
     },
     "https://www.gamebob.dev/fr/utilitaires/categories/streaming/planificateur-cible-loudness-audio-streaming/": {
-      "hash": "6b3cd744c8da02815bab42caec8f80988fbb256d3493935f8e2bbc8b257f2bd7",
+      "hash": "e8a50eb9f209d0d3579292c9d3012dbdf110c9455e33c29c8f66cbfdc1cf3892",
       "route": "/fr/utilitaires/categories/streaming/planificateur-cible-loudness-audio-streaming/"
     },
     "https://www.gamebob.dev/fr/utilitaires/categories/streaming/tirage-au-sort/": {
-      "hash": "543808b11c28681d062ec13f61e2f105cae6dac8f8bc989eabe840be563cfbe6",
+      "hash": "8963ad182d4d90e95483dd33194b68cd1ec6a6d944c1f16d0850f1b898303c4c",
       "route": "/fr/utilitaires/categories/streaming/tirage-au-sort/"
     },
     "https://www.gamebob.dev/id/utilitas/kategori/streaming/detektor-pemblokiran-isp/": {
-      "hash": "a39c1799867d5b94fe5d355de9fa378438b1ac0b17cc289c7b46841733cbc9dc",
+      "hash": "4b14298ea378c74f364908f7144c1f9cb89e1fb1dd925d674796792864fbf75b",
       "route": "/id/utilitas/kategori/streaming/detektor-pemblokiran-isp/"
     },
     "https://www.gamebob.dev/id/utilitas/kategori/streaming/": {
-      "hash": "025735aa871b7dafede67cad58e35d33e6ffbe26d3b5856e31f2cd0e8c075b79",
+      "hash": "d4e6f6ac1fe45490924de303f45714d9fe6e877b7d0efcc94c56d43bfc936311",
       "route": "/id/utilitas/kategori/streaming/"
     },
     "https://www.gamebob.dev/id/utilitas/kategori/streaming/penghitung-mundur-adegan-streaming-obs/": {
-      "hash": "4690640a8e5c3b81ccb7ecbacf9c350accffd00ff475c3dc87f1ebc4fb0682c0",
+      "hash": "63bdaf3fb6fc2a902cfa780ea2f55d7289716b73d22f9a07b4c16da026395a15",
       "route": "/id/utilitas/kategori/streaming/penghitung-mundur-adegan-streaming-obs/"
     },
     "https://www.gamebob.dev/id/utilitas/kategori/streaming/pengundi-nama-acak/": {
-      "hash": "8c766e0f95ef84b3f69fb3a9be8c71f80ecbb0e1ef2eb6237848b3d946e54083",
+      "hash": "1383d5f766dd271d51b005faf36de03213789c67573f76313e7847b013d7cb4f",
       "route": "/id/utilitas/kategori/streaming/pengundi-nama-acak/"
     },
     "https://www.gamebob.dev/id/utilitas/kategori/streaming/perencana-bitrate-penyimpanan-video/": {
-      "hash": "cd0e146f08b5c7bc267339a84cd09072f1965b331afa67b3bf087635d8956377",
+      "hash": "66a3ec28f805998b91708aaacdbb947d1d33e41fa34609b922871280682eb4c0",
       "route": "/id/utilitas/kategori/streaming/perencana-bitrate-penyimpanan-video/"
     },
     "https://www.gamebob.dev/id/utilitas/kategori/streaming/perencana-target-loudness-audio-streaming/": {
-      "hash": "f718b2424fe988abf6580ca31fa5d702bce04d3562f6c7b5a773d6d491f26703",
+      "hash": "f3ee57f3b0289062053ea52df3fb24e97224e3505abb01b5db8403c15fd50f31",
       "route": "/id/utilitas/kategori/streaming/perencana-target-loudness-audio-streaming/"
     },
     "https://www.gamebob.dev/it/utilita/categorie/streaming/conto-alla-rovescia-scena-stream-obs/": {
-      "hash": "9da246c8e7c2cfaeaa5b5f5a729a66bc2bdd61827f891c65c1b09d2e2cbbae00",
+      "hash": "00b945008049a5517029ec6a7170715f48fa716341c27d16bd229a705786757b",
       "route": "/it/utilita/categorie/streaming/conto-alla-rovescia-scena-stream-obs/"
     },
     "https://www.gamebob.dev/it/utilita/categorie/streaming/estrazione-nomi/": {
-      "hash": "911862d75b61d156e26e4ad0e0452af131f3e97caf91a2091bead93809877db2",
+      "hash": "3fcd6cf8f35d7cc648f76976124de4cf56139e0b0e49362a3a89b3761a4a37b3",
       "route": "/it/utilita/categorie/streaming/estrazione-nomi/"
     },
     "https://www.gamebob.dev/it/utilita/categorie/streaming/": {
-      "hash": "1642f5bb2986643791decab5584c855b358d7a3cf41cc7f36cb2e8549d06cd31",
+      "hash": "b07e1b5f75c0aabd03427277f3a3c2be7607d6866bdb246850f84f78ba784b43",
       "route": "/it/utilita/categorie/streaming/"
     },
     "https://www.gamebob.dev/it/utilita/categorie/streaming/pianificatore-bitrate-archiviazione-video/": {
-      "hash": "005a6b8afd4ad6e88c198dea058b9593fce43524bf9974d7519349116672237b",
+      "hash": "76f5d2f49e84f6ba4da664b6c6c2cb2b21696d932847efbf00a9daef3fb8dab3",
       "route": "/it/utilita/categorie/streaming/pianificatore-bitrate-archiviazione-video/"
     },
     "https://www.gamebob.dev/it/utilita/categorie/streaming/pianificatore-target-loudness-audio-streaming/": {
-      "hash": "cae7165ffe69ec71bfb56e99d9fa836707b27736fe57ab7b19a259c462552551",
+      "hash": "1e1746ec612773b37164cddc4a9a058b9535693ffe26473f51ea4f71e20e7b64",
       "route": "/it/utilita/categorie/streaming/pianificatore-target-loudness-audio-streaming/"
     },
     "https://www.gamebob.dev/it/utilita/categorie/streaming/rilevatore-blocchi-isp/": {
-      "hash": "9b934c098c3c02ad3c33f1eee0e5c8e53466fb8896848785617330f299e82348",
+      "hash": "096d0dcc64b4d9b465a7cb599a1847b2c7a38c0ac338a075a96a45ddba75e1d0",
       "route": "/it/utilita/categorie/streaming/rilevatore-blocchi-isp/"
     },
     "https://www.gamebob.dev/ja/utilities/categories/streaming/giveaway/": {
-      "hash": "5a715b9f2b4fe63acaae0622ec2128c50edd337651a432eb09312ff0af4458fd",
+      "hash": "2e19e3ab64a41fc25d771008996b7058947c70239252275b1f99290535c23ea6",
       "route": "/ja/utilities/categories/streaming/giveaway/"
     },
     "https://www.gamebob.dev/ja/utilities/categories/streaming/": {
-      "hash": "7e03b500cadcc09430332f043458d010c0fb8539195f29b79450b8d326cc82b8",
+      "hash": "41e333ad1663f4fcd15f3002d995d2ab1d301f2d9d7d4c7e02ef28db0aed41d6",
       "route": "/ja/utilities/categories/streaming/"
     },
     "https://www.gamebob.dev/ja/utilities/categories/streaming/isp-blockage-detector/": {
-      "hash": "88bd8f17f81dfcfc67af7c49b85f487d770467b87d75965ae678cadbd69af535",
+      "hash": "fec88efe1a58e6609691262a197cd70133c60ce098b5a73e256c6eec7b01000f",
       "route": "/ja/utilities/categories/streaming/isp-blockage-detector/"
     },
     "https://www.gamebob.dev/ja/utilities/categories/streaming/stream-audio-loudness-target-planner/": {
-      "hash": "6720e682b292e91370b135dcdba12364fb42d4e1cfbf36d267e2092e3041c1a0",
+      "hash": "cd8742864b49e739cbb5c7584aef3cb9423953a01948902b96d8f5f84cdc1bf3",
       "route": "/ja/utilities/categories/streaming/stream-audio-loudness-target-planner/"
     },
     "https://www.gamebob.dev/ja/utilities/categories/streaming/stream-scene-countdown-clock/": {
-      "hash": "623199d2fcda41f6953fb6e5f4bc863317cf4b14c28ab84f78a2e476eb772563",
+      "hash": "e8de5ab11fac9edf64974cddd22187f581d77781cbbc51f1cd472219ea3d9b50",
       "route": "/ja/utilities/categories/streaming/stream-scene-countdown-clock/"
     },
     "https://www.gamebob.dev/ja/utilities/categories/streaming/video-bitrate-storage-planner/": {
-      "hash": "b90b6701eb071fdf3bbe2c54b820d9eeefe01ab7653e2e47dc4c6f0a0c86aaa7",
+      "hash": "fd757d8b53144b3adbb13753c5cdcf18e019669bc1489c901c3cdde9ff324d9e",
       "route": "/ja/utilities/categories/streaming/video-bitrate-storage-planner/"
     },
     "https://www.gamebob.dev/ko/utilities/categories/streaming/giveaway/": {
-      "hash": "b30cca65743233be81d21100a321d1a895486856cff554f2b62fed464754d7a3",
+      "hash": "1b078b6aa4b471b40b10fde8aa8f3b9b718650b03cec4656bffc45c16427abe9",
       "route": "/ko/utilities/categories/streaming/giveaway/"
     },
     "https://www.gamebob.dev/ko/utilities/categories/streaming/": {
-      "hash": "56d5e07e898dc4f7b5bfab01440ff53fbaf68090feeba49b8e3635f0200896da",
+      "hash": "4fd1577f532fef8163335b97e9f2c6ccd2290302374848fd8f59de391c471584",
       "route": "/ko/utilities/categories/streaming/"
     },
     "https://www.gamebob.dev/ko/utilities/categories/streaming/isp-blockage-detector/": {
-      "hash": "40bf5331a67d83a86d4f98148cd805e70f7bfd10c18e12dec25888a7955b9d56",
+      "hash": "0189285cf7ee6f2b7211b199394ac39d3c609ce6e6883ee451338576d51126ca",
       "route": "/ko/utilities/categories/streaming/isp-blockage-detector/"
     },
     "https://www.gamebob.dev/ko/utilities/categories/streaming/stream-audio-loudness-target-planner/": {
-      "hash": "09543f288d3d048fab110ec4bbe2f4f15438aa5f4ce17d69d5bd9e2029d2d08b",
+      "hash": "665283df53567c1d6ca9f3a8d8216b4a1ba1676151d60b456310e139166c6351",
       "route": "/ko/utilities/categories/streaming/stream-audio-loudness-target-planner/"
     },
     "https://www.gamebob.dev/ko/utilities/categories/streaming/stream-scene-countdown-clock/": {
-      "hash": "46d5276f681e97513069269326861426793c83ca8d41470470ab94e6db91bc4e",
+      "hash": "7a4b70f5430cccc781ac0d4efaa5135a5ef33ed37badb8cbf80b675542e97dc1",
       "route": "/ko/utilities/categories/streaming/stream-scene-countdown-clock/"
     },
     "https://www.gamebob.dev/ko/utilities/categories/streaming/video-bitrate-storage-planner/": {
-      "hash": "add6b5487e743a1d47b9c793f7c48049a871736cd2ae2ea1ab044739d8d63d9e",
+      "hash": "38951fb3f45775881de058652087baea56b02742e1ef860a8ff96d1f86af2652",
       "route": "/ko/utilities/categories/streaming/video-bitrate-storage-planner/"
     },
     "https://www.gamebob.dev/nl/hulpmiddelen/categorieen/streaming/": {
-      "hash": "7176903c1179fc9a4a9b5e02ed71d3346937d4bef00ed08ff6b75ffc3859cf09",
+      "hash": "e5abd866d6b356f4ccc29834fa9fe8d13fa5f9811f62f8622e5d50a3dc675d25",
       "route": "/nl/hulpmiddelen/categorieen/streaming/"
     },
     "https://www.gamebob.dev/nl/hulpmiddelen/categorieen/streaming/isp-blokkade-detector/": {
-      "hash": "74b691712b23ae2d53663fc9b0d8537c2b1ad90aea788ffb3ef334e9b6ecf0df",
+      "hash": "d9c7fa00ef3e45a0c1d3bc5552e7379fab442f664c3abbe8b22b67c2896f3fa5",
       "route": "/nl/hulpmiddelen/categorieen/streaming/isp-blokkade-detector/"
     },
     "https://www.gamebob.dev/nl/hulpmiddelen/categorieen/streaming/naam-kiezer/": {
-      "hash": "2afb3f6c76b4236e0226800dfd87cdf7cf3856bf6f7bed1b5a1e6f21bde7ba80",
+      "hash": "ecf77ee99ceb5df07b240a343e345192b999e00eca1eaf254eec50aad97931a6",
       "route": "/nl/hulpmiddelen/categorieen/streaming/naam-kiezer/"
     },
     "https://www.gamebob.dev/nl/hulpmiddelen/categorieen/streaming/planner-loudnessdoelen-streaming-audio/": {
-      "hash": "1f2ff5d666208bd8cf1ac996b4d10f5063da14754c94071862f28f424b02472b",
+      "hash": "8b22938151c895319661e72721bfa8a5fa9cb690af873daf63844cb1321c89e7",
       "route": "/nl/hulpmiddelen/categorieen/streaming/planner-loudnessdoelen-streaming-audio/"
     },
     "https://www.gamebob.dev/nl/hulpmiddelen/categorieen/streaming/stream-scene-aftelklok-obs/": {
-      "hash": "d9a18b6fe17aa5ce97a0ee29e49f7ac5fc3e1ea1c0ad952a9cc3254cedd4517a",
+      "hash": "a6436db6b39b6ca9d08599bb40ce8bff840b685dd2871a7686284845e9a84924",
       "route": "/nl/hulpmiddelen/categorieen/streaming/stream-scene-aftelklok-obs/"
     },
     "https://www.gamebob.dev/nl/hulpmiddelen/categorieen/streaming/video-bitrate-opslagplanner/": {
-      "hash": "d430fb1b0bff663f54292b7ef4160e8e11668ee1469a5620e13f70b073553e2d",
+      "hash": "71bf24a084bbdaf25e2f041a065cf877b6b44c28caba08f6a75d2d82ebeb15ac",
       "route": "/nl/hulpmiddelen/categorieen/streaming/video-bitrate-opslagplanner/"
     },
     "https://www.gamebob.dev/pl/narzedzia/kategorie/streaming/": {
-      "hash": "a8136be47df882ee4eb7ace165da91fcc038b7c7add37bfc2afed9eda604ef77",
+      "hash": "751906f57ec0b3f6dfae49fcb68722b3c2d06e88fe5aa01211d65cced724999f",
       "route": "/pl/narzedzia/kategorie/streaming/"
     },
     "https://www.gamebob.dev/pl/narzedzia/kategorie/streaming/kalkulator-bitrate-magazynowania-wideo/": {
-      "hash": "3ae9d967b4aae51ac9ab2d19849e41985b4f47b33ed978fc6792b15fa37f7c68",
+      "hash": "b93078ad1e91553cf6fd9c728a3c1c9f0980a71297f48823ed6332e735b708ee",
       "route": "/pl/narzedzia/kategorie/streaming/kalkulator-bitrate-magazynowania-wideo/"
     },
     "https://www.gamebob.dev/pl/narzedzia/kategorie/streaming/losowanie-imion/": {
-      "hash": "492f9d44dcda535a8b86fd5d94c2199fd4d83c4e8f188d3aa6655f01948d8a95",
+      "hash": "54c43ccb17f8f1cd6d762f42ded52f4f963d29900f13c5b64c6c06c431eeeb92",
       "route": "/pl/narzedzia/kategorie/streaming/losowanie-imion/"
     },
     "https://www.gamebob.dev/pl/narzedzia/kategorie/streaming/odliczanie-sceny-streama-obs/": {
-      "hash": "5e5618c80cd69f4cbc51385041af11c8b6d93679951c254d114a515e06c72ed2",
+      "hash": "69396e679272a12b666bc91633c55777b293583afa6934a50fd04d68f9f3a906",
       "route": "/pl/narzedzia/kategorie/streaming/odliczanie-sceny-streama-obs/"
     },
     "https://www.gamebob.dev/pl/narzedzia/kategorie/streaming/planer-celow-glosnosci-audio-streaming/": {
-      "hash": "15c7aeec7737b950a62d7f23cee1e9c75ccc249b278a173de92b9d53cf587674",
+      "hash": "596b4c5f618ed8ff9d181e2cb3e7937d417886b334e74c7faff60b61d2bdce49",
       "route": "/pl/narzedzia/kategorie/streaming/planer-celow-glosnosci-audio-streaming/"
     },
     "https://www.gamebob.dev/pl/narzedzia/kategorie/streaming/wykrywacz-blokad-isp/": {
-      "hash": "3085573a16e3e97991298b99855569a970750c9109889fde99bdb5c9a62ba249",
+      "hash": "f9747d37e7aafae3abbfa04624357ef3770607ff1c97997832b4b15752d35783",
       "route": "/pl/narzedzia/kategorie/streaming/wykrywacz-blokad-isp/"
     },
     "https://www.gamebob.dev/pt/utilidades/categorias/streaming/calculadora-bitrate-armazenamento-video/": {
-      "hash": "e3cd5ab3a7feb587362f517d36434eaebb04fd7d783f57043defa74a1ec59edb",
+      "hash": "253d8b16b62407897d1b781bd7f2cd48dafea27effd03c14f3fa1c2c266a30fe",
       "route": "/pt/utilidades/categorias/streaming/calculadora-bitrate-armazenamento-video/"
     },
     "https://www.gamebob.dev/pt/utilidades/categorias/streaming/contagem-regressiva-cena-stream-obs/": {
-      "hash": "99a54e761a63a59ee2792b9947cd3aece3d495b0244fe75461a36066706b1c5a",
+      "hash": "53dce5436b8b7e1d3e8f0b2ce0155f2013425ed6326292b2f4f5a199a418eb23",
       "route": "/pt/utilidades/categorias/streaming/contagem-regressiva-cena-stream-obs/"
     },
     "https://www.gamebob.dev/pt/utilidades/categorias/streaming/detetor-bloqueio-isp/": {
-      "hash": "80ca669e145932a688a074149a793845ba4bd8ca54218b6dad9cf53cf17a3634",
+      "hash": "8067af8a74d29c6a759357684b97f0675d5db231c18ae56e26c63574c74d864c",
       "route": "/pt/utilidades/categorias/streaming/detetor-bloqueio-isp/"
     },
     "https://www.gamebob.dev/pt/utilidades/categorias/streaming/": {
-      "hash": "f038b1c4dc3d948adc3b3444bcf24e64435cab787d45d09f2433a108c25d372e",
+      "hash": "bccb0ed254f3e0e1ba8dfd2224438458931c78714c9d33c8203e2d79ad90244b",
       "route": "/pt/utilidades/categorias/streaming/"
     },
     "https://www.gamebob.dev/pt/utilidades/categorias/streaming/planejador-alvo-loudness-audio-streaming/": {
-      "hash": "9b3b555aa3fc067619b24922ac617aef8a17f014d9ea326e44150478734106ea",
+      "hash": "725575067c661de887f4f0ff51a01ade25f66a5b2a94f516b57212edf5c0d6d5",
       "route": "/pt/utilidades/categorias/streaming/planejador-alvo-loudness-audio-streaming/"
     },
     "https://www.gamebob.dev/pt/utilidades/categorias/streaming/sorteio-nomes/": {
-      "hash": "62182de8e5b92f9449884c9375c16e3457761c503b98dc269791d416c7f7daae",
+      "hash": "7f951f854c364f1d73570a98da874ac2abd81ac249e32ba96edee48d363127b6",
       "route": "/pt/utilidades/categorias/streaming/sorteio-nomes/"
     },
     "https://www.gamebob.dev/ru/instrumenty/kategorii/streaming/detektor-blokirovok-isp/": {
-      "hash": "aba44aa1f6babdd50b75336c967b7695d6a7e82093c1d26b01578d0a7c32335a",
+      "hash": "582091868ae994bc1a885ccb973c753da904806888533ee3e7beb55905ede1fb",
       "route": "/ru/instrumenty/kategorii/streaming/detektor-blokirovok-isp/"
     },
     "https://www.gamebob.dev/ru/instrumenty/kategorii/streaming/": {
-      "hash": "4f994109faa9e2e2953f1f5106a1afe695ee77ac40be926ba493842ac480617c",
+      "hash": "9a35c5da827e3710b7e42869f1380911526fcbb1df0f5a1d17a4c6d85462e6a3",
       "route": "/ru/instrumenty/kategorii/streaming/"
     },
     "https://www.gamebob.dev/ru/instrumenty/kategorii/streaming/kalkulyator-bitreyta-hranilishcha-video/": {
-      "hash": "80ebb46f06beecdb0a1bc7e9725812a28894544823bac4ef8dad8650aebf6303",
+      "hash": "e5a82ec43dd9f22150fbebe4ac00b94aaea51047bbbdedb2cd1098db54af6be1",
       "route": "/ru/instrumenty/kategorii/streaming/kalkulyator-bitreyta-hranilishcha-video/"
     },
     "https://www.gamebob.dev/ru/instrumenty/kategorii/streaming/planirovshchik-gromkosti-potokovogo-audio/": {
-      "hash": "7fcfe9e5c39aba5e3760323eead27239d3d6801b1485c5f01417400919de7c20",
+      "hash": "c0e34e2d01c2598dc852640c017c24cc3a256b62a3399411e6a74bce6c9fd652",
       "route": "/ru/instrumenty/kategorii/streaming/planirovshchik-gromkosti-potokovogo-audio/"
     },
     "https://www.gamebob.dev/ru/instrumenty/kategorii/streaming/randomayzer-imen/": {
-      "hash": "33b964842930855ae4808ae58f922d0b417b4d272c9e6c00a19a8bbfe694f44c",
+      "hash": "e8b0a002f13d7a37dcf89cf3597eb377fab9e29c30bb30506928c612c9ed0e2b",
       "route": "/ru/instrumenty/kategorii/streaming/randomayzer-imen/"
     },
     "https://www.gamebob.dev/ru/instrumenty/kategorii/streaming/taymer-obratnogo-otscheta-stseny-strima-obs/": {
-      "hash": "cf66e9ac1a33efeb10a95c58a98f6eaf532abfc99f423e6af4df44a028cfdc38",
+      "hash": "8b45258b801195a9550426d4286d2541e394adde2e0c7c846bef6cbe611ae5ec",
       "route": "/ru/instrumenty/kategorii/streaming/taymer-obratnogo-otscheta-stseny-strima-obs/"
     },
     "https://www.gamebob.dev/sv/verktyg/kategorier/streaming/": {
-      "hash": "f1481c9ea20b9000c0021a7b36e41cda1b6805e9aec26d1cdb222ffc3f83c9ce",
+      "hash": "d94c83e8a392dcf39dd1d16fb842d510ec2e1a0b4d965f68198bca6d4ea9a0aa",
       "route": "/sv/verktyg/kategorier/streaming/"
     },
     "https://www.gamebob.dev/sv/verktyg/kategorier/streaming/isp-blockerings-detektor/": {
-      "hash": "412a43c9a3a9fe3232e321a382ae073fc984c903f4df57e832b827bc3b73b38d",
+      "hash": "9ba4d66b7a663d34790d1b5c0a7ab52ef673743d045076507df934cf968ed2b9",
       "route": "/sv/verktyg/kategorier/streaming/isp-blockerings-detektor/"
     },
     "https://www.gamebob.dev/sv/verktyg/kategorier/streaming/nedrakning-streamscen-obs/": {
-      "hash": "3430e9f57f6eda77ece9723a47528b21c43baf36776fd28a23640b414213e010",
+      "hash": "d16ca32b7f056c686350b3527c1627a647d47d6edaba9b1ec888be226d004e2e",
       "route": "/sv/verktyg/kategorier/streaming/nedrakning-streamscen-obs/"
     },
     "https://www.gamebob.dev/sv/verktyg/kategorier/streaming/planerare-loudnessmal-streaming-ljud/": {
-      "hash": "9c4a0767e9ea0484582c06d550a27473be27e3a4dc413b61506806b963c3c8dd",
+      "hash": "6dbd185fce388331cdb3b19c87ba1afe1834e402dbedbe59ff5a90620ea210a9",
       "route": "/sv/verktyg/kategorier/streaming/planerare-loudnessmal-streaming-ljud/"
     },
     "https://www.gamebob.dev/sv/verktyg/kategorier/streaming/slumpartad-namnvaljare/": {
-      "hash": "e351393622a97a3dd1cae83074c1c39c7be2fdcbeb213f0e347069c6989d7fb0",
+      "hash": "d205919c2f89f6ce5eea7111d69f4b412ff67d8ce6930cae3a9f173ded299b4c",
       "route": "/sv/verktyg/kategorier/streaming/slumpartad-namnvaljare/"
     },
     "https://www.gamebob.dev/sv/verktyg/kategorier/streaming/video-bitrate-lagringsplanerare/": {
-      "hash": "29c8b4e45ffdd93c1dc7acf7784f2d0458e8393682ef1dfc6524a184255d8247",
+      "hash": "0cfa6d6b39b01356ea4e5148f16c5eff7156ffff1a5c24c22944fde174ea0b52",
       "route": "/sv/verktyg/kategorier/streaming/video-bitrate-lagringsplanerare/"
     },
     "https://www.gamebob.dev/tr/araclar/kategoriler/streaming/": {
-      "hash": "d853841c9e592d6120c67441fd565bd60be6aa6d484a24e91697af93ae47b4a2",
+      "hash": "dcf61e498f59fb58f749d09e11b380e45e8e1c98f717f8c4c4a924ad54e1fdcd",
       "route": "/tr/araclar/kategoriler/streaming/"
     },
     "https://www.gamebob.dev/tr/araclar/kategoriler/streaming/isp-engelleme-dedektoru/": {
-      "hash": "b5694d3e253f3058c4f0a0b82fc1c21e6ef43bb05d24757b0d4afcef0edd3b35",
+      "hash": "64cb6e7b7c46961e2cbeaf70681f387eb38623ddce1e86f493e0b96691e7a956",
       "route": "/tr/araclar/kategoriler/streaming/isp-engelleme-dedektoru/"
     },
     "https://www.gamebob.dev/tr/araclar/kategoriler/streaming/obs-yayin-sahnesi-geri-sayim/": {
-      "hash": "9ae8b97aad22742b6a7ef995e2c2ec3b3d6cbb43295355f6651321995849a159",
+      "hash": "6a6e966a71361d5cd4f48dbd81332bb33ffc5717026b0f8fb39544632383cee6",
       "route": "/tr/araclar/kategoriler/streaming/obs-yayin-sahnesi-geri-sayim/"
     },
     "https://www.gamebob.dev/tr/araclar/kategoriler/streaming/rastgele-isim-secici/": {
-      "hash": "10846bc78a612d11ca57c4996521a6041d7e1db664bd3ae6a337ec4dfca5c92b",
+      "hash": "f468bb749d82b1074f4211d41ba67cd93f43ed8a20c2bf6c40df7139779a0136",
       "route": "/tr/araclar/kategoriler/streaming/rastgele-isim-secici/"
     },
     "https://www.gamebob.dev/tr/araclar/kategoriler/streaming/video-bitrate-depolama-planlayici/": {
-      "hash": "03bdd49da040ba1c563c0bed6abc52e84ee7bed3ce6a00ea049d742554f860dc",
+      "hash": "5859857ad1f6623a7cb21b3b1c41951235222268a75bc908919d8162835e6bbd",
       "route": "/tr/araclar/kategoriler/streaming/video-bitrate-depolama-planlayici/"
     },
     "https://www.gamebob.dev/tr/araclar/kategoriler/streaming/yayin-ses-yuksekligi-hedef-planlayici/": {
-      "hash": "ccc029614feec227314a8b12a791d38b2adc42569da0a1c306c233bea5599803",
+      "hash": "ad3bf12f221e3a8979b4a461346e3c76d8443d714dacc757c8aad3b9fb0e188d",
       "route": "/tr/araclar/kategoriler/streaming/yayin-ses-yuksekligi-hedef-planlayici/"
     },
     "https://www.jjlmoya.es/utilidades/calculadora-bitrate-almacenamiento-video/": {
-      "hash": "3d6fa05b5a1be8a830f04dbf89fcaf2c4c42a20b9f3b033421d02bd54c3b7617",
+      "hash": "b702e340c62ad11b82f1184a950125f2af34f1f78d4b75e88d2223e2de484c14",
       "route": "/utilidades/calculadora-bitrate-almacenamiento-video/"
     },
     "https://www.jjlmoya.es/utilidades/categorias/streaming/": {
-      "hash": "99d5d581e4cdf898d5c156c6bfa64146200faf7294d1d5440b84439808221fb8",
+      "hash": "4838100d5742c1ab73572ab40da1f65ee96ccd8bf617040c4e7ecdcb280467e6",
       "route": "/utilidades/categorias/streaming/"
     },
     "https://www.jjlmoya.es/utilidades/cuenta-atras-escena-streaming-obs/": {
-      "hash": "614ba415ea1382694a87808266b34cd47e1d1c4082598db5a4e11a69a549214d",
+      "hash": "e3618d116e7eb62e0972ad1bbbf61e46a63a9cdf61572c1e25a21a9bc5af79c2",
       "route": "/utilidades/cuenta-atras-escena-streaming-obs/"
     },
     "https://www.jjlmoya.es/utilidades/planificador-objetivo-sonoridad-audio-streaming/": {
-      "hash": "f90f4f1a88c6ef90d7f9b4117c2a4068f52e48ab98d8c0e76688f99182231268",
+      "hash": "4e543303dee0895512276cde2854e101ffb31aa6d0a13e61e9954f9f69401832",
       "route": "/utilidades/planificador-objetivo-sonoridad-audio-streaming/"
     },
     "https://www.jjlmoya.es/utilidades/sorteo/": {
-      "hash": "f66afe7297c25a72a00079f692aaf4954abe790e2214832fbcee62e378ecccf0",
+      "hash": "5a543074e4f01c5de40c99e1571f52644925433a84874412d683fec07f7d48d8",
       "route": "/utilidades/sorteo/"
     },
     "https://www.jjlmoya.es/utilidades/tebas-check/": {
-      "hash": "18518b46739472738031aee6c40087891914052c89d05458d378c4d2f4eb0b14",
+      "hash": "7019372e4a3ac89ea67331c0061b64f8613d9c050a0e667ad38362d05f1ee409",
       "route": "/utilidades/tebas-check/"
     },
     "https://www.gamebob.dev/zh/utilities/categories/streaming/giveaway/": {
-      "hash": "97a3e79e3af44e9f01bbf5740dc27e2c14f68b7436785c442f2aaafd67e7c9fe",
+      "hash": "1dee5d601076b95753f30c5fe3698f37301b4fddd2da39b8e518bcc2df612c8b",
       "route": "/zh/utilities/categories/streaming/giveaway/"
     },
     "https://www.gamebob.dev/zh/utilities/categories/streaming/": {
-      "hash": "92ffa7a7775c45c1c3fd1311cfaacd24152b4fdcc30958827237396d51090169",
+      "hash": "afacfb83745eb1e076c846208df1735aa0575188d99e00cc8cfaab29d5d534e2",
       "route": "/zh/utilities/categories/streaming/"
     },
     "https://www.gamebob.dev/zh/utilities/categories/streaming/isp-blockage-detector/": {
-      "hash": "b0d4284066dc21bf7b9538f68cfc7e391c671f2a67d6270cee5434af375d2aff",
+      "hash": "114dfa8321460154c8cd83f32e86d258ea8773dbfb7fc7bfd0f28d8523e9b65d",
       "route": "/zh/utilities/categories/streaming/isp-blockage-detector/"
     },
     "https://www.gamebob.dev/zh/utilities/categories/streaming/stream-audio-loudness-target-planner/": {
-      "hash": "186eea74ac54096db864b1ece59bf9e2f7aad25a10ad23ac0c8495e3265eb883",
+      "hash": "e49a7c82e56a550c7769c0cff2cf9f54fd7261343c1836515808ea6d1af2b486",
       "route": "/zh/utilities/categories/streaming/stream-audio-loudness-target-planner/"
     },
     "https://www.gamebob.dev/zh/utilities/categories/streaming/stream-scene-countdown-clock/": {
-      "hash": "bf71c48bf900ffcdc7c25a870dff557b728d6a9cc01b6e742292001434ba2f0c",
+      "hash": "c6c2a35d754e3a35f40b48c3bf527b7886b6ba07809a8cdf3776427d7bfa768a",
       "route": "/zh/utilities/categories/streaming/stream-scene-countdown-clock/"
     },
     "https://www.gamebob.dev/zh/utilities/categories/streaming/video-bitrate-storage-planner/": {
-      "hash": "36eb09b865b572f95b1ac4c77180dbd24cbabcf335ba55301f6dd388205e23fa",
+      "hash": "7ca601eb0fa7b0296f1c5c27893da15b5fb18b4bb899b490bad35f1e892dd4a8",
       "route": "/zh/utilities/categories/streaming/video-bitrate-storage-planner/"
     }
   }
