@@ -7,163 +7,83 @@
     "preview_urls": true,
     "routes": [
         {
-            "pattern": "www.jjlmoya.es/utilidades/categorias/streaming",
+            "pattern": "www.jjlmoya.es/utilidades/categorias/streaming*",
             "zone_name": "jjlmoya.es"
         },
         {
-            "pattern": "www.jjlmoya.es/utilidades/categorias/streaming/*",
+            "pattern": "www.jjlmoya.es/utilidades/sorteo*",
             "zone_name": "jjlmoya.es"
         },
         {
-            "pattern": "www.jjlmoya.es/utilidades/sorteo",
+            "pattern": "www.jjlmoya.es/utilidades/planificador-objetivo-sonoridad-audio-streaming*",
             "zone_name": "jjlmoya.es"
         },
         {
-            "pattern": "www.jjlmoya.es/utilidades/sorteo/*",
+            "pattern": "www.jjlmoya.es/utilidades/cuenta-atras-escena-streaming-obs*",
             "zone_name": "jjlmoya.es"
         },
         {
-            "pattern": "www.jjlmoya.es/utilidades/planificador-objetivo-sonoridad-audio-streaming",
+            "pattern": "www.jjlmoya.es/utilidades/tebas-check*",
             "zone_name": "jjlmoya.es"
         },
         {
-            "pattern": "www.jjlmoya.es/utilidades/planificador-objetivo-sonoridad-audio-streaming/*",
+            "pattern": "www.jjlmoya.es/utilidades/calculadora-bitrate-almacenamiento-video*",
             "zone_name": "jjlmoya.es"
         },
         {
-            "pattern": "www.jjlmoya.es/utilidades/cuenta-atras-escena-streaming-obs",
-            "zone_name": "jjlmoya.es"
-        },
-        {
-            "pattern": "www.jjlmoya.es/utilidades/cuenta-atras-escena-streaming-obs/*",
-            "zone_name": "jjlmoya.es"
-        },
-        {
-            "pattern": "www.jjlmoya.es/utilidades/tebas-check",
-            "zone_name": "jjlmoya.es"
-        },
-        {
-            "pattern": "www.jjlmoya.es/utilidades/tebas-check/*",
-            "zone_name": "jjlmoya.es"
-        },
-        {
-            "pattern": "www.jjlmoya.es/utilidades/calculadora-bitrate-almacenamiento-video",
-            "zone_name": "jjlmoya.es"
-        },
-        {
-            "pattern": "www.jjlmoya.es/utilidades/calculadora-bitrate-almacenamiento-video/*",
-            "zone_name": "jjlmoya.es"
-        },
-        {
-            "pattern": "www.gamebob.dev/en/utilities/categories/streaming",
+            "pattern": "www.gamebob.dev/en/utilities/categories/streaming*",
             "zone_name": "gamebob.dev"
         },
         {
-            "pattern": "www.gamebob.dev/en/utilities/categories/streaming/*",
+            "pattern": "www.gamebob.dev/fr/utilitaires/categories/streaming*",
             "zone_name": "gamebob.dev"
         },
         {
-            "pattern": "www.gamebob.dev/fr/utilitaires/categories/streaming",
+            "pattern": "www.gamebob.dev/de/werkzeuge/kategorien/streaming*",
             "zone_name": "gamebob.dev"
         },
         {
-            "pattern": "www.gamebob.dev/fr/utilitaires/categories/streaming/*",
+            "pattern": "www.gamebob.dev/it/utilita/categorie/streaming*",
             "zone_name": "gamebob.dev"
         },
         {
-            "pattern": "www.gamebob.dev/de/werkzeuge/kategorien/streaming",
+            "pattern": "www.gamebob.dev/pt/utilidades/categorias/streaming*",
             "zone_name": "gamebob.dev"
         },
         {
-            "pattern": "www.gamebob.dev/de/werkzeuge/kategorien/streaming/*",
+            "pattern": "www.gamebob.dev/nl/hulpmiddelen/categorieen/streaming*",
             "zone_name": "gamebob.dev"
         },
         {
-            "pattern": "www.gamebob.dev/it/utilita/categorie/streaming",
+            "pattern": "www.gamebob.dev/sv/verktyg/kategorier/streaming*",
             "zone_name": "gamebob.dev"
         },
         {
-            "pattern": "www.gamebob.dev/it/utilita/categorie/streaming/*",
+            "pattern": "www.gamebob.dev/pl/narzedzia/kategorie/streaming*",
             "zone_name": "gamebob.dev"
         },
         {
-            "pattern": "www.gamebob.dev/pt/utilidades/categorias/streaming",
+            "pattern": "www.gamebob.dev/id/utilitas/kategori/streaming*",
             "zone_name": "gamebob.dev"
         },
         {
-            "pattern": "www.gamebob.dev/pt/utilidades/categorias/streaming/*",
+            "pattern": "www.gamebob.dev/tr/araclar/kategoriler/streaming*",
             "zone_name": "gamebob.dev"
         },
         {
-            "pattern": "www.gamebob.dev/nl/hulpmiddelen/categorieen/streaming",
+            "pattern": "www.gamebob.dev/ru/instrumenty/kategorii/streaming*",
             "zone_name": "gamebob.dev"
         },
         {
-            "pattern": "www.gamebob.dev/nl/hulpmiddelen/categorieen/streaming/*",
+            "pattern": "www.gamebob.dev/ja/utilities/categories/streaming*",
             "zone_name": "gamebob.dev"
         },
         {
-            "pattern": "www.gamebob.dev/sv/verktyg/kategorier/streaming",
+            "pattern": "www.gamebob.dev/ko/utilities/categories/streaming*",
             "zone_name": "gamebob.dev"
         },
         {
-            "pattern": "www.gamebob.dev/sv/verktyg/kategorier/streaming/*",
-            "zone_name": "gamebob.dev"
-        },
-        {
-            "pattern": "www.gamebob.dev/pl/narzedzia/kategorie/streaming",
-            "zone_name": "gamebob.dev"
-        },
-        {
-            "pattern": "www.gamebob.dev/pl/narzedzia/kategorie/streaming/*",
-            "zone_name": "gamebob.dev"
-        },
-        {
-            "pattern": "www.gamebob.dev/id/utilitas/kategori/streaming",
-            "zone_name": "gamebob.dev"
-        },
-        {
-            "pattern": "www.gamebob.dev/id/utilitas/kategori/streaming/*",
-            "zone_name": "gamebob.dev"
-        },
-        {
-            "pattern": "www.gamebob.dev/tr/araclar/kategoriler/streaming",
-            "zone_name": "gamebob.dev"
-        },
-        {
-            "pattern": "www.gamebob.dev/tr/araclar/kategoriler/streaming/*",
-            "zone_name": "gamebob.dev"
-        },
-        {
-            "pattern": "www.gamebob.dev/ru/instrumenty/kategorii/streaming",
-            "zone_name": "gamebob.dev"
-        },
-        {
-            "pattern": "www.gamebob.dev/ru/instrumenty/kategorii/streaming/*",
-            "zone_name": "gamebob.dev"
-        },
-        {
-            "pattern": "www.gamebob.dev/ja/utilities/categories/streaming",
-            "zone_name": "gamebob.dev"
-        },
-        {
-            "pattern": "www.gamebob.dev/ja/utilities/categories/streaming/*",
-            "zone_name": "gamebob.dev"
-        },
-        {
-            "pattern": "www.gamebob.dev/ko/utilities/categories/streaming",
-            "zone_name": "gamebob.dev"
-        },
-        {
-            "pattern": "www.gamebob.dev/ko/utilities/categories/streaming/*",
-            "zone_name": "gamebob.dev"
-        },
-        {
-            "pattern": "www.gamebob.dev/zh/utilities/categories/streaming",
-            "zone_name": "gamebob.dev"
-        },
-        {
-            "pattern": "www.gamebob.dev/zh/utilities/categories/streaming/*",
+            "pattern": "www.gamebob.dev/zh/utilities/categories/streaming*",
             "zone_name": "gamebob.dev"
         },
         {
