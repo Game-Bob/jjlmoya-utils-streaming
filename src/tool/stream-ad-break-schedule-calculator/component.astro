@@ -1,0 +1,79 @@
+---
+import type { StreamAdBreakScheduleUI } from './ui';
+import './stream-ad-break-schedule-calculator.css';
+
+const { ui } = Astro.props as { ui: StreamAdBreakScheduleUI };
+---
+
+<div class="stream-ad-break-tool" data-stream-ad-break-tool data-ui={JSON.stringify(ui)}>
+  <form class="stream-ad-break-tool-form" data-plan-form>
+    <div class="stream-ad-break-tool-controls">
+      <div class="stream-ad-break-tool-control">
+        <label for="stream-start-time">{ui.startTimeLabel}</label>
+        <input id="stream-start-time" name="startTime" type="time" value="19:00" />
+        <span>{ui.startTimeHint}</span>
+      </div>
+      <div class="stream-ad-break-tool-control">
+        <label for="stream-planned-duration">{ui.streamDurationLabel}</label>
+        <input id="stream-planned-duration" name="plannedDuration" type="number" min="1" max="1440" step="1" value="120" />
+        <span>{ui.streamDurationHint}</span>
+      </div>
+      <div class="stream-ad-break-tool-control">
+        <label for="stream-cadence">{ui.cadenceLabel}</label>
+        <input id="stream-cadence" name="cadence" type="number" min="1" max="480" step="1" value="30" />
+        <span>{ui.cadenceHint}</span>
+      </div>
+      <div class="stream-ad-break-tool-control">
+        <label for="stream-break-length">{ui.breakLengthLabel}</label>
+        <input id="stream-break-length" name="breakLength" type="number" min="0.5" max="60" step="0.5" value="3" />
+        <span>{ui.breakLengthHint}</span>
+      </div>
+    </div>
+    <div class="stream-ad-break-tool-presets">
+      <span class="stream-ad-break-tool-eyebrow">{ui.presetsLabel}</span>
+      <div class="stream-ad-break-tool-preset-list">
+        <button type="button" data-preset="quick">{ui.presetQuick}</button>
+        <button type="button" data-preset="long">{ui.presetLong}</button>
+        <button type="button" data-preset="interview">{ui.presetInterview}</button>
+      </div>
+    </div>
+    <div class="stream-ad-break-tool-running-order">
+      <label for="stream-segments">{ui.segmentsLabel}</label>
+      <textarea id="stream-segments" name="segmentsText" rows="6">Opening | 15
+Main show | 35
+Gameplay | 35
+Closing | 35</textarea>
+      <span>{ui.segmentsHint}</span>
+    </div>
+  </form>
+  <section class="stream-ad-break-tool-result" aria-live="polite">
+    <div class="stream-ad-break-tool-result-head">
+      <div>
+        <p class="stream-ad-break-tool-eyebrow">{ui.scheduleLabel}</p>
+        <p class="stream-ad-break-tool-hint">{ui.scheduleHint}</p>
+      </div>
+      <div class="stream-ad-break-tool-state" data-plan-state data-state="empty">{ui.stateEmpty}</div>
+    </div>
+    <p class="stream-ad-break-tool-state-text" data-plan-state-text>{ui.stateEmptyText}</p>
+    <div class="stream-ad-break-tool-rail" data-schedule></div>
+    <p class="stream-ad-break-tool-empty" data-empty-schedule>{ui.noEntriesText}</p>
+    <p class="stream-ad-break-tool-detail" data-plan-detail></p>
+    <dl class="stream-ad-break-tool-metrics">
+      <div><dt>{ui.contentTotalLabel}</dt><dd data-content-total>0 {ui.minutesShort}</dd></div>
+      <div><dt>{ui.adsTotalLabel}</dt><dd data-ads-total>0 {ui.minutesShort}</dd></div>
+      <div><dt>{ui.breaksLabel}</dt><dd data-break-count>0</dd></div>
+      <div><dt>{ui.plannedEndLabel}</dt><dd data-end-time>19:00</dd></div>
+    </dl>
+    <div class="stream-ad-break-tool-actions">
+      <button type="button" class="stream-ad-break-tool-primary" data-copy>{ui.copyLabel}</button>
+      <button type="button" class="stream-ad-break-tool-secondary" data-reset>{ui.resetLabel}</button>
+      <span data-copy-status></span>
+    </div>
+  </section>
+</div>
+
+<script>
+  import { initStreamAdBreakSchedule } from './controller';
+
+  document.querySelectorAll<HTMLElement>('[data-stream-ad-break-tool]').forEach((root) => initStreamAdBreakSchedule(root));
+</script>

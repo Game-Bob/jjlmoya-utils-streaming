@@ -5,6 +5,7 @@ import { TEBAS_CHECK_TOOL } from './tool/tebasCheck/index';
 import { VIDEO_BITRATE_PLANNER_TOOL } from './tool/videoBitratePlanner/index';
 import { STREAM_SCENE_COUNTDOWN_CLOCK_TOOL } from './tool/streamSceneCountdownClock/index';
 import { STREAM_AUDIO_LOUDNESS_TARGET_PLANNER_TOOL } from './tool/stream-audio-loudness-target-planner/index';
+import { STREAM_AD_BREAK_SCHEDULE_CALCULATOR_TOOL } from './tool/stream-ad-break-schedule-calculator/index';
 
 export const ALL_TOOLS: ToolDefinition[] = [
   SORTEO_TOOL,
@@ -12,4 +13,5 @@ export const ALL_TOOLS: ToolDefinition[] = [
   VIDEO_BITRATE_PLANNER_TOOL,
   STREAM_SCENE_COUNTDOWN_CLOCK_TOOL,
   STREAM_AUDIO_LOUDNESS_TARGET_PLANNER_TOOL,
+  STREAM_AD_BREAK_SCHEDULE_CALCULATOR_TOOL,
 ];
